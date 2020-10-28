@@ -10,10 +10,28 @@
     padding: 96px 32px;
 }
 
+.quote-wrapper {
+    text-align: center;
+    margin: auto 10%;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 17px;
+}
+
+.section-heading {
+    padding-bottom: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: .05em;
+}
+
 /* -----------------------------------------------------Body */
 
 body {
-    font-family: sans-serif;
+    font-family: proxima-nova, sans-serif;
     font-weight: normal;
 }
 
@@ -23,15 +41,35 @@ body {
     padding: 0;
 }
 
+.navbar {
+    height: 90px;
+    background-color: #ff8400;
+}
+
 .logo {
     background: url("/assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-size: contain;
+    padding: 0px 20px;
+    transform: translate(7px, -4px);
 }
 
 nav ul li a {
     color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: .75em 1em;
+    line-height: 4.4em;
+}
+
+.nav-cta {
+    border: #fff 2px solid;
+    border-radius: 3px;
+    padding: px 19.5px;
+    line-height: 2em;
 }
 
 /* -----------------------------------------------------Hero Image */
@@ -39,14 +77,14 @@ nav ul li a {
     padding: 0;
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 50vh;
+    height: 600px;
     position: relative;
     overflow: hidden;
 }
 
 .opaque-overlay {
     background-color: rgba(0, 0, 0, .3);
-    height: 50vh;
+    height: 600px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -65,16 +103,33 @@ nav ul li a {
 
 /* -----------------------------------------------------Quote and Listen */
 
-#quote-and-listen {
-    
-}
-
-.quote-wrapper {
-    text-align: center;
-    margin: auto 10%;
-    font-style: italic;
+#quote-and-listen-wrapper {
+    padding-bottom: 69px;
 }
 
 .listen-wrapper {
 
+}
+
+audio {
+    margin: 11px;
+}
+
+/* -----------------------------------------------------Artist Quotes */
+#artist-quotes {
+    padding-bottom: 69px;
+}
+
+.artist-quote {
+    font-family: "Crimson Pro", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .36px;
+    color: #534d46;
+}
+
+.quote-source {
+    text-align: center;
+    font-family: "Crimson Pro", sans-serif;
 }
