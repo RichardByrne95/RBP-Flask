@@ -1,0 +1,12 @@
+/* -----------------------------------------------------Navigation */
+
+.navigation {
+    padding: 0;
+}
+
+.logo {
+    background: url("/assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
