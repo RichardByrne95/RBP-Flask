@@ -1,5 +1,10 @@
 /* -----------------------------------------------------General */
 
+body {
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -29,6 +34,8 @@
     letter-spacing: .05em;
 }
 
+/* -----------------------------------------------------Buttons */
+
 .button-md {
     border: 2px solid #c41230;
     background-color: #c41230;
@@ -37,18 +44,12 @@
     text-transform: uppercase;
     padding: 15px 34px;
     margin: 17px;
+    letter-spacing: 2px;
 }
 
 .button-md:hover {
     background-color: #fff;
     color: #c41230;
-}
-
-/* -----------------------------------------------------Body */
-
-body {
-    font-family: proxima-nova, sans-serif;
-    font-weight: normal;
 }
 
 /* -----------------------------------------------------Navigation */
