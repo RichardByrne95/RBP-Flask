@@ -151,14 +151,14 @@ nav ul li a {
     display: inline-block;
     margin: 0;
     border-radius: 3px;
-    transition: all .75s;
+    transition: all .6s;
 }
 
 .jumbotron-cta:hover {
     background-color: #fff;
     color: #ff8400;
     box-shadow: 0px 0px 0px 0px #fff;
-    transform: translatey(7px);
+    transform: translatey(6px);
     border-radius: 5px;
 }
 
