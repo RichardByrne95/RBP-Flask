@@ -26,6 +26,12 @@ h4 {
     line-height: 1.5em;
 }
 
+h5 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 a {
     color: #ff8400;
 }
@@ -335,4 +341,52 @@ blockquote::after {
 
 .form-control {
     background-color: #fafafa;
+}
+
+/* -----------------------------------------------------Footer */
+
+#prefooter {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 17px;
+}
+
+#top {
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+#top:hover {
+    border-bottom: 1px solid #000;
+}
+
+.social-links a {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+#footer {
+    background-color: #1f1f1f;
+    color: rgba(255, 255, 255, .4);
+    text-align: center;
+    padding: 64px 32px;
+}
+
+#footer h5 {
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+#footer h5 a {
+    color: #fff;
+}
+
+#footer-email {
+    color: rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#footer-copyright {
+    text-align: center;
 }
