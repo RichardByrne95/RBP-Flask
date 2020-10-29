@@ -3,6 +3,7 @@
 body {
     font-family: proxima-nova, sans-serif;
     font-weight: normal;
+    font-size: 18px;
 }
 
 p {
@@ -37,8 +38,23 @@ a:hover {
 hr {
     margin: 32px 0px;
     padding: 17px;
-    color: rgba(0,0,0,.15);
-    
+    color: rgba(0,0,0,.15);   
+}
+
+input {
+    padding: 12px;
+    margin: 6px 0 4px;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    padding: 12px;
+    margin: 6px 0 4px;
+    background-color: #fafafa;
+    line-height: normal;
+    box-sizing: border-box;
 }
 
 .uppercase {
@@ -86,6 +102,18 @@ hr {
 .button-md:hover {
     background-color: #fff;
     color: #c41230;
+}
+
+.form-submit-button {
+    font-weight: 300;
+    padding: 10px 25px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #ff8400;
+    color: #fff;
+    box-shadow: 0 2px 0 0 #d66f00;
+    border-radius: 0px;
 }
 
 /* -----------------------------------------------------Navigation */
@@ -286,10 +314,6 @@ blockquote::after {
     padding-bottom: 17px;
 }
 
-#studios h2 {
-    text-align: left;
-}
-
 .sun-photo {
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
     height: 100%;
@@ -305,4 +329,10 @@ blockquote::after {
     width: 100%;
     background-size: cover;
     margin-left: 40px;
+}
+
+/* -----------------------------------------------------Contact Form */
+
+.form-control {
+    background-color: #fafafa;
 }
