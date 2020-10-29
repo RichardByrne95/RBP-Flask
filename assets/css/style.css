@@ -34,6 +34,13 @@ a:hover {
     color: #ce6a00;
 }
 
+hr {
+    margin: 32px 0px;
+    padding: 17px;
+    color: rgba(0,0,0,.15);
+    
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -274,6 +281,11 @@ blockquote::after {
 
 /* -----------------------------------------------------Studios */
 
+.studio-one {
+    margin-top: 100px;
+    padding-bottom: 17px;
+}
+
 #studios h2 {
     text-align: left;
 }
@@ -282,5 +294,15 @@ blockquote::after {
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
     height: 100%;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-left: 40px;
+}
+
+.studio-one-photo {
+    background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    margin-left: 40px;
 }
