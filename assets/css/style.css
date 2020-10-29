@@ -29,6 +29,20 @@
     letter-spacing: .05em;
 }
 
+.button-md {
+    border: 2px solid #c41230;
+    background-color: #c41230;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 21px 34px;
+}
+
+.button-md:hover {
+    background-color: #fff;
+    color: #c41230;
+}
+
 /* -----------------------------------------------------Body */
 
 body {
