@@ -111,11 +111,22 @@ nav ul li a {
     line-height: 4.4em;
 }
 
+nav ul li a:hover {
+    color: rgb(236, 236, 236);
+}
+
 .nav-cta {
     border: #fff 2px solid;
     border-radius: 3px;
     padding: px 19.5px;
     line-height: 2em;
+    transition: all .25s;
+}
+
+nav ul li a.nav-cta:hover {
+    color: #ff8400;
+    background-color: #fff;
+    transition: all .25s;
 }
 
 /* -----------------------------------------------------Hero Image */
@@ -182,7 +193,7 @@ nav ul li a {
     display: inline-block;
     margin: 0;
     border-radius: 3px;
-    transition: all .6s;
+    transition: all .4s;
 }
 
 .jumbotron-cta:hover {
