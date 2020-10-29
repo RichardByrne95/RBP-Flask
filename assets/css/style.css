@@ -7,7 +7,7 @@
 .wrapper {
     margin: auto;
     max-width: 1020px;
-    padding: 96px 32px;
+    padding: 79px 32px;
 }
 
 .quote-wrapper {
@@ -20,6 +20,7 @@
 }
 
 .section-heading {
+    padding-top: 17px;
     padding-bottom: 17px;
     text-align: center;
     text-transform: uppercase;
@@ -153,6 +154,28 @@ nav ul li a {
     padding-bottom: 69px;
 }
 
+#quote-and-listen-wrapper blockquote::before {
+    display: inline;
+    color: #000;
+    opacity: 1;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#quote-and-listen-wrapper blockquote::after {
+    content: close-quote;
+    font-size: 1em;
+}
+
+#quote-and-listen-wrapper .quote-wrapper blockquote {
+    line-height: 1.15em;
+    transform: translateY(49px);
+}
+
+.quote-wrapper {
+    width: auto%;
+}
+
 .listen-wrapper {
 
 }
@@ -178,4 +201,20 @@ audio {
 .quote-source {
     text-align: center;
     font-family: "Crimson Pro", sans-serif;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+blockquote::before {
+    content: open-quote;
+    display: block;
+    color: #534d46;
+    opacity: 0.3;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 0;
 }
