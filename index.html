@@ -20,302 +20,331 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- ./custom css -->
+    <!-- Sidebar Script -->
+    <script>
+        function openNav() {
+            document.getElementById("mySideBar").style.width = "60%";
+            document.getElementById("main").style.marginRight = "54%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySideBar").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+        }
+    </script>
+    <!-- ./sidebar script -->
 </head>
 
 <body>
-    <header>
-        <!-- NAV -->
-        <div class="row no-gutters">
-            <div class="col">
-                <div class="container-fluid navigation">
-                    <nav class="navbar">
-                        <div class="navbar-header">
-                            <a class="navbar-brand logo" href="index.html"></a>
-                        </div>
-                        <!-- Code from official Bootstrap documentation referenced -->
-                        <ul class="list-inline">
-                            <li class="active list-inline-item">
-                                <a class="navbar-text" href="index.html">Home</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="navbar-text" href="index.html">Studios</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="navbar-text" href="index.html">Artists</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="navbar-text nav-cta" href="index.html">Request a Quote</a>
-                            </li>
-                        </ul>
-                        <!-- ./code from official Bootstrap documentation referenced -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- ./NAV -->
-        <!-- HERO IMAGE -->
-        <div class="row no-gutters">
-            <div class="col">
-                <section class="container-fluid hero-image-container">
-                    <div class="opaque-overlay">
-                        <div class="jumbotron text-center">
-                            <h2 class="lead">Indie Rock and Pop</h2>
-                            <h1 class="jumbotron-header">Sound Your Best</h1>
-                            <br>
-                            <button type="button" class="btn jumbotron-cta">Contact Us</button>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- ./HERO IMAGE -->
-    </header>
-    <main class="wrapper container-fluid">
-        <!-- QUOTE AND LISTEN -->
-        <section class="container-fluid" id="quote-and-listen-wrapper">
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <div class="quote-wrapper">
-                        <blockquote>
-                            RBP provides professional-quality recording, mixing and mastering to make your music
-                            shine.
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="listen-wrapper">
-                        <div class="listen-heading">
-                            <h2 class="section-heading">Sample Of Work</h2>
-                        </div>
-                        <div class="audio-wrapper text-center">
-                            <audio controls>
-                                <source src="#" type="audio/mpeg">
-                            </audio>
-                            <audio controls>
-                                <source src="#" type="audio/mpeg">
-                            </audio>
-                            <audio controls>
-                                <source src="#" type="audio/mpeg">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ./QUOTE AND LISTEN -->
-        <!-- ARTIST QUOTES -->
-        <section class="container-fluid" id="artist-quotes">
-            <div class="row">
-                <div class="col">
-                    <h2 class="section-heading">
-                        What Artists Are Saying
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="quote-wrapper artist-quote text-center">
-                        <blockquote>
-                            Professional, enthusiastic, receptive toward new ideas/approaches and easy to work with.
-                        </blockquote>
-                    </div>
-                    <div class="quote-source">
-                        <p>— Greg Clifford</p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="quote-wrapper artist-quote text-center">
-                        <blockquote>
-                            Richard gives the sound an artist wants!
-                        </blockquote>
-                    </div>
-                    <div class="quote-source">
-                        <p>— Abi & The Bandit</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="quote-wrapper artist-quote text-center">
-                        <blockquote>
-                            The most chill session I’ve ever done!
-                        </blockquote>
-                    </div>
-                    <div class="quote-source">
-                        <p>— Æ MAK</p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="quote-wrapper artist-quote text-center">
-                        <blockquote>
-                            Would recommend to anyone who needs a professional polish to their work.
-                        </blockquote>
-                    </div>
-                    <div class="quote-source">
-                        <p>— PureGrand</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <a role="button" class="btn button-md">More Artists</a>
-                </div>
-            </div>
-        </section>
-        <!-- ./ARTIST QUOTES -->
-        <!-- STUDIOS -->
-        <section class="container-fluid">
+    <div id="mySideBar" class="sidebar">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="navbar-text" href="index.html">Home</a>
+        <a class="navbar-text" href="studios.html">Studios</a>
+        <a class="navbar-text" href="artists.html">Artists</a>
+        <a class="navbar-text" href="contact.html">Request a Quote</a>
+    </div>
+    <div id="main">
+        <a id="backtotop"></a>
+        <header>
+            <!-- NAV -->
             <div class="row no-gutters">
                 <div class="col">
-                    <h2 class="section-heading text-left">
-                        Studios
-                    </h2>
+                    <div class="container-fluid navigation">
+                        <nav class="navbar">
+                            <div class="navbar-header">
+                                <a class="navbar-brand logo" href="index.html"></a>
+                            </div>
+                            <!-- Code from official Bootstrap documentation referenced -->
+                            <ul class="list-inline" id="horizontal-nav">
+                                <li class="active list-inline-item">
+                                    <a class="navbar-text" href="index.html">Home</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="navbar-text" href="index.html">Studios</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="navbar-text" href="index.html">Artists</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="navbar-text nav-cta" href="index.html">Request a Quote</a>
+                                </li>
+                            </ul>
+                            <!-- ./code from official Bootstrap documentation referenced -->
+                            <!-- Code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
+                            <button class="openbtn" onclick="openNav()">&#9776;</button>
+                            <!-- ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div class="row no-gutters sun-studio">
-                <div class="col-md-6">
-                    <h3>
-                        Sun Studio
-                    </h3>
-                    <h4>Rihanna. Kanye West. The Script. James Vincent McMorrow. WILL.I.AM. Tony Visconti. Stephen
-                        Street.</h4>
-                    <p>
-                        Sun is a studio environment for those looking to get top-of-the-line sounding records. Its
-                        <strong>tranquil and professional</strong> vibe allow you to perform at your best, and have a
-                        great time doing
-                        it.
-                    </p>
-                    <p>
-                        There’s also a <strong>pool table</strong> to have fun and wind down! Click <a
-                            href="studios.html">here</a> to see more.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="sun-photo"></div>
-                </div>
-            </div>
-            <div class="row no-gutters studio-one">
-                <div class="col-md-6">
-                    <h3>
-                        Studio One
-                    </h3>
-                    <h4>The Clockworks. The Hot Sprockets. Whitetrash. Æ MAK. Rónán Connolly.</h4>
-                    <p>
-                        Studio 1 is Dublin’s hidden studio gem. Many successful artists from the Irish music scene have
-                        <strong>started out their careers by recording here</strong>.
-                    </p>
-                    <p>
-                        With its state-of-the-art equipment and unique sounding Wood-Floor Live Room, Studio 1 is
-                        <strong>perfect for musicians who are starting out</strong>. Click <a
-                            href="studios.html">here</a> to see more.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="studio-one-photo"></div>
-                </div>
-            </div>
-        </section>
-        <!-- ./STUDIOS -->
-        <hr>
-        <!-- CONTACT FORM -->
-        <section class="container-fluid">
-            <div class="row">
+            <!-- ./NAV -->
+            <!-- HERO IMAGE -->
+            <div class="row no-gutters">
                 <div class="col">
-                    <h2 class="section-heading text-left">Contact Us</h2>
-                    <p>
-                        Get in touch via the form below and tell me about your project!
-                    </p>
-                    <p>
-                        You'll get a reply within <strong>24 hours!</strong>
-                    </p>
+                    <section class="container-fluid hero-image-container">
+                        <div class="opaque-overlay">
+                            <div class="jumbotron text-center">
+                                <h2 class="lead">Indie Rock and Pop</h2>
+                                <h1 class="jumbotron-header">Sound Your Best</h1>
+                                <br>
+                                <button type="button" class="btn jumbotron-cta">Contact Us</button>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <br>
-            <!-- Code from official Bootstrap documentation referenced -->
-            <form>
+            <!-- ./HERO IMAGE -->
+        </header>
+        <main class="wrapper container-fluid">
+            <!-- QUOTE AND LISTEN -->
+            <section class="container-fluid" id="quote-and-listen-wrapper">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="fname">First Name *</label>
-                            <input type="text" class="form-control" id="fname">
+                    <div class="col-12 col-sm-6">
+                        <div class="quote-wrapper">
+                            <blockquote>
+                                RBP provides professional-quality recording, mixing and mastering to make your music
+                                shine.
+                            </blockquote>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="lname">Surname *</label>
-                            <input type="text" class="form-control" id="lname">
+                        <div class="listen-wrapper">
+                            <div class="listen-heading">
+                                <h2 class="section-heading">Sample Of Work</h2>
+                            </div>
+                            <div class="audio-wrapper text-center">
+                                <audio controls>
+                                    <source src="#" type="audio/mpeg">
+                                </audio>
+                                <audio controls>
+                                    <source src="#" type="audio/mpeg">
+                                </audio>
+                                <audio controls>
+                                    <source src="#" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./QUOTE AND LISTEN -->
+            <!-- ARTIST QUOTES -->
+            <section class="container-fluid" id="artist-quotes">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="section-heading">
+                            What Artists Are Saying
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="quote-wrapper artist-quote text-center">
+                            <blockquote>
+                                Professional, enthusiastic, receptive toward new ideas/approaches and easy to work with.
+                            </blockquote>
+                        </div>
+                        <div class="quote-source">
+                            <p>— Greg Clifford</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="quote-wrapper artist-quote text-center">
+                            <blockquote>
+                                Richard gives the sound an artist wants!
+                            </blockquote>
+                        </div>
+                        <div class="quote-source">
+                            <p>— Abi & The Bandit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="quote-wrapper artist-quote text-center">
+                            <blockquote>
+                                The most chill session I’ve ever done!
+                            </blockquote>
+                        </div>
+                        <div class="quote-source">
+                            <p>— Æ MAK</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="quote-wrapper artist-quote text-center">
+                            <blockquote>
+                                Would recommend to anyone who needs a professional polish to their work.
+                            </blockquote>
+                        </div>
+                        <div class="quote-source">
+                            <p>— PureGrand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a role="button" class="btn button-md">More Artists</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ARTIST QUOTES -->
+            <!-- STUDIOS -->
+            <section class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <h2 class="section-heading text-left">
+                            Studios
+                        </h2>
+                    </div>
+                </div>
+                <div class="row no-gutters sun-studio">
+                    <div class="col-md-6">
+                        <h3>
+                            Sun Studio
+                        </h3>
+                        <h4>Rihanna. Kanye West. The Script. James Vincent McMorrow. WILL.I.AM. Tony Visconti. Stephen
+                            Street.</h4>
+                        <p>
+                            Sun is a studio environment for those looking to get top-of-the-line sounding records. Its
+                            <strong>tranquil and professional</strong> vibe allow you to perform at your best, and have
+                            a
+                            great time doing
+                            it.
+                        </p>
+                        <p>
+                            There’s also a <strong>pool table</strong> to have fun and wind down! Click <a
+                                href="studios.html">here</a> to see more.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sun-photo"></div>
+                    </div>
+                </div>
+                <div class="row no-gutters studio-one">
+                    <div class="col-md-6">
+                        <h3>
+                            Studio One
+                        </h3>
+                        <h4>The Clockworks. The Hot Sprockets. Whitetrash. Æ MAK. Rónán Connolly.</h4>
+                        <p>
+                            Studio 1 is Dublin’s hidden studio gem. Many successful artists from the Irish music scene
+                            have
+                            <strong>started out their careers by recording here</strong>.
+                        </p>
+                        <p>
+                            With its state-of-the-art equipment and unique sounding Wood-Floor Live Room, Studio 1 is
+                            <strong>perfect for musicians who are starting out</strong>. Click <a
+                                href="studios.html">here</a> to see more.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="studio-one-photo"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./STUDIOS -->
+            <hr>
+            <!-- CONTACT FORM -->
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="section-heading text-left">Contact Us</h2>
+                        <p>
+                            Get in touch via the form below and tell me about your project!
+                        </p>
+                        <p>
+                            You'll get a reply within <strong>24 hours!</strong>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <!-- Code from official Bootstrap documentation referenced -->
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="fname">First Name *</label>
+                                <input type="text" class="form-control" id="fname">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="lname">Surname *</label>
+                                <input type="text" class="form-control" id="lname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="project-details">Project Details</label>
+                                <textarea class="form-control" id="project-details"></textarea>
+                            </div>
+                            <button class="btn form-submit-button">Submit!</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- ./Code from official Bootstrap documentation referenced -->
+            </section>
+            <!-- ./CONTACT FORM -->
+        </main>
+        <footer>
+            <section id="prefooter">
+                <div class="row">
+                    <div class="col">
+                        <a id="top" href="#backtotop">Back to Top</a>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="footer">
+                <div class="row">
+                    <div class="col">
+                        <h5> <a href="#">Terms and Conditions</a></h5>
+                        <h5><a href="#">Returns and Refunds</a></h5>
+                        <h5><a href="#">Cookie Policy</a></h5>
+                        <h5><a href="#">Privacy Policy</a></h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="project-details">Project Details</label>
-                            <textarea class="form-control" id="project-details"></textarea>
-                        </div>
-                        <button class="btn form-submit-button">Submit!</button>
+                        <h5 id="footer-email">hello@richardbyrneproductions.com</h5>
                     </div>
                 </div>
-            </form>
-            <!-- ./Code from official Bootstrap documentation referenced -->
-        </section>
-        <!-- ./CONTACT FORM -->
-    </main>
-    <footer>
-        <section id="prefooter">
-            <div class="row">
-                <div class="col">
-                    <a id="top" href="#">Back to Top</a>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-spotify"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                <div class="row">
+                    <div class="col">
+                        <p id="footer-copyright">Copyright © 2020 Richard Byrne Productions</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="footer">
-            <div class="row">
-                <div class="col">
-                    <h5> <a href="#">Terms and Conditions</a></h5>
-                    <h5><a href="#">Returns and Refunds</a></h5>
-                    <h5><a href="#">Cookie Policy</a></h5>
-                    <h5><a href="#">Privacy Policy</a></h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h5 id="footer-email">hello@richardbyrneproductions.com</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p id="footer-copyright">Copyright © 2020 Richard Byrne Productions</p>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <!-- Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <!-- ./bootstrap scripts -->
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/e2f6d2d599.js" crossorigin="anonymous"></script>
-    <!-- ./Font Awesome -->
+            </section>
+        </footer>
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <!-- ./bootstrap scripts -->
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/e2f6d2d599.js" crossorigin="anonymous"></script>
+        <!-- ./Font Awesome -->
+    </div>
 </body>
 
 </html>

@@ -133,13 +133,29 @@ textarea {
     background-color: #ff8400;
 }
 
+.navbar #horizontal-nav {
+    display: inline-block;
+}
+
+.navbar #vertical-nav {
+    display: none;
+}
+
+nav button.openbtn {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
 .logo {
     background: url("/assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
     width: 50px;
     height: 50px;
     background-size: contain;
     padding: 0px 20px;
-    transform: translate(7px, -4px);
+    margin: -20% 0 0 10px;
 }
 
 nav ul li a {
@@ -394,9 +410,83 @@ blockquote::after {
 /* -----------------------------------------------------Media Queries */
 
 @media screen and (max-width: 992px) {
+    /* Nav */
+    
+    nav button.openbtn {
+        display: block;
+    }
+
+    .logo {
+        margin: 9% 0 0 10px;
+    }
+
+    ul#horizontal-nav.list-inline {
+        display: none;
+    }
+
+    .navbar #vertical-nav {
+        display: inline;
+    }
+
+    /* Code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
+    .sidebar {
+        display: initial;
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        background-color: #ff8400;
+        color: #fff;
+        padding-top: 50px;
+        transition: .5s;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        transition: .3s;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+    .sidebar .closebtn {
+        font-size: 36px;
+        color: #fff;
+        position: relative;
+        left: 62%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .openbtn {
+        font-size: 27px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        background-color: #ff8400;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        margin-right: 5px;
+      }
+
+    #body {
+        transition: margin-left .5s; /* If you want a transition effect */
+      }
+    /* ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
+    /* ./nav */
+    
+    /* Hero Image */
     .jumbotron {
         padding: 190px 0;
-        max-width: 960px%;
+        max-width: 960px;
     }
 
     .lead {
@@ -412,9 +502,11 @@ blockquote::after {
         line-height: 1.4em;
         padding: .85em 1.4em;
     }
+    /* ./hero image */
 }
 
 @media screen and (max-width: 576px) {
+    /* Hero Image */
     .hero-image-container {
         height: 400px;
     }
@@ -434,4 +526,5 @@ blockquote::after {
     .jumbotron-cta {
         font-size: 13px;
     }
+    /* ./hero image */
 }
