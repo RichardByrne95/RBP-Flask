@@ -197,7 +197,7 @@ nav ul li a.nav-cta:hover {
     color: #fff;
     text-align: center;
     margin: auto;
-    transform: translateY(30%);
+    padding: 190px 0;
 }
 
 .lead {
@@ -389,4 +389,49 @@ blockquote::after {
 
 #footer-copyright {
     text-align: center;
+}
+
+/* -----------------------------------------------------Media Queries */
+
+@media screen and (max-width: 992px) {
+    .jumbotron {
+        padding: 190px 0;
+        max-width: 960px%;
+    }
+
+    .lead {
+        font-size: 35px;
+    }
+
+    .jumbotron-header {
+        font-size: 60px;
+    }
+
+    .jumbotron-cta {
+        font-size: 19px;
+        line-height: 1.4em;
+        padding: .85em 1.4em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-image-container {
+        height: 400px;
+    }
+
+    .jumbotron {
+        padding: 140px 10px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+
+    .jumbotron-header {
+        font-size: 30px;
+    }
+
+    .jumbotron-cta {
+        font-size: 13px;
+    }
 }
