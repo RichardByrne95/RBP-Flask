@@ -23,13 +23,13 @@
     <!-- Sidebar Script -->
     <script>
         function openNav() {
-            document.getElementById("mySideBar").style.width = "60%";
-            document.getElementById("main").style.marginRight = "54%";
+            document.getElementById("mySideBar").style.width = "250px";
+            document.getElementById("main-wrapper").style.marginRight = "250px";
         }
 
         function closeNav() {
             document.getElementById("mySideBar").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
+            document.getElementById("main-wrapper").style.marginRight = "0";
         }
     </script>
     <!-- ./sidebar script -->
@@ -37,14 +37,14 @@
 
 <body>
     <div id="mySideBar" class="sidebar">
-        
+
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="navbar-text" href="index.html">Home</a>
         <a class="navbar-text" href="studios.html">Studios</a>
         <a class="navbar-text" href="artists.html">Artists</a>
         <a class="navbar-text" href="contact.html">Request a Quote</a>
     </div>
-    <div id="main">
+    <div id="main-wrapper">
         <a id="backtotop"></a>
         <header>
             <!-- NAV -->
@@ -61,13 +61,13 @@
                                     <a class="navbar-text" href="index.html">Home</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="navbar-text" href="index.html">Studios</a>
+                                    <a class="navbar-text" href="studios.html">Studios</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="navbar-text" href="index.html">Artists</a>
+                                    <a class="navbar-text" href="artists.html">Artists</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="navbar-text nav-cta" href="index.html">Request a Quote</a>
+                                    <a class="navbar-text nav-cta" href="contact.html">Request a Quote</a>
                                 </li>
                             </ul>
                             <!-- ./code from official Bootstrap documentation referenced -->
