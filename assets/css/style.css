@@ -1,45 +1,25 @@
-/* -----------------------------------------------------General */
+/* ================
+Table of Contents
 
-body {
-    font-family: proxima-nova, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-}
+1. General
+    1.1. Typography
+2. Components
+    2.1. Buttons
+    2.2 Jumbotrons
+    2.3 Forms
+3. Navigation
+4. Hero Image
+5. Quote and Listen
+6. Artist Quotes
+7. Studios
+8. Contact Form
+9. Footer
+10. Media Queries
+    10.1. <= 992px
+    10.2. <= 576px
+================= */
 
-p {
-    font-size: 18px;
-    line-height: 1.5em;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1.2em;
-}
-
-h4 {
-    font-size: 18px;
-    margin: 15px 0;
-    font-weight: bold;
-    line-height: 1.5em;
-}
-
-h5 {
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-a {
-    color: #ff8400;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #ce6a00;
-}
+/* -----------------------------------------------------1. General */
 
 hr {
     margin: 32px 0px;
@@ -61,10 +41,6 @@ textarea {
     background-color: #fafafa;
     line-height: normal;
     box-sizing: border-box;
-}
-
-.uppercase {
-    text-transform: uppercase;
 }
 
 .wrapper {
@@ -92,7 +68,55 @@ textarea {
     letter-spacing: .05em;
 }
 
-/* -----------------------------------------------------Buttons */
+/* -----------------------------------------------------1.1. Typography */
+
+body, p, h3, h4 {
+    font-size: 18px;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+h4 {
+    margin: 15px 0;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+h5 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    color: #ff8400;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ce6a00;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* -----------------------------------------------------2. Components */
+/* -----------------------------------------------------2.1. Buttons */
 
 .button-md {
     border: 2px solid #c41230;
@@ -122,7 +146,72 @@ textarea {
     border-radius: 0px;
 }
 
-/* -----------------------------------------------------Navigation */
+/* -----------------------------------------------------2.2. Jumbotrons */
+
+.jumbotron {
+    width: 100%;
+    max-width: 956px;
+    display: block;
+    position: relative;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 190px 0;
+}
+
+.lead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: .3em;
+    display: block;
+    white-space: nowrap;
+}
+
+.jumbotron-header {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.7em;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.jumbotron-cta {
+    background-color: #c41230;
+    color: #fff;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding: .95em 1.65em;
+    box-shadow: 0px 0.2em 0px 0px #9f0f27;
+    display: inline-block;
+    margin: 0;
+    border-radius: 3px;
+    transition: all .4s;
+}
+
+.jumbotron-cta:hover {
+    background-color: #fff;
+    color: #ff8400;
+    box-shadow: 0px 0px 0px 0px #fff;
+    transform: translatey(6px);
+    border-radius: 5px;
+}
+
+/* -----------------------------------------------------2.3. Forms */
+
+.form-control {
+    background-color: #fafafa;
+}
+
+/* -----------------------------------------------------3. Navigation */
 
 .navigation {
     padding: 0;
@@ -186,7 +275,7 @@ nav ul li a.nav-cta:hover {
     transition: all .25s;
 }
 
-/* -----------------------------------------------------Hero Image */
+/* -----------------------------------------------------4. Hero Image */
 .hero-image-container {
     padding: 0;
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
@@ -204,64 +293,7 @@ nav ul li a.nav-cta:hover {
     width: 100%;
 }
 
-.jumbotron {
-    width: 100%;
-    max-width: 956px;
-    display: block;
-    position: relative;
-    background: transparent;
-    color: #fff;
-    text-align: center;
-    margin: auto;
-    padding: 190px 0;
-}
-
-.lead {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 47px;
-    font-weight: 400;
-    line-height: .3em;
-    display: block;
-    white-space: nowrap;
-}
-
-.jumbotron-header {
-    display: block;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 72px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.7em;
-    letter-spacing: 3px;
-    margin-bottom: 0;
-}
-
-.jumbotron-cta {
-    background-color: #c41230;
-    color: #fff;
-    font-weight: 700;
-    font-size: 23px;
-    letter-spacing: 2px;
-    text-align: center;
-    line-height: 1em;
-    text-transform: uppercase;
-    padding: .95em 1.65em;
-    box-shadow: 0px 0.2em 0px 0px #9f0f27;
-    display: inline-block;
-    margin: 0;
-    border-radius: 3px;
-    transition: all .4s;
-}
-
-.jumbotron-cta:hover {
-    background-color: #fff;
-    color: #ff8400;
-    box-shadow: 0px 0px 0px 0px #fff;
-    transform: translatey(6px);
-    border-radius: 5px;
-}
-
-/* -----------------------------------------------------Quote and Listen */
+/* -----------------------------------------------------5. Quote and Listen */
 
 #quote-and-listen-wrapper {
     padding-bottom: 69px;
@@ -294,7 +326,7 @@ audio {
     margin: 11px;
 }
 
-/* -----------------------------------------------------Artist Quotes */
+/* -----------------------------------------------------6. Artist Quotes */
 #artist-quotes {
     padding-bottom: 69px;
 }
@@ -329,7 +361,7 @@ blockquote::after {
     font-size: 0;
 }
 
-/* -----------------------------------------------------Studios */
+/* -----------------------------------------------------7. Studios */
 
 .studio-one {
     margin-top: 100px;
@@ -353,13 +385,11 @@ blockquote::after {
     margin-left: 40px;
 }
 
-/* -----------------------------------------------------Contact Form */
+/* -----------------------------------------------------8. Contact Form */
 
-.form-control {
-    background-color: #fafafa;
-}
 
-/* -----------------------------------------------------Footer */
+
+/* -----------------------------------------------------9. Footer */
 
 #prefooter {
     background-color: #f7f7f7;
@@ -407,7 +437,8 @@ blockquote::after {
     text-align: center;
 }
 
-/* -----------------------------------------------------Media Queries */
+/* -----------------------------------------------------10. Media Queries */
+/* -----------------------------------------------------10.1. <= 992px */
 
 @media screen and (max-width: 992px) {
     /* Nav */
@@ -505,6 +536,8 @@ blockquote::after {
     /* ./hero image */
 }
 
+
+/* -----------------------------------------------------10.2. <= 576px */
 @media screen and (max-width: 576px) {
     /* Hero Image */
     .hero-image-container {
