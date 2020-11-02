@@ -22,6 +22,12 @@ Table of Contents
 
 /* -----------------------------------------------------1. General */
 
+* {
+    /* Code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+    scroll-behavior: smooth;
+    /* ./code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+}
+
 hr {
     margin: 32px 0px;
     padding: 17px;
