@@ -550,6 +550,29 @@ blockquote::after {
         margin: 0;
     }
     /* ./quote and listen */
+
+    /* Studios */
+    .sun-photo {
+        height: 400px;
+        margin: 0;
+    }   
+        
+    .studio-one-photo {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .pre-photo-text {
+        display: none;
+    }
+
+    .post-photo-text {
+        display: block;
+        margin-top: 17px;
+    }
+    /* ./studios */
 }
 
 /* -----------------------------------------------------10.2. <= 768px */
@@ -583,10 +606,11 @@ blockquote::after {
     }
 
     #quote-and-listen-wrapper .quote-wrapper {
-        margin: 0px 50px 50px 50px;
+        margin: 0px 0px 50px 0px;
         justify-content: center;
         display: flex;
         flex-direction: column;
+        transform: translateY(32px);
     }
 
     audio {
@@ -595,27 +619,6 @@ blockquote::after {
         margin: 14px auto;
     }
     /* ./quote and listen */
-
-    /* Studios */
-    .sun-photo {
-        height: 400px;
-        margin: 0;
-    }   
-        
-    .studio-one-photo {
-        height: 400px;
-        margin: 0;
-    }
-
-    .pre-photo-text {
-        display: none;
-    }
-
-    .post-photo-text {
-        display: block;
-        margin-top: 17px;
-    }
-    /* ./studios */
 }
 
 /* -----------------------------------------------------10.3. <= 576px */
@@ -672,8 +675,6 @@ blockquote::after {
     /* .quote and listen */
 
     /* Studios */
-    
-    
     .sun-photo {
         height: 215px;
         margin: 0;
