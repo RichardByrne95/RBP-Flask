@@ -16,7 +16,8 @@ Table of Contents
 9. Footer
 10. Media Queries
     10.1. <= 992px
-    10.2. <= 576px
+    10.2. <= 654px
+    10.3. <= 576px
 ================= */
 
 /* -----------------------------------------------------1. General */
@@ -24,7 +25,7 @@ Table of Contents
 hr {
     margin: 32px 0px;
     padding: 17px;
-    color: rgba(0,0,0,.15);   
+    color: rgba(0,0,0,.15);
 }
 
 input {
@@ -509,7 +510,7 @@ blockquote::after {
       }
 
     #body {
-        transition: margin-left .5s; /* If you want a transition effect */
+        transition: margin-left .5s;
       }
     /* ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
     /* ./nav */
@@ -536,8 +537,33 @@ blockquote::after {
     /* ./hero image */
 }
 
+/* -----------------------------------------------------10.2. <= 654px */
 
-/* -----------------------------------------------------10.2. <= 576px */
+@media screen and (max-width: 654px) {
+    /* Hero Image */
+    .hero-image-container {
+        height: 450px;
+    }
+
+    .jumbotron {
+        padding: 140px 10px;
+    }
+
+    .lead {
+        font-size: 35px;
+    }
+
+    .jumbotron-header {
+        font-size: 50px;
+    }
+
+    .jumbotron-cta {
+        font-size: 17px;
+    }
+    /* ./hero image */
+}
+
+/* -----------------------------------------------------10.3. <= 576px */
 @media screen and (max-width: 576px) {
     /* Hero Image */
     .hero-image-container {
