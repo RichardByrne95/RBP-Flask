@@ -596,9 +596,17 @@ blockquote::after {
     }
     /* ./quote and listen */
 
-    /* Artist Quotes */
-
-    /* ./artist quotes */
+    /* Studios */
+    .sun-photo {
+        height: 400px;
+        margin: 0;
+    }   
+        
+    .studio-one-photo {
+        height: 400px;
+        margin: 0;
+    }   
+    /* ./studios */
 }
 
 /* -----------------------------------------------------10.3. <= 576px */
@@ -647,7 +655,15 @@ blockquote::after {
     }
     /* .quote and listen */
 
-    /* Artist Quotes */
-    
-    /* ./artist quotes */
+    /* Studios */
+    .sun-photo {
+        height: 250px;
+        margin: 0;
+    }   
+        
+    .studio-one-photo {
+        height: 250px;
+        margin: 0;
+    }   
+    /* ./studios */
 }
