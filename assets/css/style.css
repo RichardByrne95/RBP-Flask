@@ -635,11 +635,19 @@ blockquote::after {
 
     /* Quote and Listen */
     
+    #quote-and-listen-wrapper .quote-wrapper {
+        margin: 0px 0px 50px 0px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
     #quote-and-listen-wrapper .quote-wrapper blockquote {
         line-height: 1.15em;
         transform: translateY(-30px);
         margin: auto;
     }
+
     
     .quote-wrapper {
         width: auto;
