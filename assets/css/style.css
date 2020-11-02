@@ -300,6 +300,8 @@ nav ul li a.nav-cta:hover {
     width: 100%;
 }
 
+
+/* ------------------------------------------------------------------------------------Index.html */
 /* -----------------------------------------------------5. Quote and Listen */
 
 #quote-and-listen-wrapper {
@@ -708,3 +710,23 @@ blockquote::after {
     }
     /* ./footer */
 }
+
+
+/* ------------------------------------------------------------------------------------Studios.html */
+/* Hero Image */
+.studios-hero-image-container {
+    padding: 0;
+    background: url(/assets/images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.studios-jumbotron {
+    margin: 0 auto;
+    padding: 130px 0;
+}
+/* ./hero image */
