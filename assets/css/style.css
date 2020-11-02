@@ -730,3 +730,46 @@ blockquote::after {
     padding: 130px 0;
 }
 /* ./hero image */
+
+/* Sun Studio */
+.sun-photo-1 {
+    background-image: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 17px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#studios-studio-one-wrapper {
+    margin-top: 79px;
+}
+
+.studio-one-photo-1 {
+    background-image: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 17px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-thumbnails {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.gallery-thumbnails img {
+    height: 90px;
+    opacity: .5;
+    transition: .3s;
+}
+
+.gallery-thumbnails img:hover {
+    opacity: 1;
+}
+/* ./sun studio */
