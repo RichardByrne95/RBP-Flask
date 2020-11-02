@@ -16,7 +16,7 @@ Table of Contents
 9. Footer
 10. Media Queries
     10.1. <= 992px
-    10.2. <= 654px
+    10.2. <= 768px
     10.3. <= 576px
 ================= */
 
@@ -323,8 +323,17 @@ nav ul li a.nav-cta:hover {
     width: auto;
 }
 
+.listen-wrapper {
+    text-align: center;
+}
+
+.listen-heading h2 {
+    text-align: center;
+}
+
 audio {
     margin: 11px;
+    width: 80%;
 }
 
 /* -----------------------------------------------------6. Artist Quotes */
@@ -535,11 +544,17 @@ blockquote::after {
         padding: .85em 1.4em;
     }
     /* ./hero image */
+
+    /* Quote and Listen */
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        margin: 0;
+    }
+    /* ./quote and listen */
 }
 
-/* -----------------------------------------------------10.2. <= 654px */
+/* -----------------------------------------------------10.2. <= 768px */
 
-@media screen and (max-width: 654px) {
+@media screen and (max-width: 768px) {
     /* Hero Image */
     .hero-image-container {
         height: 450px;
@@ -561,6 +576,29 @@ blockquote::after {
         font-size: 17px;
     }
     /* ./hero image */
+
+    /* Quote and Listen */
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        transform: translateY(0);
+    }
+
+    #quote-and-listen-wrapper .quote-wrapper {
+        margin: 0px 50px 50px 50px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    audio {
+        display: block;
+        align-self: center;
+        margin: 14px auto;
+    }
+    /* ./quote and listen */
+
+    /* Artist Quotes */
+
+    /* ./artist quotes */
 }
 
 /* -----------------------------------------------------10.3. <= 576px */
@@ -586,4 +624,30 @@ blockquote::after {
         font-size: 13px;
     }
     /* ./hero image */
+
+    /* Quote and Listen */
+    
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        line-height: 1.15em;
+        transform: translateY(-30px);
+        margin: auto;
+    }
+    
+    .quote-wrapper {
+        width: auto;
+    }
+
+    .listen-wrapper {
+        display: flexbox;
+        text-align: center;
+    }
+    
+    audio {
+        margin: 8px auto ;
+    }
+    /* .quote and listen */
+
+    /* Artist Quotes */
+    
+    /* ./artist quotes */
 }
