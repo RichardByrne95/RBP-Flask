@@ -467,6 +467,18 @@ blockquote::after {
 }
 
 /* -----------------------------------------------------10. Media Queries */
+
+@media screen and (min-width: 993px) {
+    .pre-photo-text {
+        display: block;
+        margin-top: 17px;
+    }
+
+    .post-photo-text {
+        display: none;
+    }
+}
+
 /* -----------------------------------------------------10.1. <= 992px */
 
 @media screen and (max-width: 992px) {
