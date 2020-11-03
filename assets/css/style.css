@@ -1048,3 +1048,31 @@ blockquote::after {
     left: 10%;
     right: 10%;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .contact-hero-image-container {
+        height: 400px;
+    }
+
+    .contact-hero-image-container h1 {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-hero-image-container {
+        height: 250px;
+    }
+    
+    .contact-hero-image-container h1 {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        right: 10%;
+    }
+}
+/* ./Media Queries */
