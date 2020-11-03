@@ -947,6 +947,77 @@ blockquote::after {
     margin-bottom: 17px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .artists-hero-image-container {
+        height: 400px;
+    }
+
+    .artists-jumbotron {
+        padding: 110px;
+    }
+
+    .artist-image {
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    #and-many-more h5 {
+        font-size: 22px;
+    }
+
+    #top-shelf {
+        height: 230px;
+        margin-top: 80px;
+    }
+
+    #abi-and-the-bandit {
+        height: 230px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .artists-hero-image-container {
+        height: 300px;
+    }
+
+    .artists-jumbotron {
+        padding: 90px;
+    }
+
+    .artists-wrapper {
+        padding: 22px;
+    }
+
+    .artist-image {
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    #greg-clifford {
+        margin-top: 50px
+    }
+
+    #and-many-more h5 {
+        font-size: 22px;
+    }
+
+    #fionn-lynch {
+        height: 230px;
+    }
+
+    #top-shelf {
+        height: 230px;
+        margin-top: 80px;
+    }
+
+    #abi-and-the-bandit {
+        height: 230px;
+        margin-top: 80px;
+    }
+}
+
 /* ------------------------------------------------------------------------------------12. Contact.html */
 
 .contact-hero-image-container {
