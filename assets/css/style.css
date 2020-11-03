@@ -773,3 +773,39 @@ blockquote::after {
     opacity: 1;
 }
 /* ./sun studio */
+
+
+/* ------------------------------------------------------------------------------------Artists.html */
+.artists-hero-image-container {
+    padding: 0;
+    background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-image {
+    height: 550px;
+    padding 17px;
+    margin-top: 102px;
+}
+
+#ae-mak {
+    background: url(/assets/images/artists/AE\ MAK.jpg) no-repeat center center;
+    background-size: contain;
+    margin-top: 0;
+}
+
+#greg-clifford {
+    background: url(/assets/images/artists/Greg\ Clifford.jpg) no-repeat center center;
+    background-size: contain;
+    margin-top: 0;
+}
+
+#bjh {
+    background: url(/assets/images/artists/Barry\ Jay\ Hughes\ Logo.png) no-repeat center center;
+    background-size: contain;
+}
