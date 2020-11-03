@@ -18,6 +18,8 @@ Table of Contents
     10.1. <= 992px
     10.2. <= 768px
     10.3. <= 576px
+11. Studios.html
+12. Artists.html
 ================= */
 
 /* -----------------------------------------------------1. General */
@@ -712,7 +714,7 @@ blockquote::after {
 }
 
 
-/* ------------------------------------------------------------------------------------Studios.html */
+/* ------------------------------------------------------------------------------------11. Studios.html */
 /* Hero Image */
 .studios-hero-image-container {
     padding: 0;
@@ -775,7 +777,7 @@ blockquote::after {
 /* ./sun studio */
 
 
-/* ------------------------------------------------------------------------------------Artists.html */
+/* ------------------------------------------------------------------------------------12. Artists.html */
 .artists-hero-image-container {
     padding: 0;
     background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
