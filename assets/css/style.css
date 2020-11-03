@@ -750,7 +750,11 @@ blockquote::after {
 
 .studios-jumbotron {
     margin: 0 auto;
-    padding: 130px 0;
+    padding: 100px 0;
+}
+
+.studios-jumbotron .lead {
+    line-height: initial;
 }
 /* ./hero image */
 
@@ -803,11 +807,15 @@ blockquote::after {
     padding: 0;
     background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: center;
+}
+
+.artists-jumbotron {
+    padding: 140px;
 }
 
 .artist-image {
