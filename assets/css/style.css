@@ -654,6 +654,12 @@ blockquote::after {
 
 /* -----------------------------------------------------10.3. <= 576px */
 @media screen and (max-width: 576px) {
+    /* General */
+    .wrapper {
+        padding: 70px 10px;
+    }
+    /* ./general */
+    
     /* Hero Image */
     .hero-image-container {
         height: 400px;
@@ -759,12 +765,12 @@ blockquote::after {
 /* ./hero image */
 
 /* Sun Studio */
+
 .sun-photo-1 {
-    background-image: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg);
+    background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     margin-bottom: 17px;
-    position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -775,11 +781,10 @@ blockquote::after {
 }
 
 .studio-one-photo-1 {
-    background-image: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg);
+    background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     margin-bottom: 17px;
-    position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -800,6 +805,50 @@ blockquote::after {
     opacity: 1;
 }
 /* ./sun studio */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .studios-hero-image-container {
+        height: 500px;
+    }
+
+    .sun-photo-1 {
+        height: 400px;
+    }
+
+    .studio-one-photo-1 {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .studios-hero-image-container {
+        height: 390px;
+    }
+
+    .studios-hero-image-container .lead {
+        font-size: 27px;
+    }
+
+    .sun-photo-1 {
+        height: 200px;
+    }
+
+    .gallery-thumbnails img {
+        height: 45px;
+    }
+
+    .studio-one-photo-1 {
+        height: 200px;
+    }
+
+    .button-sm {
+        margin: 17px 5px;
+    }
+}
+
+
 
 
 /* ------------------------------------------------------------------------------------12. Artists.html */
