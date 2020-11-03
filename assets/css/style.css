@@ -788,9 +788,10 @@ blockquote::after {
 }
 
 .artist-image {
+    display: block;
     height: 550px;
-    padding 17px;
     margin-top: 102px;
+    position: relative;
 }
 
 #ae-mak {
@@ -808,4 +809,60 @@ blockquote::after {
 #bjh {
     background: url(/assets/images/artists/Barry\ Jay\ Hughes\ Logo.png) no-repeat center center;
     background-size: contain;
+}
+
+#white-trash {
+    background: url(/assets/images/artists/White\ Trash\ Logo.jpg) no-repeat center center;
+    background-size: contain;
+}
+
+#eoin-coogan {
+    background: url(/assets/images/artists/Eoin\ Coogan.jpg) no-repeat center center;
+    background-size: contain;
+}
+
+#sambo-drumz {
+    background: url(/assets/images/artists/Dreaming\ of\ Jupiter.jpg) no-repeat center center;
+    background-size: contain;
+}
+
+#ultitune {
+    background: url('/assets/images/artists/Ultitune\ -\ Here\'s\ to\ You.jpg') no-repeat center center;
+    background-size: contain;
+}
+
+#fionn-lynch {
+    background: url(/assets/images/artists/Keywest_Bandlogo.png) no-repeat center center;
+    background-size: contain;
+}
+
+#top-shelf {
+    background: url(/assets/images/artists/Top\ Shelf.jpg) no-repeat center center;
+    background-size: contain;
+    height: 320px;
+    margin-top: 130px;
+    margin-bottom: 37px;
+}
+
+#abi-and-the-bandit {
+    background: url(/assets/images/artists/Abi_Rec-min.jpg) no-repeat center center;
+    background-size: contain;
+    height: 320px;
+    margin-top: 130px;
+    margin-bottom: 37px;
+}
+
+#and-many-more {
+    margin: 34px;
+    margin-top: 68px;
+    font-size: 40px;
+}
+
+#mentors {
+    margin: 68px 0;
+    align-items: left;
+}
+
+.mentors-heading {
+    margin-bottom: 17px;
 }
