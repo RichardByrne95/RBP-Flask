@@ -1074,5 +1074,9 @@ blockquote::after {
         left: 10%;
         right: 10%;
     }
+
+    .contact-wrapper {
+        padding: 35px 10px;
+    }
 }
 /* ./Media Queries */
