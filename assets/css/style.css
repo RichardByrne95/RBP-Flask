@@ -368,6 +368,7 @@ audio {
     font-weight: 600;
     letter-spacing: .36px;
     color: #534d46;
+    /* animation: appear .8s ease-in-out; */
 }
 
 .quote-source {
@@ -1092,4 +1093,16 @@ blockquote::after {
         transform: scale(1);
     }
 }
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0%);
+    }
+} */
 /* ./Animations */
