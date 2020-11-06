@@ -66,6 +66,10 @@ hr {
     color: rgba(0,0,0,.15);
 }
 
+audio {
+    outline: none;
+}
+
 input {
     padding: 12px;
     margin: 6px 0 4px;
