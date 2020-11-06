@@ -70,6 +70,10 @@ audio {
     outline: none;
 }
 
+figure {
+    margin: 0;
+}
+
 input {
     padding: 12px;
     margin: 6px 0 4px;
