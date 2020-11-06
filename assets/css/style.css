@@ -9,17 +9,47 @@ Table of Contents
     2.3 Forms
 3. Navigation
 4. Hero Image
-5. Quote and Listen
-6. Artist Quotes
-7. Studios
-8. Contact Form
-9. Footer
-10. Media Queries
-    10.1. <= 992px
-    10.2. <= 768px
-    10.3. <= 576px
-11. Studios.html
-12. Artists.html
+5. Footer
+6. Index.html
+    6.1. Quote and Listen
+    6.2. Artist Quotes
+    6.3. Studios
+    6.4. Contact Form
+    6.5. Media Queries
+        6.5.1. >= 993px
+            6.5.1.1. Quote and Listen
+        6.5.2. <= 992px
+            6.5.2.1. Nav
+            6.5.2.2. Hero Image
+            6.5.2.3. Quote and Listen
+            6.5.2.4. Studios
+        6.5.3. <= 768px
+            6.5.3.1. Hero Image
+            6.5.3.2. Quote and Listen
+        6.5.4. <= 576px
+            6.5.4.1. General
+            6.5.4.2. Hero Image
+            6.5.4.3. Quote and Listen
+            6.5.4.4. Studios
+            6.5.4.5. Footer
+7. Studios.html
+    7.1. Hero Image
+    7.2. Studios
+    7.3. Media Queries
+        7.3.1. <= 768px
+        7.3.2. <= 576px
+8. Artists.html
+    8.1. Hero Image
+    8.2. Artist Images
+    8.3. Media Queries
+        8.3.1. <= 768px
+        8.3.2. <= 576px
+9. Contact.html
+    9.1. Hero Image
+    9.2. Media Queries
+        9.2.1. <= 768px
+        9.2.2. <= 576px
+10. Animations
 ================= */
 
 /* -----------------------------------------------------1. General */
@@ -312,115 +342,7 @@ nav ul li a.nav-cta:hover {
     width: 100%;
 }
 
-
-/* ------------------------------------------------------------------------------------5. Index.html */
-/* -----------------------------------------------------5.1 Quote and Listen */
-
-#quote-and-listen-wrapper {
-    padding-bottom: 69px;
-}
-
-#quote-and-listen-wrapper blockquote::before {
-    display: inline;
-    color: #000;
-    opacity: 1;
-    font-size: 1em;
-    font-weight: 400;
-}
-
-#quote-and-listen-wrapper blockquote::after {
-    content: close-quote;
-    font-size: 1em;
-}
-
-#quote-and-listen-wrapper .quote-wrapper blockquote {
-    line-height: 1.15em;
-    transform: translateY(49px);
-    margin: auto 10%;
-}
-
-.quote-wrapper {
-    width: auto;
-}
-
-.listen-wrapper {
-    text-align: center;
-}
-
-.listen-heading h2 {
-    text-align: center;
-}
-
-audio {
-    margin: 11px;
-    width: 80%;
-}
-
-/* -----------------------------------------------------5.2. Artist Quotes */
-#artist-quotes {
-    padding-bottom: 69px;
-}
-
-.artist-quote {
-    font-family: "Crimson Pro", sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: .36px;
-    color: #534d46;
-    /* animation: appear .8s ease-in-out; */
-}
-
-.quote-source {
-    text-align: center;
-    font-family: "Crimson Pro", sans-serif;
-    font-size: 20px;
-    opacity: 0.5;
-}
-
-blockquote::before {
-    content: open-quote;
-    display: block;
-    color: #534d46;
-    opacity: 0.3;
-    font-size: 2.5em;
-    font-weight: 600;
-}
-
-blockquote::after {
-    content: close-quote;
-    font-size: 0;
-}
-
-/* -----------------------------------------------------5.3 Studios */
-
-.studio-one {
-    margin-top: 100px;
-    padding-bottom: 17px;
-}
-
-.sun-photo {
-    background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
-    height: 94%;
-    width: 100%;
-    background-size: cover;
-    box-sizing: border-box;
-    margin: 0 17px 17px 34px;
-}
-
-.studio-one-photo {
-    background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat;
-    height: 94%;
-    width: 100%;
-    background-size: cover;
-    margin: 0 17px 17px 34px;
-}
-
-/* -----------------------------------------------------5.4. Contact Form */
-
-
-
-/* -----------------------------------------------------6. Footer */
+/* -----------------------------------------------------5. Footer */
 
 #prefooter {
     background-color: #f7f7f7;
@@ -468,8 +390,117 @@ blockquote::after {
     text-align: center;
 }
 
-/* -----------------------------------------------------7. Media Queries */
 
+/* ------------------------------------------------------------------------------------6. Index.html */
+/* -----------------------------------------------------6.1 Quote and Listen */
+
+#quote-and-listen-wrapper {
+    padding-bottom: 69px;
+}
+
+#quote-and-listen-wrapper blockquote::before {
+    display: inline;
+    color: #000;
+    opacity: 1;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#quote-and-listen-wrapper blockquote::after {
+    content: close-quote;
+    font-size: 1em;
+}
+
+#quote-and-listen-wrapper .quote-wrapper blockquote {
+    line-height: 1.15em;
+    transform: translateY(49px);
+    margin: auto 10%;
+}
+
+.quote-wrapper {
+    width: auto;
+}
+
+.listen-wrapper {
+    text-align: center;
+}
+
+.listen-heading h2 {
+    text-align: center;
+}
+
+audio {
+    margin: 11px;
+    width: 80%;
+}
+
+/* -----------------------------------------------------6.2. Artist Quotes */
+#artist-quotes {
+    padding-bottom: 69px;
+}
+
+.artist-quote {
+    font-family: "Crimson Pro", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .36px;
+    color: #534d46;
+    /* animation: appear .8s ease-in-out; */
+}
+
+.quote-source {
+    text-align: center;
+    font-family: "Crimson Pro", sans-serif;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+blockquote::before {
+    content: open-quote;
+    display: block;
+    color: #534d46;
+    opacity: 0.3;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 0;
+}
+
+/* -----------------------------------------------------6.3 Studios */
+
+.studio-one {
+    margin-top: 100px;
+    padding-bottom: 17px;
+}
+
+.sun-photo {
+    background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
+    height: 94%;
+    width: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0 17px 17px 34px;
+}
+
+.studio-one-photo {
+    background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat;
+    height: 94%;
+    width: 100%;
+    background-size: cover;
+    margin: 0 17px 17px 34px;
+}
+
+/* -----------------------------------------------------6.4. Contact Form */
+
+
+
+/* -----------------------------------------------------6.5. Media Queries */
+/* -----------------------------------------------------6.5.1. >= 993px */
+/* ------------------------------------------6.5.1.1. Quote and Listen */
 @media screen and (min-width: 993px) {
     .pre-photo-text {
         display: block;
@@ -481,10 +512,10 @@ blockquote::after {
     }
 }
 
-/* -----------------------------------------------------7.1. <= 992px */
+/* -----------------------------------------------------6.5.2. <= 992px */
 
 @media screen and (max-width: 992px) {
-    /* Nav */
+    /* ------------------------------------------6.5.2.1. Nav */
     
     nav button.openbtn {
         display: block;
@@ -555,11 +586,9 @@ blockquote::after {
       button:focus {
         outline: none;
     }
-
     /* ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
-    /* ./nav */
     
-    /* Hero Image */
+    /* ------------------------------------------6.5.2.2. Hero Image */
     .jumbotron {
         padding: 190px 0;
         max-width: 960px;
@@ -578,15 +607,13 @@ blockquote::after {
         line-height: 1.4em;
         padding: .85em 1.4em;
     }
-    /* ./hero image */
-
-    /* Quote and Listen */
+    
+    /* ------------------------------------------6.5.2.3. Quote and Listen */
     #quote-and-listen-wrapper .quote-wrapper blockquote {
         margin: 0;
     }
-    /* ./quote and listen */
-
-    /* Studios */
+    
+    /* ------------------------------------------6.5.2.4. Studios */
     .sun-photo {
         height: 400px;
         margin: 0;
@@ -607,13 +634,12 @@ blockquote::after {
         display: block;
         margin-top: 17px;
     }
-    /* ./studios */
 }
 
-/* -----------------------------------------------------7.2. <= 768px */
+/* -----------------------------------------------------6.5.3. <= 768px */
 
 @media screen and (max-width: 768px) {
-    /* Hero Image */
+    /* ------------------------------------------6.5.3.1. Hero Image */
     .hero-image-container {
         height: 450px;
     }
@@ -633,9 +659,8 @@ blockquote::after {
     .jumbotron-cta {
         font-size: 17px;
     }
-    /* ./hero image */
-
-    /* Quote and Listen */
+    
+    /* ------------------------------------------6.5.3.2. Quote and Listen */
     #quote-and-listen-wrapper .quote-wrapper blockquote {
         transform: translateY(0);
     }
@@ -656,15 +681,14 @@ blockquote::after {
     /* ./quote and listen */
 }
 
-/* -----------------------------------------------------7.3. <= 576px */
+/* -----------------------------------------------------6.5.4. <= 576px */
 @media screen and (max-width: 576px) {
-    /* General */
+    /* ------------------------------------------6.5.4.1. General */
     .wrapper {
         padding: 70px 10px;
     }
-    /* ./general */
     
-    /* Hero Image */
+    /* ------------------------------------------6.5.4.2. Hero Image */
     .hero-image-container {
         height: 350px;
     }
@@ -684,10 +708,8 @@ blockquote::after {
     .jumbotron-cta {
         font-size: 13px;
     }
-    /* ./hero image */
-
-    /* Quote and Listen */
     
+    /* ------------------------------------------6.5.4.3. Quote and Listen */
     #quote-and-listen-wrapper .quote-wrapper {
         margin: 0px 0px 50px 0px;
         justify-content: center;
@@ -713,9 +735,7 @@ blockquote::after {
     audio {
         margin: 8px auto ;
     }
-    /* .quote and listen */
-
-    /* Studios */
+    /* ------------------------------------------6.5.4.4. Studios */
     .sun-photo {
         height: 215px;
         margin: 0;
@@ -729,9 +749,8 @@ blockquote::after {
         height: 220px;
         margin: 0;
     }   
-    /* ./studios */
-
-    /* Footer */
+    
+    /* ------------------------------------------6.5.4.5. Footer */
     #footer h5 {
         font-size: 12px;
         text-align: center;
@@ -741,12 +760,11 @@ blockquote::after {
         font-size: 11px;
         padding: 20px 0;
     }
-    /* ./footer */
 }
 
 
-/* ------------------------------------------------------------------------------------8. Studios.html */
-/* Hero Image */
+/* ------------------------------------------------------------------------------------7. Studios.html */
+/* -----------------------------------------------------7.1. Hero Image */
 .studios-hero-image-container {
     padding: 0;
     background: url(/assets/images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
@@ -766,10 +784,8 @@ blockquote::after {
 .studios-jumbotron .lead {
     line-height: initial;
 }
-/* ./hero image */
 
-/* Sun Studio */
-
+/* -----------------------------------------------------7.2. Studios */
 .sun-photo-1 {
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
@@ -808,9 +824,9 @@ blockquote::after {
 .gallery-thumbnails img:hover {
     opacity: 1;
 }
-/* ./sun studio */
 
-/* Media Queries */
+/* -----------------------------------------------------7.3. Media Queries */
+/* -----------------------------------------------------7.3.1. <= 768px */
 @media screen and (max-width: 768px) {
     .studios-hero-image-container {
         height: 500px;
@@ -825,8 +841,8 @@ blockquote::after {
     }
 }
 
+/* -----------------------------------------------------7.3.2. <= 576px */
 @media screen and (max-width: 576px) {
-    
     .studios-hero-image-container {
         height: 390px;
     }
@@ -852,10 +868,8 @@ blockquote::after {
     }
 }
 
-
-
-
-/* ------------------------------------------------------------------------------------9. Artists.html */
+/* ------------------------------------------------------------------------------------8. Artists.html */
+/* -----------------------------------------------------8.1. Hero Image */
 .artists-hero-image-container {
     padding: 0;
     background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
@@ -871,6 +885,7 @@ blockquote::after {
     padding: 140px;
 }
 
+/* -----------------------------------------------------8.2. Artist Images */
 .artist-image {
     display: block;
     height: 550px;
@@ -951,7 +966,8 @@ blockquote::after {
     margin-bottom: 17px;
 }
 
-/* Media Queries */
+/* -----------------------------------------------------8.3. Media Queries */
+/* -----------------------------------------------------8.3.1. <= 768px */
 @media screen and (max-width: 768px) {
     .artists-hero-image-container {
         height: 400px;
@@ -981,6 +997,7 @@ blockquote::after {
     }
 }
 
+/* -----------------------------------------------------8.3.2. <= 576px */
 @media screen and (max-width: 576px) {
     .artists-hero-image-container {
         height: 300px;
@@ -1022,8 +1039,8 @@ blockquote::after {
     }
 }
 
-/* ------------------------------------------------------------------------------------10. Contact.html */
-
+/* ------------------------------------------------------------------------------------9. Contact.html */
+/* -----------------------------------------------------9.1. Hero Image */
 .contact-hero-image-container {
     padding: 0;
     background: url(/assets/images/sunstudio/TempleLaneLowRes-22-1024x683.jpg) no-repeat center center;
@@ -1053,7 +1070,8 @@ blockquote::after {
     right: 10%;
 }
 
-/* Media Queries */
+/* -----------------------------------------------------9.2. Media Queries */
+/* -----------------------------------------------------9.2.1. <= 768px */
 @media screen and (max-width: 768px) {
     .contact-hero-image-container {
         height: 400px;
@@ -1067,6 +1085,7 @@ blockquote::after {
     }
 }
 
+/* -----------------------------------------------------9.2.2. <= 576px */
 @media screen and (max-width: 576px) {
     .contact-hero-image-container {
         height: 250px;
@@ -1083,9 +1102,8 @@ blockquote::after {
         padding: 35px 10px;
     }
 }
-/* ./Media Queries */
 
-/* Animations */
+/* -----------------------------------------------------10. Animations */
 @keyframes grow {
     from {
         transform: scale(0.9);
@@ -1107,4 +1125,3 @@ blockquote::after {
         transform: translate(0%);
     }
 } */
-/* ./Animations */
