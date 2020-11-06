@@ -524,6 +524,7 @@ blockquote::after {
         color: #fff;
         display: block;
         transition: .3s;
+        white-space: nowrap;
     }
 
     .sidebar a:hover {
@@ -554,7 +555,7 @@ blockquote::after {
       button:focus {
         outline: none;
     }
-    
+
     /* ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
     /* ./nav */
     
