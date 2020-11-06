@@ -207,6 +207,7 @@ a:hover {
     margin: auto;
     padding: 190px 0;
     animation: grow ease-in-out 3s;
+    animation-fill-mode: forwards;
 }
 
 .lead {
