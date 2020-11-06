@@ -313,8 +313,8 @@ nav ul li a.nav-cta:hover {
 }
 
 
-/* ------------------------------------------------------------------------------------Index.html */
-/* -----------------------------------------------------5. Quote and Listen */
+/* ------------------------------------------------------------------------------------5. Index.html */
+/* -----------------------------------------------------5.1 Quote and Listen */
 
 #quote-and-listen-wrapper {
     padding-bottom: 69px;
@@ -356,7 +356,7 @@ audio {
     width: 80%;
 }
 
-/* -----------------------------------------------------6. Artist Quotes */
+/* -----------------------------------------------------5.2. Artist Quotes */
 #artist-quotes {
     padding-bottom: 69px;
 }
@@ -392,7 +392,7 @@ blockquote::after {
     font-size: 0;
 }
 
-/* -----------------------------------------------------7. Studios */
+/* -----------------------------------------------------5.3 Studios */
 
 .studio-one {
     margin-top: 100px;
@@ -416,11 +416,11 @@ blockquote::after {
     margin: 0 17px 17px 34px;
 }
 
-/* -----------------------------------------------------8. Contact Form */
+/* -----------------------------------------------------5.4. Contact Form */
 
 
 
-/* -----------------------------------------------------9. Footer */
+/* -----------------------------------------------------6. Footer */
 
 #prefooter {
     background-color: #f7f7f7;
@@ -468,7 +468,7 @@ blockquote::after {
     text-align: center;
 }
 
-/* -----------------------------------------------------10. Media Queries */
+/* -----------------------------------------------------7. Media Queries */
 
 @media screen and (min-width: 993px) {
     .pre-photo-text {
@@ -481,7 +481,7 @@ blockquote::after {
     }
 }
 
-/* -----------------------------------------------------10.1. <= 992px */
+/* -----------------------------------------------------7.1. <= 992px */
 
 @media screen and (max-width: 992px) {
     /* Nav */
@@ -551,9 +551,10 @@ blockquote::after {
         margin-right: 5px;
       }
 
-    #body {
-        transition: margin-left .5s;
-      }
+      button:focus {
+        outline: none;
+    }
+    
     /* ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
     /* ./nav */
     
@@ -608,7 +609,7 @@ blockquote::after {
     /* ./studios */
 }
 
-/* -----------------------------------------------------10.2. <= 768px */
+/* -----------------------------------------------------7.2. <= 768px */
 
 @media screen and (max-width: 768px) {
     /* Hero Image */
@@ -654,7 +655,7 @@ blockquote::after {
     /* ./quote and listen */
 }
 
-/* -----------------------------------------------------10.3. <= 576px */
+/* -----------------------------------------------------7.3. <= 576px */
 @media screen and (max-width: 576px) {
     /* General */
     .wrapper {
@@ -743,7 +744,7 @@ blockquote::after {
 }
 
 
-/* ------------------------------------------------------------------------------------11. Studios.html */
+/* ------------------------------------------------------------------------------------8. Studios.html */
 /* Hero Image */
 .studios-hero-image-container {
     padding: 0;
@@ -853,7 +854,7 @@ blockquote::after {
 
 
 
-/* ------------------------------------------------------------------------------------12. Artists.html */
+/* ------------------------------------------------------------------------------------9. Artists.html */
 .artists-hero-image-container {
     padding: 0;
     background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
@@ -1020,7 +1021,7 @@ blockquote::after {
     }
 }
 
-/* ------------------------------------------------------------------------------------12. Contact.html */
+/* ------------------------------------------------------------------------------------10. Contact.html */
 
 .contact-hero-image-container {
     padding: 0;
