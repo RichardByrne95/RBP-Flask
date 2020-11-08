@@ -1,68 +1,15 @@
-/* ================
-Table of Contents
-
-1. General
-    1.1. Typography
-2. Components
-    2.1. Buttons
-    2.2 Jumbotrons
-    2.3 Forms
-3. Navigation
-4. Hero Image
-5. Footer
-6. Index.html
-    6.1. Quote and Listen
-    6.2. Artist Quotes
-    6.3. Studios
-    6.4. Contact Form
-    6.5. Media Queries
-        6.5.1. >= 993px
-            6.5.1.1. Quote and Listen
-        6.5.2. <= 992px
-            6.5.2.1. Nav
-            6.5.2.2. Hero Image
-            6.5.2.3. Quote and Listen
-            6.5.2.4. Studios
-        6.5.3. <= 768px
-            6.5.3.1. Hero Image
-            6.5.3.2. Quote and Listen
-        6.5.4. <= 576px
-            6.5.4.1. General
-            6.5.4.2. Hero Image
-            6.5.4.3. Quote and Listen
-            6.5.4.4. Studios
-            6.5.4.5. Footer
-7. Studios.html
-    7.1. Hero Image
-    7.2. Studios
-    7.3. Media Queries
-        7.3.1. <= 768px
-        7.3.2. <= 576px
-8. Artists.html
-    8.1. Hero Image
-    8.2. Artist Images
-    8.3. Media Queries
-        8.3.1. <= 768px
-        8.3.2. <= 576px
-9. Contact.html
-    9.1. Hero Image
-    9.2. Media Queries
-        9.2.1. <= 768px
-        9.2.2. <= 576px
-10. Animations
-================= */
-
 /* -----------------------------------------------------1. General */
 
 * {
     /* Code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
     scroll-behavior: smooth;
     /* ./code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+    font-size: 10px;
 }
 
 hr {
-    margin: 32px 0px;
-    padding: 17px;
+    margin: 3.2rem 0;
+    padding: 1.7rem;
     color: rgba(0,0,0,.15);
 }
 
@@ -75,16 +22,16 @@ figure {
 }
 
 input {
-    padding: 12px;
-    margin: 6px 0 4px;
+    padding: 1.2rem;
+    margin: .6rem 0 .4rem;
     line-height: normal;
     box-sizing: border-box;
 }
 
 textarea {
-    min-height: 100px;
-    padding: 12px;
-    margin: 6px 0 4px;
+    min-height: 10rem;
+    padding: 1.2rem;
+    margin: .6rem 0 .4rem;
     background-color: #fafafa;
     line-height: normal;
     box-sizing: border-box;
@@ -92,33 +39,33 @@ textarea {
 
 .wrapper {
     margin: auto;
-    max-width: 1020px;
-    padding: 79px 32px;
+    max-width: 102rem;
+    padding: 7.9rem 3.2rem;
 }
 
 .quote-wrapper {
     text-align: center;
     margin: auto 0;
     font-style: italic;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
-    padding: 17px;
+    padding: 1.7rem;
 }
 
 .section-heading {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 25px;
-    letter-spacing: .05em;
+    font-size: 2.5rem;
+    letter-spacing: .05rem;
 }
 
 /* -----------------------------------------------------1.1. Typography */
 
 body, p, h3, h4 {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 body {
@@ -127,25 +74,25 @@ body {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 h3 {
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     text-transform: uppercase;
-    line-height: 1.2em;
+    line-height: 1.2rem;
 }
 
 h4 {
-    margin: 15px 0;
+    margin: 1.5rem 0;
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 h5 {
-    font-size: 13px;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
@@ -166,14 +113,14 @@ a:hover {
 /* -----------------------------------------------------2.1. Buttons */
 
 .button-md {
-    border: 2px solid #c41230;
+    border: .2rem solid #c41230;
     background-color: #c41230;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 15px 34px;
-    margin: 17px;
-    letter-spacing: 2px;
+    padding: 1.5rem 3.4rem;
+    margin: 1.7rem;
+    letter-spacing: .2rem;
 }
 
 .button-md:hover {
@@ -183,15 +130,15 @@ a:hover {
 
 .form-submit-button {
     font-weight: 300;
-    padding: 10px 25px;
-    margin: 10px 0;
+    padding: 1rem 2.5rem;
+    margin: 1rem 0;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     background-color: #c41230;
     color: #fff;
-    box-shadow: 0 2px 0 0 #9f0f27;
-    border: solid 2px #c41230;
-    border-radius: 3px;
+    box-shadow: 0 .2rem 0 0 #9f0f27;
+    border: solid .2rem #c41230;
+    border-radius: .3rem;
     transition: all .3s;
 }
 
@@ -199,30 +146,30 @@ a:hover {
     color: #c41230;
     background-color: #fff;
     box-shadow: 0 0 0 0 #fff;
-    transform: translateY(5px);
+    transform: translateY(.5rem);
 }
 
 /* -----------------------------------------------------2.2. Jumbotrons */
 
 .jumbotron {
     width: 100%;
-    max-width: 956px;
+    max-width: 95.6rem;
     display: block;
     position: relative;
     background: transparent;
     color: #fff;
     text-align: center;
     margin: auto;
-    padding: 190px 0;
+    padding: 19rem 0;
     animation: grow ease-in-out 3s;
     animation-fill-mode: forwards;
 }
 
 .lead {
     font-family: 'Montserrat', sans-serif;
-    font-size: 47px;
+    font-size: 4.7rem;
     font-weight: 400;
-    line-height: .3em;
+    line-height: .3rem;
     display: block;
     white-space: nowrap;
 }
@@ -230,11 +177,11 @@ a:hover {
 .jumbotron-header {
     display: block;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1.7em;
-    letter-spacing: 3px;
+    line-height: 1.7rem;
+    letter-spacing: .3rem;
     margin-bottom: 0;
 }
 
@@ -242,25 +189,25 @@ a:hover {
     background-color: #c41230;
     color: #fff;
     font-weight: 700;
-    font-size: 23px;
-    letter-spacing: 2px;
+    font-size: 2.3rem;
+    letter-spacing: .2rem;
     text-align: center;
-    line-height: 1em;
+    line-height: 1rem;
     text-transform: uppercase;
-    padding: .95em 1.65em;
-    box-shadow: 0px 0.2em 0px 0px #9f0f27;
+    padding: .95rem 1.65rem;
+    box-shadow: 0 0.2em 0 0 #9f0f27;
     display: inline-block;
     margin: 0;
-    border-radius: 3px;
+    border-radius: .3rem;
     transition: all .4s;
 }
 
 .jumbotron-cta:hover {
     background-color: #e00d30;
     color: #fff;
-    box-shadow: 0px 0px 0px 0px #9f0f27;
-    transform: translatey(6px);
-    border-radius: 5px;
+    box-shadow: 0 0 0 0 #9f0f27;
+    transform: translatey(.6rem);
+    border-radius: .5rem;
 }
 
 /* -----------------------------------------------------2.3. Forms */
@@ -276,7 +223,7 @@ a:hover {
 }
 
 .navbar {
-    height: 90px;
+    height: 9rem;
     background-color: #ff8400;
 }
 
@@ -298,21 +245,21 @@ nav button.openbtn {
 
 .logo {
     background: url("/assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     background-size: contain;
-    padding: 0px 20px;
-    margin: -20% 0 0 10px;
+    padding: 0 2rem;
+    margin: -20% 0 0 1rem;
 }
 
 nav ul li a {
     color: #fff;
     font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
-    padding: .75em 1em;
-    line-height: 4.4em;
+    padding: .75rem 1rem;
+    line-height: 4.4rem;
 }
 
 nav ul li a:hover {
@@ -320,10 +267,10 @@ nav ul li a:hover {
 }
 
 .nav-cta {
-    border: #fff 2px solid;
-    border-radius: 3px;
-    padding: px 19.5px;
-    line-height: 2em;
+    border: #fff .2rem solid;
+    border-radius: .3rem;
+    padding: 1.95rem;
+    line-height: 2rem;
     transition: all .25s;
 }
 
@@ -338,7 +285,7 @@ nav ul li a.nav-cta:hover {
     padding: 0;
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 600px;
+    height: 60rem;
     position: relative;
     overflow: hidden;
     align-items: center;
@@ -347,7 +294,7 @@ nav ul li a.nav-cta:hover {
 
 .opaque-overlay {
     background-color: rgba(0, 0, 0, .3);
-    height: 600px;
+    height: 60rem;
     width: 100%;
 }
 
@@ -356,32 +303,32 @@ nav ul li a.nav-cta:hover {
 #prefooter {
     background-color: #f7f7f7;
     text-align: center;
-    padding: 17px;
+    padding: 1.7rem;
 }
 
 #top {
-    border-bottom: 1px solid rgb(158, 158, 158);
+    border-bottom: .1rem solid rgb(158, 158, 158);
 }
 
 #top:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: .1rem solid #000;
 }
 
 .social-links a {
-    font-size: 25px;
-    margin: 0 10px;
+    font-size: 2.5rem;
+    margin: 0 1rem;
 }
 
 #footer {
     background-color: #1f1f1f;
     color: rgba(255, 255, 255, .4);
     text-align: center;
-    padding: 64px 32px;
+    padding: 6.4rem 3.2rem;
 }
 
 #footer h5 {
     display: inline-block;
-    padding: 20px 20px;
+    padding: 2rem 2rem;
 }
 
 #footer h5 a {
@@ -391,8 +338,8 @@ nav ul li a.nav-cta:hover {
 #footer-email {
     color: rgba(255, 255, 255, 0.8);
     white-space: nowrap;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
 }
 
 #footer-copyright {
@@ -404,25 +351,25 @@ nav ul li a.nav-cta:hover {
 /* -----------------------------------------------------6.1 Quote and Listen */
 
 #quote-and-listen-wrapper {
-    padding-bottom: 69px;
+    padding-bottom: 6.9rem;
 }
 
 #quote-and-listen-wrapper blockquote::before {
     display: inline;
     color: #000;
     opacity: 1;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 #quote-and-listen-wrapper blockquote::after {
     content: close-quote;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #quote-and-listen-wrapper .quote-wrapper blockquote {
-    line-height: 1.15em;
-    transform: translateY(49px);
+    line-height: 1.15rem;
+    transform: translateY(4.9rem);
     margin: auto 10%;
 }
 
@@ -439,21 +386,21 @@ nav ul li a.nav-cta:hover {
 }
 
 audio {
-    margin: 11px;
+    margin: 1.1rem;
     width: 80%;
 }
 
 /* -----------------------------------------------------6.2. Artist Quotes */
 #artist-quotes {
-    padding-bottom: 69px;
+    padding-bottom: 6.9rem;
 }
 
 .artist-quote {
     font-family: "Crimson Pro", sans-serif;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 600;
-    letter-spacing: .36px;
+    letter-spacing: .036rem;
     color: #534d46;
     /* animation: appear .8s ease-in-out; */
 }
@@ -461,7 +408,7 @@ audio {
 .quote-source {
     text-align: center;
     font-family: "Crimson Pro", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     opacity: 0.5;
 }
 
@@ -470,7 +417,7 @@ blockquote::before {
     display: block;
     color: #534d46;
     opacity: 0.3;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -482,8 +429,8 @@ blockquote::after {
 /* -----------------------------------------------------6.3 Studios */
 
 .studio-one {
-    margin-top: 100px;
-    padding-bottom: 17px;
+    margin-top: 10rem;
+    padding-bottom: 1.7rem;
 }
 
 .sun-photo {
@@ -492,7 +439,7 @@ blockquote::after {
     width: 100%;
     background-size: cover;
     box-sizing: border-box;
-    margin: 0 17px 17px 34px;
+    margin: 0 1.7rem 1.7rem 3.4rem;
 }
 
 .studio-one-photo {
@@ -500,7 +447,7 @@ blockquote::after {
     height: 94%;
     width: 100%;
     background-size: cover;
-    margin: 0 17px 17px 34px;
+    margin: 0 1.7rem 1.7rem 3.4rem;
 }
 
 /* -----------------------------------------------------6.4. Contact Form */
@@ -513,7 +460,7 @@ blockquote::after {
 @media screen and (min-width: 993px) {
     .pre-photo-text {
         display: block;
-        margin-top: 17px;
+        margin-top: 1.7rem;
     }
 
     .post-photo-text {
@@ -531,7 +478,7 @@ blockquote::after {
     }
 
     .logo {
-        margin: 9% 0 0 10px;
+        margin: 9% 0 0 1rem;
     }
 
     ul#horizontal-nav.list-inline {
@@ -554,13 +501,13 @@ blockquote::after {
         overflow-x: hidden;
         background-color: #ff8400;
         color: #fff;
-        padding-top: 50px;
+        padding-top: 5rem;
         transition: .5s;
     }
 
     .sidebar a {
-        padding: 8px 8px 8px 32px;
-        font-size: 20px;
+        padding: .8rem .8rem .8rem 3.2rem;
+        font-size: 2rem;
         color: #fff;
         display: block;
         transition: .3s;
@@ -572,7 +519,7 @@ blockquote::after {
       }
 
     .sidebar .closebtn {
-        font-size: 36px;
+        font-size: 3.6rem;
         color: #fff;
         position: relative;
         left: 62%;
@@ -581,15 +528,15 @@ blockquote::after {
     }
 
     .openbtn {
-        font-size: 27px;
-        width: 60px;
-        height: 60px;
+        font-size: 2.7rem;
+        width: 6rem;
+        height: 6rem;
         cursor: pointer;
         background-color: #ff8400;
         color: white;
         border: none;
-        padding: 10px 10px;
-        margin-right: 5px;
+        padding: 1rem 1rem;
+        margin-right: .5rem;
       }
 
       button:focus {
@@ -599,22 +546,22 @@ blockquote::after {
     
     /* ------------------------------------------6.5.2.2. Hero Image */
     .jumbotron {
-        padding: 190px 0;
-        max-width: 960px;
+        padding: 19rem 0;
+        max-width: 96rem;
     }
 
     .lead {
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 
     .jumbotron-header {
-        font-size: 60px;
+        font-size: 6rem;
     }
 
     .jumbotron-cta {
-        font-size: 19px;
-        line-height: 1.4em;
-        padding: .85em 1.4em;
+        font-size: 1.9rem;
+        line-height: 1.4rem;
+        padding: .85rem 1.4rem;
     }
     
     /* ------------------------------------------6.5.2.3. Quote and Listen */
@@ -624,12 +571,12 @@ blockquote::after {
     
     /* ------------------------------------------6.5.2.4. Studios */
     .sun-photo {
-        height: 400px;
+        height: 40rem;
         margin: 0;
     }   
         
     .studio-one-photo {
-        height: 400px;
+        height: 40rem;
         width: 100%;
         display: flex;
         margin: 0;
@@ -641,7 +588,7 @@ blockquote::after {
 
     .post-photo-text {
         display: block;
-        margin-top: 17px;
+        margin-top: 1.7rem;
     }
 }
 
@@ -650,23 +597,23 @@ blockquote::after {
 @media screen and (max-width: 768px) {
     /* ------------------------------------------6.5.3.1. Hero Image */
     .hero-image-container {
-        height: 450px;
+        height: 45rem;
     }
 
     .jumbotron {
-        padding: 140px 10px;
+        padding: 14rem 1rem;
     }
 
     .lead {
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 
     .jumbotron-header {
-        font-size: 50px;
+        font-size: 5rem;
     }
 
     .jumbotron-cta {
-        font-size: 17px;
+        font-size: 1.7rem;
     }
     
     /* ------------------------------------------6.5.3.2. Quote and Listen */
@@ -675,17 +622,17 @@ blockquote::after {
     }
 
     #quote-and-listen-wrapper .quote-wrapper {
-        margin: 0px 0px 50px 0px;
+        margin: 0 0 5rem 0;
         justify-content: center;
         display: flex;
         flex-direction: column;
-        transform: translateY(32px);
+        transform: translateY(3.2rem);
     }
 
     audio {
         display: block;
         align-self: center;
-        margin: 14px auto;
+        margin: 1.4rem auto;
     }
     /* ./quote and listen */
 }
@@ -694,41 +641,41 @@ blockquote::after {
 @media screen and (max-width: 576px) {
     /* ------------------------------------------6.5.4.1. General */
     .wrapper {
-        padding: 70px 10px;
+        padding: 7rem 1rem;
     }
     
     /* ------------------------------------------6.5.4.2. Hero Image */
     .hero-image-container {
-        height: 350px;
+        height: 35rem;
     }
 
     .jumbotron {
-        padding: 125px 10px;
+        padding: 12.5rem 1rem;
     }
 
     .lead {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .jumbotron-header {
-        font-size: 30px;
+        font-size: 3rem;
     }
 
     .jumbotron-cta {
-        font-size: 13px;
+        font-size: 1.3rem;
     }
     
     /* ------------------------------------------6.5.4.3. Quote and Listen */
     #quote-and-listen-wrapper .quote-wrapper {
-        margin: 0px 0px 50px 0px;
+        margin: 0 0 5rem 0;
         justify-content: center;
         display: flex;
         flex-direction: column;
     }
 
     #quote-and-listen-wrapper .quote-wrapper blockquote {
-        line-height: 1.15em;
-        transform: translateY(-30px);
+        line-height: 1.15rem;
+        transform: translateY(-3rem);
         margin: auto;
     }
 
@@ -742,32 +689,32 @@ blockquote::after {
     }
     
     audio {
-        margin: 8px auto ;
+        margin: .8rem auto ;
     }
     /* ------------------------------------------6.5.4.4. Studios */
     .sun-photo {
-        height: 215px;
+        height: 21.5rem;
         margin: 0;
     }   
     
     .studio-one {
-        margin-top: 50px;
+        margin-top: 5rem;
     }
 
     .studio-one-photo {
-        height: 220px;
+        height: 22rem;
         margin: 0;
     }   
     
     /* ------------------------------------------6.5.4.5. Footer */
     #footer h5 {
-        font-size: 12px;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     h5#footer-email {
-        font-size: 11px;
-        padding: 20px 0;
+        font-size: 1.1rem;
+        padding: 2rem 0;
     }
 }
 
@@ -778,7 +725,7 @@ blockquote::after {
     padding: 0;
     background: url(/assets/images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
     background-size: cover;
-    height: 600px;
+    height: 60rem;
     position: relative;
     overflow: hidden;
     align-items: center;
@@ -787,7 +734,7 @@ blockquote::after {
 
 .studios-jumbotron {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 10rem 0;
 }
 
 .studios-jumbotron .lead {
@@ -798,22 +745,22 @@ blockquote::after {
 .sun-photo-1 {
     background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 500px;
-    margin-bottom: 17px;
+    height: 50rem;
+    margin-bottom: 1.7rem;
     overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 
 #studios-studio-one-wrapper {
-    margin-top: 79px;
+    margin-top: 7.9rem;
 }
 
 .studio-one-photo-1 {
     background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
     background-size: cover;
-    height: 500px;
-    margin-bottom: 17px;
+    height: 50rem;
+    margin-bottom: 1.7rem;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -821,11 +768,11 @@ blockquote::after {
 
 .gallery-thumbnails {
     text-align: center;
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
 }
 
 .gallery-thumbnails img {
-    height: 90px;
+    height: 9rem;
     opacity: .5;
     transition: .3s;
 }
@@ -838,42 +785,42 @@ blockquote::after {
 /* -----------------------------------------------------7.3.1. <= 768px */
 @media screen and (max-width: 768px) {
     .studios-hero-image-container {
-        height: 500px;
+        height: 50rem;
     }
 
     .sun-photo-1 {
-        height: 400px;
+        height: 40rem;
     }
 
     .studio-one-photo-1 {
-        height: 400px;
+        height: 40rem;
     }
 }
 
 /* -----------------------------------------------------7.3.2. <= 576px */
 @media screen and (max-width: 576px) {
     .studios-hero-image-container {
-        height: 390px;
+        height: 39rem;
     }
 
     .studios-hero-image-container .lead {
-        font-size: 27px;
+        font-size: 2.7rem;
     }
 
     .sun-photo-1 {
-        height: 200px;
+        height: 20rem;
     }
 
     .gallery-thumbnails img {
-        height: 45px;
+        height: 4.5rem;
     }
 
     .studio-one-photo-1 {
-        height: 200px;
+        height: 20rem;
     }
 
     .button-sm {
-        margin: 17px 5px;
+        margin: 1.7rem .5rem;
     }
 }
 
@@ -883,7 +830,7 @@ blockquote::after {
     padding: 0;
     background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
     background-size: cover;
-    height: 500px;
+    height: 50rem;
     position: relative;
     overflow: hidden;
     align-items: center;
@@ -891,14 +838,14 @@ blockquote::after {
 }
 
 .artists-jumbotron {
-    padding: 140px;
+    padding: 14rem;
 }
 
 /* -----------------------------------------------------8.2. Artist Images */
 .artist-image {
     display: block;
-    height: 550px;
-    margin-top: 102px;
+    height: 55rem;
+    margin-top: 10.2rem;
     position: relative;
 }
 
@@ -947,104 +894,104 @@ blockquote::after {
 #top-shelf {
     background: url(/assets/images/artists/Top\ Shelf.jpg) no-repeat center center;
     background-size: contain;
-    height: 320px;
-    margin-top: 130px;
-    margin-bottom: 37px;
+    height: 32rem;
+    margin-top: 13rem;
+    margin-bottom: 3.7rem;
 }
 
 #abi-and-the-bandit {
     background: url(/assets/images/artists/Abi_Rec-min.jpg) no-repeat center center;
     background-size: contain;
-    height: 320px;
-    margin-top: 130px;
-    margin-bottom: 37px;
+    height: 32rem;
+    margin-top: 13rem;
+    margin-bottom: 3.7rem;
 }
 
 #and-many-more {
-    margin: 34px;
-    margin-top: 68px;
-    font-size: 40px;
+    margin: 3.4rem;
+    margin-top: 6.8rem;
+    font-size: 4rem;
 }
 
 #mentors {
-    margin: 68px 0;
+    margin: 6.8rem 0;
     align-items: left;
 }
 
 .mentors-heading {
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
 }
 
 /* -----------------------------------------------------8.3. Media Queries */
 /* -----------------------------------------------------8.3.1. <= 768px */
 @media screen and (max-width: 768px) {
     .artists-hero-image-container {
-        height: 400px;
+        height: 40rem;
     }
 
     .artists-jumbotron {
-        padding: 110px;
+        padding: 11rem;
     }
 
     .artist-image {
-        height: 400px;
-        margin-top: 50px;
+        height: 40rem;
+        margin-top: 5rem;
     }
 
     #and-many-more h5 {
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 
     #top-shelf {
-        height: 230px;
-        margin-top: 80px;
+        height: 23rem;
+        margin-top: 8rem;
     }
 
     #abi-and-the-bandit {
-        height: 230px;
-        margin-top: 80px;
+        height: 23rem;
+        margin-top: 8rem;
     }
 }
 
 /* -----------------------------------------------------8.3.2. <= 576px */
 @media screen and (max-width: 576px) {
     .artists-hero-image-container {
-        height: 300px;
+        height: 30rem;
     }
 
     .artists-jumbotron {
-        padding: 90px;
+        padding: 9rem;
     }
 
     .artists-wrapper {
-        padding: 22px;
+        padding: 2.2rem;
     }
 
     .artist-image {
-        height: 350px;
-        margin-top: 50px;
+        height: 35rem;
+        margin-top: 5rem;
     }
 
     #greg-clifford {
-        margin-top: 50px
+        margin-top: 5rem
     }
 
     #and-many-more h5 {
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 
     #fionn-lynch {
-        height: 230px;
+        height: 23rem;
     }
 
     #top-shelf {
-        height: 230px;
-        margin-top: 80px;
+        height: 23rem;
+        margin-top: 8rem;
     }
 
     #abi-and-the-bandit {
-        height: 230px;
-        margin-top: 80px;
+        height: 23rem;
+        margin-top: 8rem;
     }
 }
 
@@ -1054,7 +1001,7 @@ blockquote::after {
     padding: 0;
     background: url(/assets/images/sunstudio/TempleLaneLowRes-22-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 400px;
+    height: 40rem;
     position: relative;
     overflow: hidden;
     align-items: center;
@@ -1062,7 +1009,7 @@ blockquote::after {
 }
 
 #contact-overlay {
-    height: 400px;
+    height: 40rem;
     padding: 0;
 }
 
@@ -1083,7 +1030,7 @@ blockquote::after {
 /* -----------------------------------------------------9.2.1. <= 768px */
 @media screen and (max-width: 768px) {
     .contact-hero-image-container {
-        height: 400px;
+        height: 40rem;
     }
 
     .contact-hero-image-container h1 {
@@ -1097,7 +1044,7 @@ blockquote::after {
 /* -----------------------------------------------------9.2.2. <= 576px */
 @media screen and (max-width: 576px) {
     .contact-hero-image-container {
-        height: 250px;
+        height: 25rem;
     }
     
     .contact-hero-image-container h1 {
@@ -1108,7 +1055,7 @@ blockquote::after {
     }
 
     .contact-wrapper {
-        padding: 35px 10px;
+        padding: 3.5rem 1rem;
     }
 }
 
