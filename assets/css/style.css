@@ -244,7 +244,7 @@ nav button.openbtn {
 }
 
 .logo {
-    background: url("/assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
+    background: url("../assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
     width: 5rem;
     height: 5rem;
     background-size: contain;
@@ -283,7 +283,7 @@ nav ul li a.nav-cta:hover {
 /* -----------------------------------------------------4. Hero Image */
 .hero-image-container {
     padding: 0;
-    background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
     height: 60rem;
     position: relative;
@@ -434,7 +434,7 @@ blockquote::after {
 }
 
 .sun-photo {
-    background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
+    background: url(../assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
     height: 94%;
     width: 100%;
     background-size: cover;
@@ -443,7 +443,7 @@ blockquote::after {
 }
 
 .studio-one-photo {
-    background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat;
+    background: url(../assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat;
     height: 94%;
     width: 100%;
     background-size: cover;
@@ -723,7 +723,7 @@ blockquote::after {
 /* -----------------------------------------------------7.1. Hero Image */
 .studios-hero-image-container {
     padding: 0;
-    background: url(/assets/images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
+    background: url(../assets/images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
     background-size: cover;
     height: 60rem;
     position: relative;
@@ -743,7 +743,7 @@ blockquote::after {
 
 /* -----------------------------------------------------7.2. Studios */
 .sun-photo-1 {
-    background: url(/assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background: url(../assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
     height: 50rem;
     margin-bottom: 1.7rem;
@@ -757,7 +757,7 @@ blockquote::after {
 }
 
 .studio-one-photo-1 {
-    background: url(/assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
+    background: url(../assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
     background-size: cover;
     height: 50rem;
     margin-bottom: 1.7rem;
@@ -828,7 +828,7 @@ blockquote::after {
 /* -----------------------------------------------------8.1. Hero Image */
 .artists-hero-image-container {
     padding: 0;
-    background: url(/assets/images/misc/artists-image-min.webp) no-repeat center center;
+    background: url(../assets/images/misc/artists-image-min.webp) no-repeat center center;
     background-size: cover;
     height: 50rem;
     position: relative;
@@ -850,49 +850,49 @@ blockquote::after {
 }
 
 #ae-mak {
-    background: url(/assets/images/artists/AE\ MAK.jpg) no-repeat center center;
+    background: url(../assets/images/artists/AE\ MAK.jpg) no-repeat center center;
     background-size: contain;
     margin-top: 0;
 }
 
 #greg-clifford {
-    background: url(/assets/images/artists/Greg\ Clifford.jpg) no-repeat center center;
+    background: url(../assets/images/artists/Greg\ Clifford.jpg) no-repeat center center;
     background-size: contain;
     margin-top: 0;
 }
 
 #bjh {
-    background: url(/assets/images/artists/Barry\ Jay\ Hughes\ Logo.png) no-repeat center center;
+    background: url(../assets/images/artists/Barry\ Jay\ Hughes\ Logo.png) no-repeat center center;
     background-size: contain;
 }
 
 #white-trash {
-    background: url(/assets/images/artists/White\ Trash\ Logo.jpg) no-repeat center center;
+    background: url(../assets/images/artists/White\ Trash\ Logo.jpg) no-repeat center center;
     background-size: contain;
 }
 
 #eoin-coogan {
-    background: url(/assets/images/artists/Eoin\ Coogan.jpg) no-repeat center center;
+    background: url(../assets/images/artists/Eoin\ Coogan.jpg) no-repeat center center;
     background-size: contain;
 }
 
 #sambo-drumz {
-    background: url(/assets/images/artists/Dreaming\ of\ Jupiter.jpg) no-repeat center center;
+    background: url(../assets/images/artists/Dreaming\ of\ Jupiter.jpg) no-repeat center center;
     background-size: contain;
 }
 
 #ultitune {
-    background: url('/assets/images/artists/Ultitune\ -\ Here\'s\ to\ You.jpg') no-repeat center center;
+    background: url('../assets/images/artists/Ultitune\ -\ Here\'s\ to\ You.jpg') no-repeat center center;
     background-size: contain;
 }
 
 #fionn-lynch {
-    background: url(/assets/images/artists/Keywest_Bandlogo.png) no-repeat center center;
+    background: url(../assets/images/artists/Keywest_Bandlogo.png) no-repeat center center;
     background-size: contain;
 }
 
 #top-shelf {
-    background: url(/assets/images/artists/Top\ Shelf.jpg) no-repeat center center;
+    background: url(../assets/images/artists/Top\ Shelf.jpg) no-repeat center center;
     background-size: contain;
     height: 32rem;
     margin-top: 13rem;
@@ -900,7 +900,7 @@ blockquote::after {
 }
 
 #abi-and-the-bandit {
-    background: url(/assets/images/artists/Abi_Rec-min.jpg) no-repeat center center;
+    background: url(../assets/images/artists/Abi_Rec-min.jpg) no-repeat center center;
     background-size: contain;
     height: 32rem;
     margin-top: 13rem;
@@ -999,7 +999,7 @@ blockquote::after {
 /* -----------------------------------------------------9.1. Hero Image */
 .contact-hero-image-container {
     padding: 0;
-    background: url(/assets/images/sunstudio/TempleLaneLowRes-22-1024x683.jpg) no-repeat center center;
+    background: url(../assets/images/sunstudio/TempleLaneLowRes-22-1024x683.jpg) no-repeat center center;
     background-size: cover;
     height: 40rem;
     position: relative;
