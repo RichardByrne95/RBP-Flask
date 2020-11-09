@@ -346,7 +346,7 @@ nav button.openbtn {
     background-color: #1f1f1f;
     color: rgba(255, 255, 255, .4);
     text-align: center;
-    padding: 3rem 3.2rem;
+    padding: 6.4rem 3.2rem;
 }
 
 #footer h5 {
@@ -354,20 +354,32 @@ nav button.openbtn {
     padding: 2rem 2rem;
 }
 
-#footer h5 a {
-    color: #fff;
+#footer h5 {
     font-size: 1.2rem;
+    text-align: center;
 }
 
 #footer-email {
     color: rgba(255, 255, 255, 0.8);
     white-space: nowrap;
-    font-size: 1.4rem;
     letter-spacing: .2rem;
+    font-size: 1.1rem;
+    padding: 2rem 0;
 }
 
 #footer-copyright {
     text-align: center;
+}
+
+/* -----------------------------------------------------10. Animations */
+@keyframes grow {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* ------------------------------------------------------------------------------------6. Index.html */
@@ -489,47 +501,70 @@ blockquote::after {
     display: block;
 }
 
-/* ------------------------------------------6.5.4.5. Footer */
-#footer {
-    background-color: #1f1f1f;
-    color: rgba(255, 255, 255, .4);
-    text-align: center;
-    padding: 6.4rem 3.2rem;
-}
-
-#footer h5 {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-h5#footer-email {
-    font-size: 1.1rem;
-    padding: 2rem 0;
-}
-
 /* ------------------------------------------------------------------------------------7. Studios.html */
+/* -----------------------------------------------------7.1. Hero Image */
 .studios-hero-image-container {
-    height: 39rem;
+    padding: 0;
+    background: url(../images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
+    background-size: cover;
+    height: 34rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
-.studios-hero-image-container .lead {
-    font-size: 2.7rem;
+.studios-hero-image-container .opaque-overlay {
+    height: 35rem;
+}
+
+.studios-jumbotron {
+    padding: 7.5rem 0;
+}
+
+.studios-jumbotron .lead {
+    line-height: initial;
+    font-size: 2.4rem;
+}
+
+.studios-hero-image-container .jumbotron-header {
+    font-size: 2.8rem;
+}
+
+.studios-jumbotron .jumbotron-cta {
+    font-size: 1.8rem;
+}
+
+/* -----------------------------------------------------7.1. Sun Studio */
+#studios h2 {
+    font-size: 3.4rem;
 }
 
 .sun-photo-1 {
-    height: 20rem;
-}
-
-.gallery-thumbnails img {
-    height: 4.5rem;
-}
-
-.studio-one-photo-1 {
-    height: 20rem;
+    background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 1.7rem;
+    overflow: hidden;
+    height: 25rem;
 }
 
 .button-sm {
     margin: 1.7rem .5rem;
+}
+
+/* -----------------------------------------------------7.1. Studio One */
+
+.studio-one-photo-1 {
+    background: url(../images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 1.7rem;
+    height: 25rem;
+}
+
+#studios-studio-one-wrapper h2 {
+    padding-top: 6rem;
 }
 
 /* ------------------------------------------------------------------------------------8. Artists.html */
@@ -588,17 +623,6 @@ h5#footer-email {
     padding: 3.5rem 1rem;
 }
 
-/* -----------------------------------------------------10. Animations */
-@keyframes grow {
-    from {
-        transform: scale(0.9);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
 /* -----------------------------------------------------10. Media Queries */
 /* -----------------------------------------------------10. >=576px */
 @media screen and (min-width: 576px) {
@@ -632,6 +656,7 @@ h5#footer-email {
         height: 40vh;
     }
 
+    /* Index.html */
     /* Studio */
     .sun-studio .studio-text {
         box-sizing: border-box;
@@ -667,6 +692,48 @@ h5#footer-email {
         padding: 0 4rem;
         display: inline-block;
     }
+
+    /* Studios.html */
+    /* Hero Image */    
+    .studios-hero-image-container {
+        height: 40rem;
+    }
+    
+    .studios-hero-image-container .opaque-overlay {
+        height: 40rem;
+    }
+    
+    .studios-jumbotron {
+        padding: 6rem 0;
+    }
+
+    .studios-jumbotron .lead {
+        line-height: 5rem;
+        font-size: 3.5rem;
+    }
+    
+    .studios-hero-image-container .jumbotron-header {
+        font-size: 4.5rem;
+        line-height: 7rem;
+    }
+    
+    .studios-jumbotron .jumbotron-cta {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }
+
+    /* Sun Studio */
+    .sun-photo-1 {
+        height: 30rem;
+    }
+
+    .studio-one-photo-1 {
+        height: 30rem;
+    }
+
+    #studios-sun-wrapper .post-photo-text, #studios-studio-one-wrapper .post-photo-text {
+        display: block;
+    }
 }
 
 /* -----------------------------------------------------10. >=992px */
@@ -701,6 +768,7 @@ h5#footer-email {
         height: 50rem;
     }
 
+    /* Index.html */
     /* Quote and Listen */
     #quote-and-listen-wrapper {
         width: 90%;
@@ -716,6 +784,43 @@ h5#footer-email {
     #quote-and-listen-wrapper .quote-wrapper blockquote {
         font-size: 2.75rem;
         line-height: 3.7rem;
+    }
+    
+    /* Studios.html */
+    /* General */
+    #studios.wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 7rem;
+    }
+    /* Hero Image */
+    .studios-hero-image-container, .studios-hero-image-container .opaque-overlay {
+        height: 60rem;
+    }
+    
+    .studios-jumbotron {
+        padding: 13rem 0;
+    }
+
+    .studios-hero-image-container .jumbotron-header {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    .studios-hero-image-container .lead {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    .sun-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .studio-one-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
     }
 }
 
@@ -806,5 +911,42 @@ h5#footer-email {
     /* Studios */
     .sun-photo, .studio-one-photo {
         margin-top: 0;
+    }
+
+    /* Studios.html */
+    /* General */
+    #studios.wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 7rem;
+    }
+    /* Hero Image */
+    .studios-hero-image-container, .studios-hero-image-container .opaque-overlay {
+        height: 60rem;
+    }
+    
+    .studios-jumbotron {
+        padding: 15rem 0;
+    }
+
+    .studios-hero-image-container .jumbotron-header {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    .studios-hero-image-container .lead {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    .sun-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .studio-one-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
     }
 }
