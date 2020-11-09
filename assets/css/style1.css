@@ -1,0 +1,810 @@
+/* -----------------------------------------------------1. General */
+
+* {
+    /* Code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+    scroll-behavior: smooth;
+    /* ./code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+    font-size: 10px;
+}
+
+section {
+    padding: 0;
+}
+
+hr {
+    margin: 4rem 0;
+    color: rgba(0,0,0,.15);
+}
+
+audio {
+    outline: none;
+}
+
+figure {
+    margin: 0;
+}
+
+textarea {
+    min-height: 10rem;
+    padding: 1.2rem;
+    margin: .6rem 0 .4rem;
+    background-color: #fafafa;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0;
+    max-width: 102rem;
+    padding: 7.9rem 3.2rem;
+}
+
+.quote-wrapper {
+    text-align: center;
+    margin: auto 0;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1.7rem;
+}
+
+.section-heading {
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: .05rem;
+}
+
+.wrapper {
+    padding: 6rem 1rem;
+}
+
+/* -----------------------------------------------------1.1. Typography */
+
+body, a, p, h3, h4, strong{
+    font-size: 1.8rem;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    line-height: 2.8rem;
+}
+
+h3 {
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    line-height: 1.3rem;
+}
+
+h4 {
+    margin: 1.5rem 0;
+    font-weight: bold;
+    line-height: 2.8rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+}
+
+a {
+    color: #ff8400;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ce6a00;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* -----------------------------------------------------2. Components */
+/* -----------------------------------------------------2.1. Buttons */
+
+.button-md {
+    font-size: 1.5rem;
+    border: .3rem solid #c41230;
+    background-color: #c41230;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.6rem 3.3rem;
+    margin: 1.7rem;
+    letter-spacing: .2rem;
+}
+
+.button-md:hover {
+    background-color: #fff;
+    color: #c41230;
+}
+
+.form-submit-button {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 1rem 2.5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background-color: #c41230;
+    color: #fff;
+    box-shadow: 0 .2rem 0 0 #9f0f27;
+    border: solid .2rem #c41230;
+    border-radius: .3rem;
+    transition: all .3s;
+}
+
+.form-submit-button:hover {
+    color: #c41230;
+    background-color: #fff;
+    box-shadow: 0 0 0 0 #fff;
+    transform: translateY(.5rem);
+}
+
+/* -----------------------------------------------------2.3. Forms */
+
+.form-control {
+    padding: 1.7rem;
+    font-size: 1.7rem;
+    margin: .6rem 0 .4rem;
+    line-height: normal;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+/* -----------------------------------------------------2.2. Jumbotrons */
+
+.jumbotron {
+    width: 100%;
+    max-width: 95.6rem;
+    display: block;
+    position: relative;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    padding: 9.5rem 1rem;
+    animation: grow ease-in-out 3s;
+    animation-fill-mode: forwards;
+    color: #fafafa;
+}
+
+.lead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    display: block;
+    white-space: nowrap;
+}
+
+.jumbotron-header {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 4rem;
+    letter-spacing: .3rem;
+    margin-bottom: 0;
+}
+
+.jumbotron-cta {
+    background-color: #c41230;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 1.65rem;
+    box-shadow: 0 0.2em 0 0 #9f0f27;
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: .3rem;
+    transition: all .4s;
+}
+
+.jumbotron-cta:hover {
+    background-color: #e00d30;
+    color: #fff;
+    box-shadow: 0 0 0 0 #9f0f27;
+    transform: translatey(.6rem);
+    border-radius: .5rem;
+}
+
+/* -----------------------------------------------------3. Navigation */
+
+.navigation {
+    padding: 0;
+}
+
+.navbar {
+    height: 7rem;
+    background-color: #ff8400;
+}
+
+nav button.openbtn {
+    display: block;
+    font-size: 2.7rem;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    background-color: #ff8400;
+    color: white;
+    border: none;
+    padding: 1rem 1rem;
+    margin-right: .5rem;
+    outline: none;
+}
+
+.navbar #horizontal-nav {
+    display: none;
+}
+
+.sidebar {
+    display: initial;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: #ff8400;
+    color: #fff;
+    padding-top: 5rem;
+    transition: .5s;
+}
+
+.sidebar a {
+    padding: .8rem .8rem .8rem 3.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .08rem;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+.sidebar .closebtn {
+    font-size: 3.6rem;
+    color: #fff;
+    position: relative;
+    left: 62%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    background: url(../images/logo/RBP-logo-black%20small%20cropped.png) left center no-repeat;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-size: contain;
+    padding: 0 2rem;
+    margin: 9% 0 0 1rem;
+}
+
+/* -----------------------------------------------------4. Hero Image */
+.hero-image-container {
+    padding: 0;
+    background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background-size: cover;
+    height: 35rem;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.opaque-overlay {
+    background-color: rgba(0, 0, 0, .4);
+    height: 35rem;
+    width: 100%;
+}
+
+/* -----------------------------------------------------5. Footer */
+
+#prefooter {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 1.7rem;
+}
+
+#top {
+    border-bottom: .1rem solid rgb(158, 158, 158);
+}
+
+#top:hover {
+    border-bottom: .1rem solid #000;
+}
+
+.social-links a i {
+    font-size: 2.5rem;
+    margin: 1.5rem 1rem;
+}
+
+#footer {
+    background-color: #1f1f1f;
+    color: rgba(255, 255, 255, .4);
+    text-align: center;
+    padding: 3rem 3.2rem;
+}
+
+#footer h5 {
+    display: inline-block;
+    padding: 2rem 2rem;
+}
+
+#footer h5 a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#footer-email {
+    color: rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+}
+
+#footer-copyright {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------6. Index.html */
+/* ------------------------------------------6.5.4.3. Quote and Listen */
+
+#quote-and-listen-wrapper {
+    padding-bottom: 6.9rem;
+}
+
+#quote-and-listen-wrapper .quote-wrapper {
+    font-size: 3rem;
+    margin: 0 0 5rem 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#quote-and-listen-wrapper .quote-wrapper blockquote {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: auto;
+}
+
+#quote-and-listen-wrapper blockquote::before {
+    content: open-quote;
+    display: inline;
+    color: #000;
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#quote-and-listen-wrapper blockquote::after {
+    content: close-quote;
+    font-size: 3rem;
+}
+
+.quote-wrapper {
+    width: auto;
+}
+
+.listen-wrapper {
+    display: flexbox;
+    text-align: center;
+}
+
+audio {
+    margin: .8rem auto ;
+}
+
+/* -----------------------------------------------------6.2. Artist Quotes */
+#artist-quotes {
+    padding-bottom: 6rem;
+}
+
+#artist-quotes .artist-quote blockquote{
+    font-family: "Crimson Pro", sans-serif;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .036rem;
+    color: #534d46;
+}
+
+.quote-source p {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Crimson Pro", sans-serif;
+    opacity: 0.5;
+}
+
+blockquote::before {
+    content: open-quote;
+    display: block;
+    color: #534d46;
+    opacity: 0.3;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 0;
+}
+
+.more-artists-button {
+    margin-top: 4rem;
+}
+
+/* ------------------------------------------6.5.4.4. Studios */
+.sun-photo {
+    background: url("../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg") center center;
+    width: 100%;
+    height: 21.5rem;
+    margin: 1.5rem 0;
+    background-size: cover;
+    box-sizing: border-box;
+}   
+
+.studio-one {
+    margin-top: 5rem;
+}
+
+.studio-one-photo {
+    background: url("../images/studioone/STUDIOONE_01-1-min.jpg") no-repeat center center;
+    width: 100%;
+    height: 21.5rem;
+    margin: 1.5rem 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.pre-photo-text {
+    display: none;
+    margin-top: 1.7rem;
+}
+
+.post-photo-text {
+    display: block;
+}
+
+/* ------------------------------------------6.5.4.5. Footer */
+#footer {
+    background-color: #1f1f1f;
+    color: rgba(255, 255, 255, .4);
+    text-align: center;
+    padding: 6.4rem 3.2rem;
+}
+
+#footer h5 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h5#footer-email {
+    font-size: 1.1rem;
+    padding: 2rem 0;
+}
+
+/* ------------------------------------------------------------------------------------7. Studios.html */
+.studios-hero-image-container {
+    height: 39rem;
+}
+
+.studios-hero-image-container .lead {
+    font-size: 2.7rem;
+}
+
+.sun-photo-1 {
+    height: 20rem;
+}
+
+.gallery-thumbnails img {
+    height: 4.5rem;
+}
+
+.studio-one-photo-1 {
+    height: 20rem;
+}
+
+.button-sm {
+    margin: 1.7rem .5rem;
+}
+
+/* ------------------------------------------------------------------------------------8. Artists.html */
+.artists-hero-image-container {
+    height: 30rem;
+}
+
+.artists-jumbotron {
+    padding: 9rem;
+}
+
+.artists-wrapper {
+    padding: 2.2rem;
+}
+
+.artist-image {
+    height: 35rem;
+    margin-top: 5rem;
+}
+
+#greg-clifford {
+    margin-top: 5rem
+}
+
+#and-many-more h5 {
+    font-size: 2.2rem;
+}
+
+#fionn-lynch {
+    height: 23rem;
+}
+
+#top-shelf {
+    height: 23rem;
+    margin-top: 8rem;
+}
+
+#abi-and-the-bandit {
+    height: 23rem;
+    margin-top: 8rem;
+}
+
+/* ------------------------------------------------------------------------------------9. Contact.html */
+.contact-hero-image-container {
+    height: 25rem;
+}
+
+.contact-hero-image-container h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+}
+
+.contact-wrapper {
+    padding: 3.5rem 1rem;
+}
+
+/* -----------------------------------------------------10. Animations */
+@keyframes grow {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* -----------------------------------------------------10. Media Queries */
+/* -----------------------------------------------------10. >=576px */
+@media screen and (min-width: 576px) {
+    /* General */
+    .wrapper {
+        margin: 0;
+        padding: 7.9rem 3.2rem;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        padding: 10rem 1rem;
+    }
+
+    .lead {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+
+    .jumbotron-header {
+        font-size: 4.5rem;
+    }
+    
+    .jumbotron-cta {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }    
+
+    /* Hero Image */
+    .hero-image-container, .opaque-overlay {
+        height: 40vh;
+    }
+
+    /* Studio */
+    .sun-studio .studio-text {
+        box-sizing: border-box;
+        padding-right: 2rem;
+    }
+
+    .studio-one .studio-text {
+        box-sizing: border-box;
+        padding-right: 2rem;
+    }
+
+    .pre-photo-text {
+        display: block;
+        margin-top: 1.7rem;
+    }
+
+    .post-photo-text {
+        display: none;
+    }
+
+    .sun-photo {
+        box-sizing: border-box;
+        height: 30rem;
+        margin: 3rem 0 4rem 1rem;
+        padding: 0 4rem;
+        display: inline-block;
+    }
+
+    .studio-one-photo {
+        box-sizing: border-box;
+        height: 30rem;
+        margin: 3rem 0 4rem 1rem;
+        padding: 0 4rem;
+        display: inline-block;
+    }
+}
+
+/* -----------------------------------------------------10. >=992px */
+@media screen and (min-width: 992px) {
+    /* Navigation */
+    .navbar {
+        height: 8rem;
+    }
+    
+    /* Jumbotron */
+    .jumbotron {
+        padding: 13.5rem 1rem;
+    }
+
+    .lead {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .jumbotron-header {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+    
+    .jumbotron-cta {
+        font-size: 2.5rem;
+        padding: 2.75rem 4rem;
+    }    
+
+    /* Hero Image */
+    .hero-image-container, .opaque-overlay {
+        height: 50rem;
+    }
+
+    /* Quote and Listen */
+    #quote-and-listen-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #quote-and-listen-wrapper .quote-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        transform: translateY(4rem);
+    }
+
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        font-size: 2.75rem;
+        line-height: 3.7rem;
+    }
+}
+
+/* -----------------------------------------------------10. >=1200px */
+@media screen and (min-width: 1200px) {
+    /* General */
+    .wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 0;
+    }
+
+    /* Navigation */
+    .navbar {
+        height: 9rem;
+    }
+
+    .logo {
+        margin: 0 1rem;
+
+    }
+    
+    .navbar #horizontal-nav {
+        display: inline-block;
+    }
+
+    .navbar button.openbtn {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #horizontal-nav {
+        justify-content: center;
+        margin-bottom: 0;
+        
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        padding: .75rem 1rem;
+        line-height: 4.4rem;
+        margin-right: .8rem;
+    }
+    
+    nav ul li a:hover {
+        color: rgb(236, 236, 236);
+    }
+    
+    .nav-cta {
+        border: #fff .2rem solid;
+        border-radius: .3rem;
+        padding: 2rem;
+        transition: all .25s;
+        line-height: 0;
+    }
+    
+    nav ul li a.nav-cta:hover {
+        color: #ff8400;
+        background-color: #fff;
+        transition: all .25s;
+    }
+
+    /* Jumbotron */
+    .hero-image-container, .opaque-overlay {
+        height: 60rem;
+    }
+
+    .jumbotron {
+        padding: 17.5rem 1rem;
+    }
+
+    .jumbotron-cta {
+        font-size: 2.5rem;
+        padding: 2.5rem 3.5rem;
+    }    
+
+    /* Quote and Listen */
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        font-size: 3rem;
+    }
+
+    /* Studios */
+    .sun-photo, .studio-one-photo {
+        margin-top: 0;
+    }
+}
