@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
     /* ./code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
     font-size: 10px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 section {
