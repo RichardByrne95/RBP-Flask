@@ -1046,7 +1046,7 @@ blockquote::after {
     }
     
     .navbar #horizontal-nav {
-        display: inline-block;
+        display: inline-flex;
         justify-content: center;
         margin-bottom: 0;
         align-items: center;
@@ -1054,6 +1054,11 @@ blockquote::after {
 
     .navbar button.openbtn {
         display: none;
+    }
+
+    nav ul li {
+        justify-content: center;
+        align-items: center;
     }
 
     nav ul li a {
@@ -1065,6 +1070,7 @@ blockquote::after {
         padding: .75rem 1rem;
         margin-right: .8rem;
         display: inline-block;
+        overflow-x: visible;
     }
     
     nav ul li a:hover {
@@ -1074,10 +1080,9 @@ blockquote::after {
     .nav-cta {
         border: #fff .2rem solid;
         border-radius: .3rem;
-        padding: 1rem 1.5rem;
+        padding: 1.5rem;
         transition: all .25s;
         overflow: visible;
-        line-height: 1.5rem;
     }
     
     nav ul li a.nav-cta:hover {
