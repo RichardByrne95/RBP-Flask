@@ -448,6 +448,7 @@ nav button.openbtn {
 
 audio {
     margin: .8rem auto ;
+    max-width: 27rem;
 }
 
 /* -----------------------------------------------------6.2. Artist Quotes */
@@ -722,6 +723,11 @@ blockquote::after {
     .wrapper {
         margin: 0;
         padding: 7.9rem 3.2rem;
+    }
+
+    audio {
+        margin: .8rem auto ;
+        max-width: initial;
     }
 
     /* Jumbotron */
