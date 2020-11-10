@@ -5,11 +5,15 @@
     scroll-behavior: smooth;
     /* ./code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
     font-size: 10px;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 0;
 }
 
 hr {
-    margin: 3.2rem 0;
-    padding: 1.7rem;
+    margin: 4rem 0;
     color: rgba(0,0,0,.15);
 }
 
@@ -21,13 +25,6 @@ figure {
     margin: 0;
 }
 
-input {
-    padding: 1.2rem;
-    margin: .6rem 0 .4rem;
-    line-height: normal;
-    box-sizing: border-box;
-}
-
 textarea {
     min-height: 10rem;
     padding: 1.2rem;
@@ -37,8 +34,12 @@ textarea {
     box-sizing: border-box;
 }
 
+#main-wrapper {
+    width: 100%;
+}
+
 .wrapper {
-    margin: auto;
+    margin: 0;
     max-width: 102rem;
     padding: 7.9rem 3.2rem;
 }
@@ -53,8 +54,7 @@ textarea {
 }
 
 .section-heading {
-    padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
+    padding: 2rem 0;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
@@ -62,9 +62,13 @@ textarea {
     letter-spacing: .05rem;
 }
 
+.wrapper {
+    padding: 6rem 1rem;
+}
+
 /* -----------------------------------------------------1.1. Typography */
 
-body, p, h3, h4 {
+body, a, p, h3, h4, strong{
     font-size: 1.8rem;
 }
 
@@ -74,25 +78,35 @@ body {
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 2.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    overflow: visible;
 }
 
 h3 {
     font-weight: bold;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
 }
 
 h4 {
     margin: 1.5rem 0;
     font-weight: bold;
-    line-height: 1.5rem;
+    line-height: 2.8rem;
 }
 
 h5 {
     font-size: 1.3rem;
-    letter-spacing: .2rem;
+    letter-spacing: .25rem;
     text-transform: uppercase;
 }
 
@@ -105,6 +119,10 @@ a:hover {
     color: #ce6a00;
 }
 
+blockquote {
+    overflow: visible;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -113,12 +131,13 @@ a:hover {
 /* -----------------------------------------------------2.1. Buttons */
 
 .button-md {
-    border: .2rem solid #c41230;
+    font-size: 1.5rem;
+    border: .3rem solid #c41230;
     background-color: #c41230;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 1.5rem 3.4rem;
+    padding: 1.6rem 3.3rem;
     margin: 1.7rem;
     letter-spacing: .2rem;
 }
@@ -129,6 +148,7 @@ a:hover {
 }
 
 .form-submit-button {
+    font-size: 1.6rem;
     font-weight: 300;
     padding: 1rem 2.5rem;
     margin: 1rem 0;
@@ -149,6 +169,21 @@ a:hover {
     transform: translateY(.5rem);
 }
 
+/* -----------------------------------------------------2.3. Forms */
+
+.form-control {
+    padding: 1.7rem;
+    font-size: 1.7rem;
+    margin: .6rem 0 .4rem;
+    line-height: normal;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
 /* -----------------------------------------------------2.2. Jumbotrons */
 
 .jumbotron {
@@ -157,19 +192,20 @@ a:hover {
     display: block;
     position: relative;
     background: transparent;
-    color: #fff;
     text-align: center;
     margin: auto;
-    padding: 19rem 0;
+    padding: 9rem 1rem;
     animation: grow ease-in-out 3s;
     animation-fill-mode: forwards;
+    color: #fafafa;
+    overflow: hidden;
 }
 
 .lead {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4.7rem;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: .3rem;
+    line-height: 3rem;
     display: block;
     white-space: nowrap;
 }
@@ -177,10 +213,10 @@ a:hover {
 .jumbotron-header {
     display: block;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 7.2rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1.7rem;
+    line-height: 4rem;
     letter-spacing: .3rem;
     margin-bottom: 0;
 }
@@ -189,15 +225,15 @@ a:hover {
     background-color: #c41230;
     color: #fff;
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     letter-spacing: .2rem;
     text-align: center;
-    line-height: 1rem;
+    line-height: 2rem;
     text-transform: uppercase;
-    padding: .95rem 1.65rem;
+    padding: 1.5rem 1.65rem;
     box-shadow: 0 0.2em 0 0 #9f0f27;
     display: inline-block;
-    margin: 0;
+    margin: 1rem 0;
     border-radius: .3rem;
     transition: all .4s;
 }
@@ -210,12 +246,6 @@ a:hover {
     border-radius: .5rem;
 }
 
-/* -----------------------------------------------------2.3. Forms */
-
-.form-control {
-    background-color: #fafafa;
-}
-
 /* -----------------------------------------------------3. Navigation */
 
 .navigation {
@@ -223,61 +253,74 @@ a:hover {
 }
 
 .navbar {
-    height: 9rem;
+    height: 7rem;
     background-color: #ff8400;
 }
 
-.navbar #horizontal-nav {
-    display: inline-block;
-}
-
-.navbar #vertical-nav {
-    display: none;
-}
-
 nav button.openbtn {
+    display: block;
+    font-size: 2.7rem;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    background-color: #ff8400;
+    color: white;
+    border: none;
+    padding: 1rem 1rem;
+    margin-right: .5rem;
+    outline: none;
+}
+
+.navbar #horizontal-nav {
     display: none;
 }
 
 .sidebar {
-    display: none;
+    display: initial;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: #ff8400;
+    color: #fff;
+    padding-top: 5rem;
+    transition: .5s;
+}
+
+.sidebar a {
+    padding: .8rem .8rem .8rem 3.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .08rem;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+.sidebar .closebtn {
+    font-size: 3.6rem;
+    color: #fff;
+    position: relative;
+    left: 62%;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-    background: url("../assets/images/logo/RBP-logo-black small cropped.png") left center no-repeat;
-    width: 5rem;
-    height: 5rem;
+    background: url(../images/logo/RBP-logo-black%20small%20cropped.png) left center no-repeat;
+    width: 4.5rem;
+    height: 4.5rem;
     background-size: contain;
     padding: 0 2rem;
-    margin: -20% 0 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.3rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    padding: .75rem 1rem;
-    line-height: 4.4rem;
-}
-
-nav ul li a:hover {
-    color: rgb(236, 236, 236);
-}
-
-.nav-cta {
-    border: #fff .2rem solid;
-    border-radius: .3rem;
-    padding: 1.95rem;
-    line-height: 2rem;
-    transition: all .25s;
-}
-
-nav ul li a.nav-cta:hover {
-    color: #ff8400;
-    background-color: #fff;
-    transition: all .25s;
+    margin: 9% 0 0 1rem;
 }
 
 /* -----------------------------------------------------4. Hero Image */
@@ -285,7 +328,7 @@ nav ul li a.nav-cta:hover {
     padding: 0;
     background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 60rem;
+    height: 35rem;
     position: relative;
     overflow: hidden;
     align-items: center;
@@ -293,8 +336,8 @@ nav ul li a.nav-cta:hover {
 }
 
 .opaque-overlay {
-    background-color: rgba(0, 0, 0, .3);
-    height: 60rem;
+    background-color: rgba(0, 0, 0, .4);
+    height: 35rem;
     width: 100%;
 }
 
@@ -314,31 +357,33 @@ nav ul li a.nav-cta:hover {
     border-bottom: .1rem solid #000;
 }
 
-.social-links a {
+.social-links a i {
     font-size: 2.5rem;
-    margin: 0 1rem;
+    margin: 1.5rem 1rem;
 }
 
 #footer {
     background-color: #1f1f1f;
     color: rgba(255, 255, 255, .4);
     text-align: center;
-    padding: 6.4rem 3.2rem;
+    padding: 4rem 1rem;
 }
 
 #footer h5 {
     display: inline-block;
-    padding: 2rem 2rem;
+    padding: 2rem 0;
 }
 
-#footer h5 a {
-    color: #fff;
+#footer h5, #footer a {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fafafa;
+    display: block;
 }
 
 #footer-email {
     color: rgba(255, 255, 255, 0.8);
     white-space: nowrap;
-    font-size: 1.4rem;
     letter-spacing: .2rem;
 }
 
@@ -346,31 +391,50 @@ nav ul li a.nav-cta:hover {
     text-align: center;
 }
 
+/* -----------------------------------------------------10. Animations */
+@keyframes grow {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
 
 /* ------------------------------------------------------------------------------------6. Index.html */
-/* -----------------------------------------------------6.1 Quote and Listen */
+/* ------------------------------------------6.5.4.3. Quote and Listen */
 
 #quote-and-listen-wrapper {
     padding-bottom: 6.9rem;
 }
 
+#quote-and-listen-wrapper .quote-wrapper {
+    font-size: 3rem;
+    margin: 0 0 5rem 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#quote-and-listen-wrapper .quote-wrapper blockquote {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: auto;
+}
+
 #quote-and-listen-wrapper blockquote::before {
+    content: open-quote;
     display: inline;
     color: #000;
     opacity: 1;
-    font-size: 1rem;
+    font-size: 3rem;
     font-weight: 400;
 }
 
 #quote-and-listen-wrapper blockquote::after {
     content: close-quote;
-    font-size: 1rem;
-}
-
-#quote-and-listen-wrapper .quote-wrapper blockquote {
-    line-height: 1.15rem;
-    transform: translateY(4.9rem);
-    margin: auto 10%;
+    font-size: 3rem;
 }
 
 .quote-wrapper {
@@ -378,37 +442,33 @@ nav ul li a.nav-cta:hover {
 }
 
 .listen-wrapper {
-    text-align: center;
-}
-
-.listen-heading h2 {
+    display: flexbox;
     text-align: center;
 }
 
 audio {
-    margin: 1.1rem;
-    width: 80%;
+    margin: .8rem auto ;
+    max-width: 27rem;
 }
 
 /* -----------------------------------------------------6.2. Artist Quotes */
 #artist-quotes {
-    padding-bottom: 6.9rem;
+    padding-bottom: 6rem;
 }
 
-.artist-quote {
+#artist-quotes .artist-quote blockquote{
     font-family: "Crimson Pro", sans-serif;
     font-size: 2.2rem;
     font-style: normal;
     font-weight: 600;
     letter-spacing: .036rem;
     color: #534d46;
-    /* animation: appear .8s ease-in-out; */
 }
 
-.quote-source {
+.quote-source p {
+    font-size: 2rem;
     text-align: center;
     font-family: "Crimson Pro", sans-serif;
-    font-size: 2rem;
     opacity: 0.5;
 }
 
@@ -426,491 +486,199 @@ blockquote::after {
     font-size: 0;
 }
 
-/* -----------------------------------------------------6.3 Studios */
-
-.studio-one {
-    margin-top: 10rem;
-    padding-bottom: 1.7rem;
+.more-artists-button {
+    margin-top: 4rem;
 }
 
+/* ------------------------------------------6.5.4.4. Studios */
 .sun-photo {
-    background: url(../assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat;
-    height: 94%;
+    background: url("../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg") center center;
     width: 100%;
+    height: 21.5rem;
+    margin: 1.5rem 0;
     background-size: cover;
     box-sizing: border-box;
-    margin: 0 1.7rem 1.7rem 3.4rem;
+}   
+
+.studio-one {
+    margin-top: 5rem;
 }
 
 .studio-one-photo {
-    background: url(../assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat;
-    height: 94%;
+    background: url("../images/studioone/STUDIOONE_01-1-min.jpg") no-repeat center center;
     width: 100%;
+    height: 21.5rem;
+    margin: 1.5rem 0;
     background-size: cover;
-    margin: 0 1.7rem 1.7rem 3.4rem;
+    box-sizing: border-box;
 }
 
-/* -----------------------------------------------------6.4. Contact Form */
-
-
-
-/* -----------------------------------------------------6.5. Media Queries */
-/* -----------------------------------------------------6.5.1. >= 993px */
-/* ------------------------------------------6.5.1.1. Quote and Listen */
-@media screen and (min-width: 993px) {
-    .pre-photo-text {
-        display: block;
-        margin-top: 1.7rem;
-    }
-
-    .post-photo-text {
-        display: none;
-    }
+.pre-photo-text {
+    display: none;
+    margin-top: 1.7rem;
 }
 
-/* -----------------------------------------------------6.5.2. <= 992px */
-
-@media screen and (max-width: 992px) {
-    /* ------------------------------------------6.5.2.1. Nav */
-    
-    nav button.openbtn {
-        display: block;
-    }
-
-    .logo {
-        margin: 9% 0 0 1rem;
-    }
-
-    ul#horizontal-nav.list-inline {
-        display: none;
-    }
-
-    .navbar #vertical-nav {
-        display: inline;
-    }
-
-    /* Code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
-    .sidebar {
-        display: initial;
-        height: 100vh;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        overflow-x: hidden;
-        background-color: #ff8400;
-        color: #fff;
-        padding-top: 5rem;
-        transition: .5s;
-    }
-
-    .sidebar a {
-        padding: .8rem .8rem .8rem 3.2rem;
-        font-size: 2rem;
-        color: #fff;
-        display: block;
-        transition: .3s;
-        white-space: nowrap;
-    }
-
-    .sidebar a:hover {
-        color: #f1f1f1;
-      }
-
-    .sidebar .closebtn {
-        font-size: 3.6rem;
-        color: #fff;
-        position: relative;
-        left: 62%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .openbtn {
-        font-size: 2.7rem;
-        width: 6rem;
-        height: 6rem;
-        cursor: pointer;
-        background-color: #ff8400;
-        color: white;
-        border: none;
-        padding: 1rem 1rem;
-        margin-right: .5rem;
-      }
-
-      button:focus {
-        outline: none;
-    }
-    /* ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
-    
-    /* ------------------------------------------6.5.2.2. Hero Image */
-    .jumbotron {
-        padding: 19rem 0;
-        max-width: 96rem;
-    }
-
-    .lead {
-        font-size: 3.5rem;
-    }
-
-    .jumbotron-header {
-        font-size: 6rem;
-    }
-
-    .jumbotron-cta {
-        font-size: 1.9rem;
-        line-height: 1.4rem;
-        padding: .85rem 1.4rem;
-    }
-    
-    /* ------------------------------------------6.5.2.3. Quote and Listen */
-    #quote-and-listen-wrapper .quote-wrapper blockquote {
-        margin: 0;
-    }
-    
-    /* ------------------------------------------6.5.2.4. Studios */
-    .sun-photo {
-        height: 40rem;
-        margin: 0;
-    }   
-        
-    .studio-one-photo {
-        height: 40rem;
-        width: 100%;
-        display: flex;
-        margin: 0;
-    }
-
-    .pre-photo-text {
-        display: none;
-    }
-
-    .post-photo-text {
-        display: block;
-        margin-top: 1.7rem;
-    }
+.post-photo-text {
+    display: block;
 }
-
-/* -----------------------------------------------------6.5.3. <= 768px */
-
-@media screen and (max-width: 768px) {
-    /* ------------------------------------------6.5.3.1. Hero Image */
-    .hero-image-container {
-        height: 45rem;
-    }
-
-    .jumbotron {
-        padding: 14rem 1rem;
-    }
-
-    .lead {
-        font-size: 3.5rem;
-    }
-
-    .jumbotron-header {
-        font-size: 5rem;
-    }
-
-    .jumbotron-cta {
-        font-size: 1.7rem;
-    }
-    
-    /* ------------------------------------------6.5.3.2. Quote and Listen */
-    #quote-and-listen-wrapper .quote-wrapper blockquote {
-        transform: translateY(0);
-    }
-
-    #quote-and-listen-wrapper .quote-wrapper {
-        margin: 0 0 5rem 0;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        transform: translateY(3.2rem);
-    }
-
-    audio {
-        display: block;
-        align-self: center;
-        margin: 1.4rem auto;
-    }
-    /* ./quote and listen */
-}
-
-/* -----------------------------------------------------6.5.4. <= 576px */
-@media screen and (max-width: 576px) {
-    /* ------------------------------------------6.5.4.1. General */
-    .wrapper {
-        padding: 7rem 1rem;
-    }
-    
-    /* ------------------------------------------6.5.4.2. Hero Image */
-    .hero-image-container {
-        height: 35rem;
-    }
-
-    .jumbotron {
-        padding: 12.5rem 1rem;
-    }
-
-    .lead {
-        font-size: 1.8rem;
-    }
-
-    .jumbotron-header {
-        font-size: 3rem;
-    }
-
-    .jumbotron-cta {
-        font-size: 1.3rem;
-    }
-    
-    /* ------------------------------------------6.5.4.3. Quote and Listen */
-    #quote-and-listen-wrapper .quote-wrapper {
-        margin: 0 0 5rem 0;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #quote-and-listen-wrapper .quote-wrapper blockquote {
-        line-height: 1.15rem;
-        transform: translateY(-3rem);
-        margin: auto;
-    }
-
-    .quote-wrapper {
-        width: auto;
-    }
-
-    .listen-wrapper {
-        display: flexbox;
-        text-align: center;
-    }
-    
-    audio {
-        margin: .8rem auto ;
-    }
-    /* ------------------------------------------6.5.4.4. Studios */
-    .sun-photo {
-        height: 21.5rem;
-        margin: 0;
-    }   
-    
-    .studio-one {
-        margin-top: 5rem;
-    }
-
-    .studio-one-photo {
-        height: 22rem;
-        margin: 0;
-    }   
-    
-    /* ------------------------------------------6.5.4.5. Footer */
-    #footer h5 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    h5#footer-email {
-        font-size: 1.1rem;
-        padding: 2rem 0;
-    }
-}
-
 
 /* ------------------------------------------------------------------------------------7. Studios.html */
 /* -----------------------------------------------------7.1. Hero Image */
 .studios-hero-image-container {
     padding: 0;
-    background: url(../assets/images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
+    background: url(../images/misc/Mics_Vox_Blurred.jpg) no-repeat center center;
     background-size: cover;
-    height: 60rem;
+    height: 34rem;
+    width: 100%;
     position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 
+.studios-hero-image-container .opaque-overlay {
+    height: 35rem;
+}
+
 .studios-jumbotron {
-    margin: 0 auto;
-    padding: 10rem 0;
+    padding: 7.5rem 0;
 }
 
 .studios-jumbotron .lead {
     line-height: initial;
+    font-size: 2.4rem;
 }
 
-/* -----------------------------------------------------7.2. Studios */
+.studios-hero-image-container .jumbotron-header {
+    font-size: 2.8rem;
+}
+
+.studios-jumbotron .jumbotron-cta {
+    font-size: 1.8rem;
+}
+
+/* -----------------------------------------------------7.1. Sun Studio */
+#studios h2 {
+    font-size: 3.4rem;
+}
+
 .sun-photo-1 {
-    background: url(../assets/images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
     background-size: cover;
-    height: 50rem;
     margin-bottom: 1.7rem;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
+    height: 25rem;
 }
 
-#studios-studio-one-wrapper {
-    margin-top: 7.9rem;
+.button-sm {
+    margin: 1.7rem .5rem;
 }
+
+/* -----------------------------------------------------7.1. Studio One */
 
 .studio-one-photo-1 {
-    background: url(../assets/images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
+    background: url(../images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
     background-size: cover;
-    height: 50rem;
-    margin-bottom: 1.7rem;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery-thumbnails {
-    text-align: center;
     margin-bottom: 1.7rem;
+    height: 25rem;
 }
 
-.gallery-thumbnails img {
-    height: 9rem;
-    opacity: .5;
-    transition: .3s;
-}
-
-.gallery-thumbnails img:hover {
-    opacity: 1;
-}
-
-/* -----------------------------------------------------7.3. Media Queries */
-/* -----------------------------------------------------7.3.1. <= 768px */
-@media screen and (max-width: 768px) {
-    .studios-hero-image-container {
-        height: 50rem;
-    }
-
-    .sun-photo-1 {
-        height: 40rem;
-    }
-
-    .studio-one-photo-1 {
-        height: 40rem;
-    }
-}
-
-/* -----------------------------------------------------7.3.2. <= 576px */
-@media screen and (max-width: 576px) {
-    .studios-hero-image-container {
-        height: 39rem;
-    }
-
-    .studios-hero-image-container .lead {
-        font-size: 2.7rem;
-    }
-
-    .sun-photo-1 {
-        height: 20rem;
-    }
-
-    .gallery-thumbnails img {
-        height: 4.5rem;
-    }
-
-    .studio-one-photo-1 {
-        height: 20rem;
-    }
-
-    .button-sm {
-        margin: 1.7rem .5rem;
-    }
+#studios-studio-one-wrapper h2 {
+    padding-top: 6rem;
 }
 
 /* ------------------------------------------------------------------------------------8. Artists.html */
-/* -----------------------------------------------------8.1. Hero Image */
-.artists-hero-image-container {
-    padding: 0;
-    background: url(../assets/images/misc/artists-image-min.webp) no-repeat center center;
-    background-size: cover;
-    height: 50rem;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
+.artists-wrapper.wrapper {
+    padding: 1rem 2rem;
 }
 
-.artists-jumbotron {
-    padding: 14rem;
+.artists-hero-image-container {
+    height: 30rem;
+    padding: 0;
+    background: url("../images/misc/artists-image-min.webp") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.artists-jumbotron .jumbotron-header {
+    font-size: 3.6rem;
+}
+
+.artists-jumbotron .jumbotron-cta {
+    font-size: 1.8rem;
 }
 
 /* -----------------------------------------------------8.2. Artist Images */
 .artist-image {
     display: block;
-    height: 55rem;
-    margin-top: 10.2rem;
+    width: 100%;
+    height: 35rem;
+    margin: 4.5rem 0 1.5rem 0;
     position: relative;
 }
 
 #ae-mak {
-    background: url(../assets/images/artists/AE\ MAK.jpg) no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/AE\ MAK.jpg") no-repeat center center;
+    background-size: cover;
     margin-top: 0;
 }
 
 #greg-clifford {
-    background: url(../assets/images/artists/Greg\ Clifford.jpg) no-repeat center center;
-    background-size: contain;
-    margin-top: 0;
+    background: url("../images/artists/Greg\ Clifford.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 #bjh {
-    background: url(../assets/images/artists/Barry\ Jay\ Hughes\ Logo.png) no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/Barry\ Jay\ Hughes\ Logo.png") no-repeat center center;
+    background-size: cover;
 }
 
 #white-trash {
-    background: url(../assets/images/artists/White\ Trash\ Logo.jpg) no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/White\ Trash\ Logo.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 #eoin-coogan {
-    background: url(../assets/images/artists/Eoin\ Coogan.jpg) no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/Eoin\ Coogan.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 #sambo-drumz {
-    background: url(../assets/images/artists/Dreaming\ of\ Jupiter.jpg) no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/Dreaming\ of\ Jupiter.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 #ultitune {
-    background: url('../assets/images/artists/Ultitune\ -\ Here\'s\ to\ You.jpg') no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/Ultitune\ -\ Here\'s\ to\ You.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 #fionn-lynch {
-    background: url(../assets/images/artists/Keywest_Bandlogo.png) no-repeat center center;
-    background-size: contain;
+    background: url("../images/artists/Keywest_Bandlogo.png") no-repeat center center;
+    background-size: cover;
+    height: 20rem;
 }
 
 #top-shelf {
-    background: url(../assets/images/artists/Top\ Shelf.jpg) no-repeat center center;
-    background-size: contain;
-    height: 32rem;
-    margin-top: 13rem;
-    margin-bottom: 3.7rem;
+    background: url("../images/artists/Top\ Shelf.jpg") no-repeat center center;
+    background-size: cover;
+    height: 28rem;
+    margin-top: 7rem;
 }
 
 #abi-and-the-bandit {
-    background: url(../assets/images/artists/Abi_Rec-min.jpg) no-repeat center center;
-    background-size: contain;
-    height: 32rem;
-    margin-top: 13rem;
-    margin-bottom: 3.7rem;
+    background: url("../images/artists/Abi_Rec-min.jpg") no-repeat center center;
+    background-size: cover;
+    height: 27rem;
+    margin-top: 6rem;
 }
 
-#and-many-more {
+#and-many-more h5 {
     margin: 3.4rem;
     margin-top: 6.8rem;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 #mentors {
@@ -922,162 +690,477 @@ blockquote::after {
     margin-bottom: 1.7rem;
 }
 
-/* -----------------------------------------------------8.3. Media Queries */
-/* -----------------------------------------------------8.3.1. <= 768px */
-@media screen and (max-width: 768px) {
-    .artists-hero-image-container {
-        height: 40rem;
-    }
-
-    .artists-jumbotron {
-        padding: 11rem;
-    }
-
-    .artist-image {
-        height: 40rem;
-        margin-top: 5rem;
-    }
-
-    #and-many-more h5 {
-        font-size: 2.2rem;
-    }
-
-    #top-shelf {
-        height: 23rem;
-        margin-top: 8rem;
-    }
-
-    #abi-and-the-bandit {
-        height: 23rem;
-        margin-top: 8rem;
-    }
-}
-
-/* -----------------------------------------------------8.3.2. <= 576px */
-@media screen and (max-width: 576px) {
-    .artists-hero-image-container {
-        height: 30rem;
-    }
-
-    .artists-jumbotron {
-        padding: 9rem;
-    }
-
-    .artists-wrapper {
-        padding: 2.2rem;
-    }
-
-    .artist-image {
-        height: 35rem;
-        margin-top: 5rem;
-    }
-
-    #greg-clifford {
-        margin-top: 5rem
-    }
-
-    #and-many-more h5 {
-        font-size: 2.2rem;
-    }
-
-    #fionn-lynch {
-        height: 23rem;
-    }
-
-    #top-shelf {
-        height: 23rem;
-        margin-top: 8rem;
-    }
-
-    #abi-and-the-bandit {
-        height: 23rem;
-        margin-top: 8rem;
-    }
-}
-
 /* ------------------------------------------------------------------------------------9. Contact.html */
-/* -----------------------------------------------------9.1. Hero Image */
+/* Hero Image */
 .contact-hero-image-container {
     padding: 0;
-    background: url(../assets/images/sunstudio/TempleLaneLowRes-22-1024x683.jpg) no-repeat center center;
+    background: url("../images/sunstudio/TempleLaneLowRes-22-1024x683.jpg") no-repeat center center;
     background-size: cover;
-    height: 40rem;
     position: relative;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
 }
 
-#contact-overlay {
-    height: 40rem;
-    padding: 0;
-}
-
-.jumbotron-text-wrapper {
-    padding: 0;
-    width: 100%;
-    height: 100%;
+.contact-hero-image-container .opaque-overlay {
+    height: 25rem;
 }
 
 .contact-hero-image-container h1 {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 10%;
     right: 10%;
 }
 
-/* -----------------------------------------------------9.2. Media Queries */
-/* -----------------------------------------------------9.2.1. <= 768px */
-@media screen and (max-width: 768px) {
-    .contact-hero-image-container {
-        height: 40rem;
-    }
-
-    .contact-hero-image-container h1 {
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        right: 10%;
-    }
+/* Form */
+.contact-wrapper {
+    padding: 1.5rem 1rem;
 }
 
-/* -----------------------------------------------------9.2.2. <= 576px */
-@media screen and (max-width: 576px) {
-    .contact-hero-image-container {
-        height: 25rem;
+/* -----------------------------------------------------10. Media Queries */
+/* -----------------------------------------------------10. >=576px */
+@media screen and (min-width: 576px) {
+    /* General */
+    .wrapper {
+        margin: 0;
+        padding: 7.9rem 3.2rem;
+    }
+
+    audio {
+        margin: .8rem auto ;
+        max-width: initial;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        padding: 10rem 1rem;
+    }
+
+    .lead {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+
+    .jumbotron-header {
+        font-size: 4.5rem;
+    }
+    
+    .jumbotron-cta {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }    
+
+    /* Hero Image */
+    .hero-image-container, .opaque-overlay {
+        height: 40vh;
+    }
+
+    /* Index.html */
+    /* Studio */
+    .sun-studio .studio-text {
+        box-sizing: border-box;
+        padding-right: 2rem;
+    }
+
+    .studio-one .studio-text {
+        box-sizing: border-box;
+        padding-right: 2rem;
+    }
+
+    .pre-photo-text {
+        display: block;
+        margin-top: 1.7rem;
+    }
+
+    .post-photo-text {
+        display: none;
+    }
+
+    .sun-photo {
+        box-sizing: border-box;
+        height: 30rem;
+        margin: 3rem 0 4rem 1rem;
+        padding: 0 4rem;
+        display: inline-block;
+    }
+
+    .studio-one-photo {
+        box-sizing: border-box;
+        height: 30rem;
+        margin: 3rem 0 4rem 1rem;
+        padding: 0 4rem;
+        display: inline-block;
+    }
+
+    /* Studios.html */
+    /* Hero Image */    
+    .studios-hero-image-container {
+        height: 40rem;
+    }
+    
+    .studios-hero-image-container .opaque-overlay {
+        height: 40rem;
+    }
+    
+    .studios-jumbotron {
+        padding: 6rem 0;
+    }
+
+    .studios-jumbotron .lead {
+        line-height: 5rem;
+        font-size: 3.5rem;
+    }
+    
+    .studios-hero-image-container .jumbotron-header {
+        font-size: 4.5rem;
+        line-height: 7rem;
+    }
+    
+    .studios-jumbotron .jumbotron-cta {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }
+
+    /* Sun Studio */
+    .sun-photo-1 {
+        height: 30rem;
+    }
+
+    .studio-one-photo-1 {
+        height: 30rem;
+    }
+
+    #studios-sun-wrapper .post-photo-text, #studios-studio-one-wrapper .post-photo-text {
+        display: block;
+    }
+
+    /* Artists.html */
+    /* General */
+    .artists-wrapper.wrapper {
+        padding: 0 7em;
+    }
+
+    .artist-image {
+        height: 30rem;
+        margin-bottom: 1rem;
+    }
+
+    #ae-mak {
+        margin-top: 4.5rem;
+    }
+
+    #fionn-lynch {
+        margin: 12rem 0 2.8rem 0;
+    }
+
+    #top-shelf {
+        height: 27rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #abi-and-the-bandit {
+        height: 27rem;
+        margin: 7rem 0 1.5rem 0;
+    }
+
+    /* Contact.html */
+    /* Hero Image */
+    .contact-hero-image-container .opaque-overlay {
+        height: 30rem;
     }
     
     .contact-hero-image-container h1 {
         position: absolute;
-        top: 20%;
+        top: 65%;
         left: 10%;
         right: 10%;
     }
 
+    /* Form */
     .contact-wrapper {
-        padding: 3.5rem 1rem;
+        padding: 2.2rem 3.2rem;
     }
 }
 
-/* -----------------------------------------------------10. Animations */
-@keyframes grow {
-    from {
-        transform: scale(0.9);
+/* -----------------------------------------------------10. >=992px */
+@media screen and (min-width: 992px) {
+    /* Navigation */
+    .navbar {
+        height: 8rem;
+    }
+    
+    /* Jumbotron */
+    .jumbotron {
+        padding: 13.5rem 1rem;
     }
 
-    to {
-        transform: scale(1);
+    .lead {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .jumbotron-header {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+    
+    .jumbotron-cta {
+        font-size: 2.5rem;
+        padding: 2.75rem 4rem;
+    }    
+
+    /* Hero Image */
+    .hero-image-container, .opaque-overlay {
+        height: 50rem;
+    }
+
+    /* Index.html */
+    /* Quote and Listen */
+    #quote-and-listen-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #quote-and-listen-wrapper .quote-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        transform: translateY(4rem);
+    }
+
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        font-size: 2.75rem;
+        line-height: 3.7rem;
+    }
+    
+    /* Studios.html */
+    /* General */
+    #studios.wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 7rem;
+    }
+    /* Hero Image */
+    .studios-hero-image-container, .studios-hero-image-container .opaque-overlay {
+        height: 60rem;
+    }
+    
+    .studios-jumbotron {
+        padding: 13rem 0;
+    }
+
+    .studios-hero-image-container .jumbotron-header {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    .studios-hero-image-container .lead {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    /* Sun Studio */
+
+    .sun-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
+    }
+
+    /* Studio One */
+
+    .studio-one-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
+    }
+
+    /* Artists.html */
+    /* General */
+    .artists-wrapper.wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 7rem;
+    }
+
+    /* Hero Image */
+    .artists-hero-image-container, .opaque-overlay {
+        height: 50rem;
+    }
+
+    .artists-jumbotron .jumbotron-header {
+        font-size: 7rem;
+    }
+
+    .artists-hero-image-container .jumbotron-cta {
+        font-size: 2.5rem;
+        padding: 2.5rem 3.5rem;
+    }
+
+    /* Artist Images */
+    .artist-image {
+        height: 43rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #fionn-lynch {
+        margin-bottom: 16.5rem;
+    }
+
+    /* Contact.html */
+    /* Hero Image */
+    .contact-hero-image-container .opaque-overlay {
+        height: 40rem;
+    }
+    
+    .contact-hero-image-container h1 {
+        font-size: 6rem;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        right: 10%;
+    }
+
+    /* Form */
+    .contact-wrapper {
+        padding: 3rem 5rem;
     }
 }
 
-/* @keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateX(25%);
+/* -----------------------------------------------------10. >=1200px */
+@media screen and (min-width: 1200px) {
+    /* General */
+    .wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 0;
     }
 
-    to {
-        opacity: 1;
-        transform: translate(0%);
+    /* Navigation */
+    .sidebar {
+        display: none;
     }
-} */
+    
+    .navbar {
+        height: 9rem;
+        align-items: center;;
+    }
+
+    .logo {
+        margin: 0 1rem;
+    }
+    
+    .navbar #horizontal-nav {
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .navbar button.openbtn {
+        display: none;
+    }
+
+    nav ul li {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        padding: .75rem 1rem;
+        margin-right: .8rem;
+        display: inline-block;
+        overflow-x: visible;
+    }
+    
+    nav ul li a:hover {
+        color: rgb(236, 236, 236);
+    }
+    
+    .nav-cta {
+        border: #fff .2rem solid;
+        border-radius: .3rem;
+        padding: 1.5rem;
+        transition: all .25s;
+        overflow: visible;
+    }
+    
+    nav ul li a.nav-cta:hover {
+        color: #ff8400;
+        background-color: #fff;
+        transition: all .25s;
+    }
+
+    /* Jumbotron */
+    .hero-image-container, .opaque-overlay {
+        height: 60rem;
+    }
+
+    .jumbotron {
+        padding: 17.5rem 1rem;
+    }
+
+    .jumbotron-cta {
+        font-size: 2.5rem;
+        padding: 2.5rem 3.5rem;
+    }    
+
+    /* Quote and Listen */
+    #quote-and-listen-wrapper .quote-wrapper blockquote {
+        font-size: 3rem;
+    }
+
+    /* Studios */
+    .sun-photo, .studio-one-photo {
+        margin-top: 0;
+    }
+
+    /* Studios.html */
+    /* General */
+    #studios.wrapper {
+        margin: 0 auto;
+        padding: 7.9rem 7rem;
+    }
+    /* Hero Image */
+    .studios-hero-image-container, .studios-hero-image-container .opaque-overlay {
+        height: 60rem;
+    }
+    
+    .studios-jumbotron {
+        padding: 15rem 0;
+    }
+
+    .studios-hero-image-container .jumbotron-header {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    .studios-hero-image-container .lead {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    .sun-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
+    }
+
+    .studio-one-photo-1 {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        height: 50rem;
+    }
+
+    /* Contact.html */
+    /* Hero Image */
+    .contact-hero-image-container .opaque-overlay {
+        height: 45rem;
+    }
+    
+    .contact-hero-image-container h1 {
+        font-size: 7rem;
+        position: absolute;
+        top: 55%;
+    }
+}
