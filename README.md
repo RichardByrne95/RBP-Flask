@@ -24,27 +24,183 @@ This is the main marketing website for Richard Byrne Productions. RBP is a recor
     -   #### Frequent Visitor Goals
         1. As a Frequent User, I want to check to see if there are any new blog posts.
 
--   ###Design
+-   ### Design
+
     -   #### Colour Scheme
+
         -   The colour scheme of RBP is orange (#FF8400), white (#FFF), red (#C41230), and black (#000).
     -   #### Typography
+
         -   The primary font used throughout the site is Proxima Nova, with Sans-Serif as the fallback font. However, Montserrat and Josefin-Sans are used for the headings of each page, both, again, with a fallback of Sans-Serif.
     -   #### Imagery
+
         -   Despite the site having a minimalist feel, the imagery is very important to the user expierence. It is designed to both inform the visitor of what they can expect when recording and give them a deeper understanding of the brand. The large hero image was chosen to be such, so as to grab the user's attention, as well as to put the brand experience at the forefront of the visitor's attention.
 
+
 -   ### Wireframes
+
     -   #### Desktop
+
         -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Homepage.png)
         -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/D-Studios.png)
         -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/D-Artists.png)
         -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/D-Contact.png)
+
     -   #### Tablet
+
         -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/T-Homepage.png)
         -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/T-Studios.png)
         -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/T-Artists.png)
         -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/T-Contact.png)
+
     -   #### Mobile
+
         -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/M-Homepage.png)
         -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/M-Studios.png)
         -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/M-Artists.png)
         -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/M-Contact.png)
+
+
+## Features
+
+-   Responsive elements on all device sizes
+-    Responsive and adaptable navigation on all device sizes
+-   Interactive elements
+
+
+## Technologies Used
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+
+### Frameworks, Libraries & Programs Used
+
+1. [Bootstrap 4.5:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+    -   Bootstrap was used to assist with the responsiveness and styling of the website.
+2. [Google Fonts:](https://fonts.google.com/)
+    -   Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+3. [Adobe Fonts:](https://fonts.adobe.com/)
+    -   Adobe fonts were used to import the 'Prozima Nova' font into the style.css file which is used on all pages throughout the project.
+4. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for social links in the footer.
+5. [jQuery:](https://jquery.com/)
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+6. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+7. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+8. [Squarespace:](https://www.squarespace.com/logo)
+    - Squarespace's logo creator was used to create the logo for RBP.
+9. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes) during the design process.
+
+
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results - Need to input](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results - Need to input](https://github.com/)
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### First Time Visitor Goals
+
+    1. As a first time visitor, I want to understand the main purpose of the site and learn about the services provided by the business.
+
+        1.  Reason 1
+        2.  Reason 2
+        3.  Reason 3
+
+    2. As a first time visitor, I want to find testimonials from established artists in order to establish the authority of the business/brand.
+
+        1.  Reason 1
+        2.  Reason 2
+        3.  Reason 3
+
+    3. As a first time visitor, I want to be able to easily navigate through the site to find the content that fits my needs.
+
+        1.  Reason 1
+        2.  Reason 2
+        3.  Reason 3
+
+-   #### Returning Visitor Goals
+    
+    1. As a returning visitor, I want to find ways of contacting the business.
+
+        1.  Reason 1
+        2.  Reason 2
+        3.  Reason 3
+
+    2. As a returning visitor, I want to find links to the social media of the business.
+
+        1.  Reason 1
+        2.  Reason 2
+        3.  Reason 3
+
+-   #### Frequent Visitor Goals
+
+    1. As a Frequent User, I want to check to see if there are any new blog posts.
+
+        1.  Reason 1
+        2.  Reason 2
+        3.  Reason 3
+
+### Further Testing
+
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+### Known Bugs
+
+-   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
+    -   A white gap can be seen to the right of the footer and navigation bar as a result.
+-   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+
+## Credits
+
+### Code
+
+-   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+
+-   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+
+-   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+
+### Content
+
+-   All content was written by the developer.
+
+-   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+
+### Media
+
+-   All Images were created by the developer.
+
+### Acknowledgements
+
+-   My Mentor for continuous helpful feedback.
+
+-   Tutor support at Code Institute for their support.
