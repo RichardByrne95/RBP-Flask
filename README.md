@@ -2,7 +2,7 @@
 
 [View the live project here.](https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html)
 
-This is the main marketing website for Richard Byrne Productions. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential clients.
+This is the main marketing website for Richard Byrne Productions. RBP is a recording, mixing and mastering studio located in Temple Bar, the heart of Dublin's music scene. The website is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential clients.
 
 <h2 align="center"><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Mockup.PNG"></h2>
 
@@ -32,7 +32,7 @@ This is the main marketing website for Richard Byrne Productions. It is designed
     -   #### Imagery
         -   Despite the site having a minimalist feel, the imagery is very important to the user expierence. It is designed to both inform the visitor of what they can expect when recording and give them a deeper understanding of the brand. The large hero image was chosen to be such, so as to grab the user's attention, as well as to put the brand experience at the forefront of the visitor's attention.
 
--   ### Wirefreames
+-   ### Wireframes
     -   #### Desktop
         -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Homepage.png)
         -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/wireframes/D-Studios.png)
