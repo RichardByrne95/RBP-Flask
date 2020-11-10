@@ -754,6 +754,21 @@ blockquote::after {
         height: 40vh;
     }
 
+    /* Footer */
+    #footer {
+        padding: 4rem 4rem;
+    }
+
+    #footer h5, #footer a {
+        display: inline-block;
+        padding: .9rem;
+        font-size: 1.4rem;
+    }
+
+    h5#footer-email {
+        padding-bottom: 3rem;
+    }
+
     /* Index.html */
     /* Studio */
     .sun-studio .studio-text {
