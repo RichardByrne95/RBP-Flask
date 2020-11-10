@@ -4,7 +4,7 @@
 
 This is the main marketing website for Richard Byrne Productions. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential clients.
 
-<h2 align="center"><img src="https:github.com/RichardByrne95/CI-MS1-RBP-Website/tree/main/assets/images/misc/RB_20Mockup.png"></h2>
+<h2 align="center"><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RB_20Mockup.png"></h2>
 
 ## User Experience (UX)
 
