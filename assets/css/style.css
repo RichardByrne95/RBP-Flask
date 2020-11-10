@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
     /* ./code referenced from: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
     font-size: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 section {
@@ -194,11 +194,11 @@ label {
     background: transparent;
     text-align: center;
     margin: auto;
-    padding: 9rem 1rem;
+    padding: 9rem 1rem 5rem 1rem;
     animation: grow ease-in-out 3s;
     animation-fill-mode: forwards;
     color: #fafafa;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .lead {
