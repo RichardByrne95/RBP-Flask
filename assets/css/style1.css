@@ -194,10 +194,11 @@ label {
     background: transparent;
     text-align: center;
     margin: auto;
-    padding: 9.5rem 1rem;
+    padding: 9rem 1rem;
     animation: grow ease-in-out 3s;
     animation-fill-mode: forwards;
     color: #fafafa;
+    overflow: hidden;
 }
 
 .lead {
@@ -689,19 +690,29 @@ blockquote::after {
 }
 
 /* ------------------------------------------------------------------------------------9. Contact.html */
+/* Hero Image */
 .contact-hero-image-container {
+    padding: 0;
+    background: url("../images/sunstudio/TempleLaneLowRes-22-1024x683.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero-image-container .opaque-overlay {
     height: 25rem;
 }
 
 .contact-hero-image-container h1 {
     position: absolute;
-    top: 20%;
+    top: 45%;
     left: 10%;
     right: 10%;
 }
 
+/* Form */
 .contact-wrapper {
-    padding: 3.5rem 1rem;
+    padding: 1.5rem 1rem;
 }
 
 /* -----------------------------------------------------10. Media Queries */
@@ -844,6 +855,24 @@ blockquote::after {
         height: 27rem;
         margin: 7rem 0 1.5rem 0;
     }
+
+    /* Contact.html */
+    /* Hero Image */
+    .contact-hero-image-container .opaque-overlay {
+        height: 30rem;
+    }
+    
+    .contact-hero-image-container h1 {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        right: 10%;
+    }
+
+    /* Form */
+    .contact-wrapper {
+        padding: 2.2rem 3.2rem;
+    }
 }
 
 /* -----------------------------------------------------10. >=992px */
@@ -967,6 +996,25 @@ blockquote::after {
     #fionn-lynch {
         margin-bottom: 16.5rem;
     }
+
+    /* Contact.html */
+    /* Hero Image */
+    .contact-hero-image-container .opaque-overlay {
+        height: 40rem;
+    }
+    
+    .contact-hero-image-container h1 {
+        font-size: 6rem;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        right: 10%;
+    }
+
+    /* Form */
+    .contact-wrapper {
+        padding: 3rem 5rem;
+    }
 }
 
 /* -----------------------------------------------------10. >=1200px */
@@ -993,7 +1041,6 @@ blockquote::after {
     
     .navbar #horizontal-nav {
         display: inline-block;
-        height: !00%;
         justify-content: center;
         margin-bottom: 0;
         align-items: center;
@@ -1092,5 +1139,17 @@ blockquote::after {
         margin: 0 0 1rem 0;
         width: 100%;
         height: 50rem;
+    }
+
+    /* Contact.html */
+    /* Hero Image */
+    .contact-hero-image-container .opaque-overlay {
+        height: 45rem;
+    }
+    
+    .contact-hero-image-container h1 {
+        font-size: 7rem;
+        position: absolute;
+        top: 55%;
     }
 }
