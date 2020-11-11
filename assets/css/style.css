@@ -447,7 +447,7 @@ nav button.openbtn {
 }
 
 .listen-wrapper {
-    display: flexbox;
+    display: inline-block;
     text-align: center;
 }
 
@@ -688,7 +688,6 @@ blockquote::after {
 
 #mentors {
     margin: 6.8rem 0;
-    align-items: left;
 }
 
 .mentors-heading {
