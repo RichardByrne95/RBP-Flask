@@ -191,7 +191,25 @@ The project was deployed to GitHub Pages using the following steps...
 
 -   All other images were sourced from [Unsplash.com](https://unsplash.com/).
 
+## Roadmap
+
+-   A page dedicated to each service (recording, mixing and mastering) will be developed in the future.
+
+-   A page dedicated to more samples of work will be develpped in the future.
+
+-   A blog is intended to be integrated into the site to host blog posts designed to help artists navigate the music indsutry.
+
+## Project Status
+
+-   This project is under continuous development by the owner.
+
+## Support
+
+-   Further information can be gotten by contacting the developer at hello@richardbyrneproductions.com
+
 ### Acknowledgements
+
+-   [Squarespace's Bedford Template](https://www.squarespace.com/) and [Awwwards.com](https://www.awwwards.com/) were used for design inspiration.
 
 -   Code Institute for giving me skills to create this project.
 
