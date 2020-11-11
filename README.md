@@ -124,7 +124,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a first time visitor, I want to understand the main purpose of the site and learn about the services provided by the business.
 
-    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Hero_Img.PNG">
+    <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Hero_Img.PNG"></h2>
 
         1.  Upon visiting the homepage, the user is greeted with a screen-wide hero image of a recording studio. The tagline 'Sound Your Best' gives an indication that this is a music/audio production studio.
         2.  Right below the hero image is a 1-line elevator pitch that describes the services that RBP offers, as well as the value RBP provides.
@@ -132,14 +132,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     2. As a first time visitor, I want to find testimonials from established artists in order to establish the authority of the business/brand.
 
-    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Artist_Quotes.PNG">
+    <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Artist_Quotes.PNG"></h2>
 
         1.  On the hompage, after introducing the brand, quotes from established artists about their experience with RBP are provided.
         2.  The artists page provides a list of 10 established artists that have worked with RBP. The user can click on the artist image/name to find out more about the artist.
 
     3. As a first time visitor, I want to be able to easily navigate through the site to find the content that fits my needs.
 
-    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Sidebar.PNG">
+    <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Sidebar.PNG"></h2>
 
         1.  On mobile and tablet devices, a responsive burger icon menu is available from the top right of the window. It presents the main navigation links for each of the website's pages.
         2.  On desktop-sized devices and above, a horizontal menu is available from the navbar at the top of the screen. It presents the main navigation links for each of the website's pages.
@@ -150,7 +150,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     
     1. As a returning visitor, I want to find ways of contacting the business.
 
-    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Navbar.PNG">
+    <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Navbar.PNG"></h2>
 
         1.  The navbar contains a 'Request a Quote' button that is presented with a surrounding border to draw attentiion to it.
         2.  The footer contains social links as well as the email address of the business so the artist can choose the way that suits them best to contact the business.
@@ -158,7 +158,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     2. As a returning visitor, I want to find links to the social media of the business.
 
-    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Social_Links.PNG">
+    <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Social_Links.PNG"></h2>
 
         1.  The footer on each page contains social links to the business' Facebook page, Instagram account, Twitter feed and Spotify page.
 
