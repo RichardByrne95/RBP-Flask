@@ -119,8 +119,8 @@ a:hover {
     color: #ce6a00;
 }
 
-blockquote {
-    overflow: visible;
+blockquote h2 {
+    font-size: 3rem;
 }
 
 .uppercase {
@@ -415,6 +415,7 @@ nav button.openbtn {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 #quote-and-listen-wrapper .quote-wrapper blockquote {
@@ -423,7 +424,7 @@ nav button.openbtn {
     margin: auto;
 }
 
-#quote-and-listen-wrapper blockquote::before {
+#quote-and-listen-wrapper blockquote h2::before {
     content: open-quote;
     display: inline;
     color: #000;
@@ -432,7 +433,7 @@ nav button.openbtn {
     font-weight: 400;
 }
 
-#quote-and-listen-wrapper blockquote::after {
+#quote-and-listen-wrapper blockquote h2::after {
     content: close-quote;
     font-size: 3rem;
 }
@@ -472,7 +473,7 @@ audio {
     opacity: 0.5;
 }
 
-blockquote::before {
+#artist-quotes blockquote::before {
     content: open-quote;
     display: block;
     color: #534d46;
