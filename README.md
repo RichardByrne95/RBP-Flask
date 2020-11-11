@@ -174,6 +174,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   On internet explorer desktop, the social links have vertical scroll bars.
 -   On extra small screen sizes, e.g. Galaxy Fold, the audio players and the email address in the footer are cut off slightly on the right hand side.
+-   Audio doesn't stop playing when another audio file starts playing.
 
 
 ## Deployment
@@ -190,11 +191,11 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Roadmap
 
--   A page dedicated to each service (recording, mixing and mastering) will be developed in the future.
+-   A page dedicated to each service (recording, mixing and mastering) will be developed.
 
 -   The Ts&Cs, Cookie Policy, Privacy Policy and Refund Policy of the business pages will be created and updated with the relevant information.
 
--   Bugs detailed above will be addressed.
+-   Address known bugs, as detailed above.
 
 -   A page dedicated to more samples of work will be develpped in the future.
 
@@ -203,6 +204,12 @@ The project was deployed to GitHub Pages using the following steps...
 -   A cookie banner is intended to be implemented before the site goes live.
 
 -   The contact forms will be able to be submitted, with the form content being sent to an email address and stored on Google Drive.
+
+-   Make audio player pause all other players when 'play' is clicked.
+
+-   Create custom audio player to replace default, so it looks the same on all browsers.
+
+-   Adding roating gallery to studio photos on studio.html
 
 ### Project Status
 
