@@ -164,6 +164,18 @@ The project was deployed to GitHub Pages using the following steps...
 4.  In the Github Pages settings of the project repository ((RBP Website)[https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html]), the main branch was chosen as the source.
 5.  The site was then published to (https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html)[https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html].
 
+### Roadmap
+
+-   A page dedicated to each service (recording, mixing and mastering) will be developed in the future.
+
+-   A page dedicated to more samples of work will be develpped in the future.
+
+-   A blog is intended to be integrated into the site to host blog posts designed to help artists navigate the music indsutry.
+
+### Project Status
+
+-   This project is under continuous development by the owner.
+
 
 ## Credits
 
@@ -190,18 +202,6 @@ The project was deployed to GitHub Pages using the following steps...
 -   The images of the studios came from [Sound Training Productions](https://soundtraining.com/productions/) with their permission.
 
 -   All other images were sourced from [Unsplash.com](https://unsplash.com/).
-
-## Roadmap
-
--   A page dedicated to each service (recording, mixing and mastering) will be developed in the future.
-
--   A page dedicated to more samples of work will be develpped in the future.
-
--   A blog is intended to be integrated into the site to host blog posts designed to help artists navigate the music indsutry.
-
-## Project Status
-
--   This project is under continuous development by the owner.
 
 ## Support
 
