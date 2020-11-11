@@ -23,9 +23,6 @@ The website is designed to be responsive and accessible on a range of devices, m
         1. As a returning visitor, I want to find ways of contacting the business.
         2. As a returning visitor, I want to find links to the social media of the business.
 
-    -   #### Frequent Visitor Goals
-        1. As a Frequent User, I want to check to see if there are any new blog posts.
-
 -   ### Design
 
     -   #### Colour Scheme
