@@ -114,43 +114,33 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a first time visitor, I want to understand the main purpose of the site and learn about the services provided by the business.
 
-        1.  Reason 1
-        2.  Reason 2
-        3.  Reason 3
+        1.  Upon visiting the homepage, the user is greeted with a screen-wide hero image of a recording studio. The tagline 'Sound Your Best' gives an indication that this is a music/audio production studio.
+        2.  Right below the hero image is a 1-line elevator pitch that describes the services that RBP offers, as well as the value RBP provides.
+        3.  The hero image contains a large call to action button to contact RBP. This is so that the user understands that one of the  primary functionS of the website is to enable artists to contact the business.
 
     2. As a first time visitor, I want to find testimonials from established artists in order to establish the authority of the business/brand.
 
-        1.  Reason 1
-        2.  Reason 2
-        3.  Reason 3
+        1.  On the hompage, after introducing the brand, quotes from established artists about their experience with RBP are provided.
+        2.  The artists page provides a list of 10 established artists that have worked with RBP. The user can click on the artist image/name to find out more about the artist.
 
     3. As a first time visitor, I want to be able to easily navigate through the site to find the content that fits my needs.
 
-        1.  Reason 1
-        2.  Reason 2
-        3.  Reason 3
+        1.  On mobile and tablet devices, a responsive burger icon menu is available from the top right of the window. It presents the main navigation links for each of the website's pages.
+        2.  On desktop-sized devices and above, a horizontal menu is available from the navbar at the top of the screen. It presents the main navigation links for each of the website's pages.
+        3.  The footer on each page contains a 'back to top' link that brings the user back to the top of the page, as well as links to the Ts&Cs, Cookie Policy, Privacy Policy and Refund Policy of the business.
+        4.  Each page contains a call to action button to get in contact with e business, in order to reduce the steps that need to be taken for an artist to get in contact.
 
 -   #### Returning Visitor Goals
     
     1. As a returning visitor, I want to find ways of contacting the business.
 
-        1.  Reason 1
-        2.  Reason 2
-        3.  Reason 3
+        1.  The navbar contains a 'Request a Quote' button that is presented with a surrounding border to draw attentiion to it.
+        2.  The footer contains social links as well as the email address of the business so the artist can choose the way that suits them best to contact the business.
+        3.  Each page contains a call to action button to get in contact with the business, in order to reduce the steps that need to be taken for an artist to get in contact.
 
     2. As a returning visitor, I want to find links to the social media of the business.
 
-        1.  Reason 1
-        2.  Reason 2
-        3.  Reason 3
-
--   #### Frequent Visitor Goals
-
-    1. As a Frequent User, I want to check to see if there are any new blog posts.
-
-        1.  Reason 1
-        2.  Reason 2
-        3.  Reason 3
+        1.  The footer on each page contains social links to the business' Facebook page, Instagram account, Twitter feed and Spotify page.
 
 ### Further Testing
 
