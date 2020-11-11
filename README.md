@@ -67,6 +67,15 @@ The website is designed to be responsive and accessible on a range of devices, m
 -   Interactive elements
 
 
+## Accessibility
+
+-   Images: Most images on the site are placed using CSS, as opposed to the "img" element. Therefore, a relevant 'aria-label' was given to each image to provide content to screen readers etc.
+
+-   Links:  All text links, including navigation, were given a role of 'button' to improve accessibility.
+
+-   Tags:   Semantic element tags were used in order to improve accessibility, and reduce the footprint of the code.
+
+
 ## Technologies Used
 
 ### Languages Used
