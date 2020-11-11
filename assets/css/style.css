@@ -350,7 +350,11 @@ nav button.openbtn {
 }
 
 #top {
-    border-bottom: .1rem solid rgb(158, 158, 158);
+    border-bottom: #ff8400 .1rem solid;
+}
+
+#top h4 a {
+    text-transform: capitalize;
 }
 
 #top:hover {
