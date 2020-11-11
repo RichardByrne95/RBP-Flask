@@ -151,43 +151,50 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   On internet explorer desktop, the social links have vertical scroll bars.
 -   On extra small screen sizes, e.g. Galaxy Fold, the audio players and the email address in the footer are cut off slightly on the right hand side.
 
+
 ## Deployment
 
 ### GitHub Pages
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+1.  Logged in to GitHub.
+2.  A new repository called 'RichardByrne95.github.io' was created.
+3.  Repository was cloned to desktop version of Github, and an index.html file was created with some placeholder html.
+4.  In the Github Pages settings of the project repository ((RBP Website)[https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html]), the main branch was chosen as the source.
+5.  The site was then published to (https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html)[https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html].
 
 
 ## Credits
 
 ### Code
 
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
+-   [Code Institue - Full Stack Software Development Course](https://codeinstitute.net/): Coding skills learned in this course allowed the developer to create all the pages on this website.
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+-   [Bootstrap4](https://getbootstrap.com/docs/4.5/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System, but also for the desktop navigation system and contact forms.
 
--   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
+-   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web): Referenced for best practices for lists and images, as well as the smooth scrolling functionality.
+
+-   [W3 Schools](https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp/): For collapsing mobile and tablet sidebar. Code was modified to fit the RBP aesthetic.
+
+-   [Font Awesome](https://fontawesome.com/): Used for social icons in footer.
 
 ### Content
 
--   All content was written by the developer.
+-   All content was written by the developer, except that which is mentioned above.
 
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+-   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours).
 
 ### Media
 
--   All Images were created by the developer.
+-   The images of the studios came from [Sound Training Productions](https://soundtraining.com/productions/) with their permission.
+
+-   All other images were sourced from [Unsplash.com](https://unsplash.com/).
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   Code Institute for giving me skills to create this project.
+
+-   My mentor, Spencer Bariball, for continuous helpful feedback.
 
 -   Tutor support at Code Institute for their support.
