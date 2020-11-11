@@ -25,12 +25,16 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 -   ### Design
 
+-   A clean and minimal aethsthetic was the main design goal of this project. This was achieved through minimal and bold use of colours, liberal use of whitespace and the primary background being white.
+
     -   #### Colour Scheme
 
         -   The colour scheme of RBP is orange (#FF8400), white (#FFF), red (#C41230), and black (#000).
+
     -   #### Typography
 
-        -   The primary font used throughout the site is Proxima Nova, with Sans-Serif as the fallback font. However, Montserrat and Josefin-Sans are used for the headings of each page, both, again, with a fallback of Sans-Serif.
+        -   The primary font used throughout the site is Proxima Nova, with Sans-Serif as the fallback font. This font serves the goal of being minimal with no frills or ornamentation. However, Montserrat and Josefin-Sans are used for the headings of each page, both, again, with a fallback of Sans-Serif. All of these fonts are very easily readable, adding to the accessibility of the site.
+
     -   #### Imagery
 
         -   Despite the site having a minimalist feel, the imagery is very important to the user expierence. It is designed to both inform the visitor of what they can expect when recording and give them a deeper understanding of the brand. The large hero image was chosen to be such, so as to grab the user's attention, as well as to put the brand experience at the forefront of the visitor's attention.
@@ -69,7 +73,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ## Accessibility
 
--   Images: Most images on the site are placed using CSS, as opposed to the "img" element. Therefore, a relevant 'aria-label' was given to each image to provide content to screen readers etc.
+-   Images: Most images on the site are placed using CSS, as opposed to the "img" element. Therefore, a relevant 'aria-label' was given to each image (apart from those that were deemed to be illegal by the W3 HTML validator) to provide content to screen readers etc.
 
 -   Links:  All text links, including navigation, were given a role of 'button' to improve accessibility.
 
@@ -120,16 +124,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a first time visitor, I want to understand the main purpose of the site and learn about the services provided by the business.
 
+    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Hero_Img.PNG">
+
         1.  Upon visiting the homepage, the user is greeted with a screen-wide hero image of a recording studio. The tagline 'Sound Your Best' gives an indication that this is a music/audio production studio.
         2.  Right below the hero image is a 1-line elevator pitch that describes the services that RBP offers, as well as the value RBP provides.
         3.  The hero image contains a large call to action button to contact RBP. This is so that the user understands that one of the  primary functionS of the website is to enable artists to contact the business.
 
     2. As a first time visitor, I want to find testimonials from established artists in order to establish the authority of the business/brand.
 
+    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Artist_Quotes.PNG">
+
         1.  On the hompage, after introducing the brand, quotes from established artists about their experience with RBP are provided.
         2.  The artists page provides a list of 10 established artists that have worked with RBP. The user can click on the artist image/name to find out more about the artist.
 
     3. As a first time visitor, I want to be able to easily navigate through the site to find the content that fits my needs.
+
+    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Sidebar.PNG">
 
         1.  On mobile and tablet devices, a responsive burger icon menu is available from the top right of the window. It presents the main navigation links for each of the website's pages.
         2.  On desktop-sized devices and above, a horizontal menu is available from the navbar at the top of the screen. It presents the main navigation links for each of the website's pages.
@@ -140,11 +150,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     
     1. As a returning visitor, I want to find ways of contacting the business.
 
+    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Navbar.PNG">
+
         1.  The navbar contains a 'Request a Quote' button that is presented with a surrounding border to draw attentiion to it.
         2.  The footer contains social links as well as the email address of the business so the artist can choose the way that suits them best to contact the business.
         3.  Each page contains a call to action button to get in contact with the business, in order to reduce the steps that need to be taken for an artist to get in contact.
 
     2. As a returning visitor, I want to find links to the social media of the business.
+
+    <img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Social_Links.PNG">
 
         1.  The footer on each page contains social links to the business' Facebook page, Instagram account, Twitter feed and Spotify page.
 
@@ -152,6 +166,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge browsers.
 -   The website was viewed on a variety of devices including Desktop, Laptop, iPad, iPad Pro, iPhone 5, iPhone 8, iPhone 8 Plus, iPhone X, Surface Duo & Moto G5.
+-   All external links open in a new tab.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
@@ -177,9 +192,17 @@ The project was deployed to GitHub Pages using the following steps...
 
 -   A page dedicated to each service (recording, mixing and mastering) will be developed in the future.
 
+-   The Ts&Cs, Cookie Policy, Privacy Policy and Refund Policy of the business pages will be created and updated with the relevant information.
+
+-   Bugs detailed above will be addressed.
+
 -   A page dedicated to more samples of work will be develpped in the future.
 
 -   A blog is intended to be integrated into the site to host blog posts designed to help artists navigate the music indsutry.
+
+-   A cookie banner is intended to be implemented before the site goes live.
+
+-   The contact forms will be able to be submitted, with the form content being sent to an email address and stored on Google Drive.
 
 ### Project Status
 
