@@ -139,7 +139,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     3. As a first time visitor, I want to be able to easily navigate through the site to find the content that fits my needs.
 
-        <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Sidebar.PNG" style="height: 5rem"></h2>
+        <h2><img src="https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/images/misc/RBP_Sidebar.PNG" width="225" height="400"></h2>
 
         1.  On mobile and tablet devices, a responsive burger icon menu is available from the top right of the window. It presents the main navigation links for each of the website's pages.
         2.  On desktop-sized devices and above, a horizontal menu is available from the navbar at the top of the screen. It presents the main navigation links for each of the website's pages.
