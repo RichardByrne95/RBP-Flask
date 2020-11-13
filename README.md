@@ -42,12 +42,12 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 -   ### Wireframes
 
-    -   #### Desktop
+    -   #### Mobile
 
-        -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Homepage.png?raw=true)
-        -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Studios.png?raw=true)
-        -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Artists.png?raw=true)
-        -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Contact.png?raw=true)
+        -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Homepage.png?raw=true)
+        -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Studios.png?raw=true)
+        -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Artists.png?raw=true)
+        -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Contact.png?raw=true)
 
     -   #### Tablet
 
@@ -56,12 +56,12 @@ The website is designed to be responsive and accessible on a range of devices, m
         -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/T-Artists.png?raw=true)
         -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/T-Contact.png?raw=true)
 
-    -   #### Mobile
+    -   #### Desktop
 
-        -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Homepage.png?raw=true)
-        -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Studios.png?raw=true)
-        -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Artists.png?raw=true)
-        -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/M-Contact.png?raw=true)
+        -   Homepage Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Homepage.png?raw=true)
+        -   Studios Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Studios.png?raw=true)
+        -   Artists Wireframe - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Artists.png?raw=true)
+        -   Contact Wirefram - [View](https://github.com/RichardByrne95/CI-MS1-RBP-Website/blob/main/assets/wireframes/D-Contact.png?raw=true)
 
 
 ## Features
