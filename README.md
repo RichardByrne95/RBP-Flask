@@ -25,7 +25,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 -   ### Design
 
--   A clean and minimal aethsthetic was the main design goal of this project. This was achieved through minimal and bold use of colours, liberal use of whitespace and the primary background being white.
+-   A clean and minimal aethsthetic was the main design goal of this project. This was achieved through minimal and bold use of colours, liberal use of whitespace and the primary background colour being white.
 
     -   #### Colour Scheme
 
@@ -262,7 +262,7 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Acknowledgements
 
--   [Squarespace's Bedford Template](https://www.squarespace.com/) and [Awwwards.com](https://www.awwwards.com/) were used for design inspiration.
+-   [Squarespace's Bedford Template](https://support.squarespace.com/hc/en-us/articles/205825968-Bedford-template-family) and [Awwwards.com](https://www.awwwards.com/) were used for design inspiration.
 
 -   Code Institute for giving me skills to create this project.
 
