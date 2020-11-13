@@ -179,6 +179,20 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Deployment
 
+### Development Process
+
+This project was developed using Visual Studio Code, Git and Github using the following steps...
+
+1.  Logged into Github Desktop App
+2.  A new repository called 'CI-MS1-RBP-Website' was created locally for this project.
+3.  This repsoitory was initalised with a blank README.md file.
+4.  This repository was then published from Github Desktop to the remote Github server using 'Ctrl + P'.
+5.  The project folder was opened in Visual Studio Code where the initial html files were created.
+6.  A new terminal in Visual Studio Code (Ctrl + Shift + ') was opened to begin the git commit process.
+7.  Files were added to the local git staging area using 'git add <'filename'>' and 'git add *' where applicable.
+8.  Local commits were made using the 'git commit -m <'message'>' command.
+9.  These local commits were then periodically pushed to the remote Github server using the 'git push' command.
+
 ### GitHub Pages
 
 The project was deployed to GitHub Pages using the following steps...
