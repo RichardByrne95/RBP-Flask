@@ -200,8 +200,8 @@ The project was deployed to GitHub Pages using the following steps...
 1.  Logged in to GitHub.
 2.  A new repository called 'RichardByrne95.github.io' was created.
 3.  Repository was cloned to desktop version of Github, and an index.html file was created with some placeholder html.
-4.  In the Github Pages settings of the project repository ((RBP Website)[https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html]), the main branch was chosen as the source.
-5.  The site was then published to (https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html)[https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html].
+4.  In the Github Pages settings of the project repository <a href="https://github.com/RichardByrne95/CI-MS1-RBP-Website">(https://github.com/RichardByrne95/CI-MS1-RBP-Website)</a>, the main branch was chosen as the source.
+5.  The site was then published to <a href="https://richardbyrne95.github.io/CI-MS1-RBP-Website/index.html">this link</a>.
 
 ### Roadmap
 
