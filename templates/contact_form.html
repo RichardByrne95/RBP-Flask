@@ -3,12 +3,16 @@
     <a id="contact-form"></a>
     <div class="row">
         <div class="col">
-            <h2 class="section-heading text-left">Contact Us</h2>
+            <h2 class="section-heading text-left">{% if contact_heading %}{{ contact_heading }}{% else %}Tell Me About Your Project{% endif %}</h2>
             <p>
-                Get in touch via the form below and tell me about your project!
+                {% if contact_subheading %}
+                    {{ contact_subheading }}
+                {% else %}
+                    Get in touch via the form below and tell me about your project!
+                    You'll get a reply within <strong>24 hours!</strong>
+                {% endif %}
             </p>
             <p>
-                You'll get a reply within <strong>24 hours!</strong>
             </p>
         </div>
     </div>

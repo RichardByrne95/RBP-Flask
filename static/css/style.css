@@ -41,7 +41,7 @@ textarea {
 .wrapper {
     margin: 0;
     max-width: 102rem;
-    padding: 7.9rem 3.2rem;
+    padding: 6rem 1rem;
 }
 
 .quote-wrapper {
@@ -60,10 +60,6 @@ textarea {
     font-weight: 600;
     font-size: 2.5rem;
     letter-spacing: .05rem;
-}
-
-.wrapper {
-    padding: 6rem 1rem;
 }
 
 /* -----------------------------------------------------1.1. Typography */
@@ -563,7 +559,7 @@ blockquote::after {
 }
 
 /* -----------------------------------------------------7.1. Sun Studio */
-#studios h2 {
+#studios-wrapper h2 {
     font-size: 3.4rem;
 }
 
@@ -952,7 +948,7 @@ blockquote::after {
     
     /* Studios.html */
     /* General */
-    #studios.wrapper {
+    #studios-wrapper.wrapper {
         margin: 0 auto;
         padding: 7.9rem 7rem;
     }
@@ -1136,7 +1132,7 @@ blockquote::after {
 
     /* Studios.html */
     /* General */
-    #studios.wrapper {
+    #studios-wrapper.wrapper {
         margin: 0 auto;
         padding: 7.9rem 7rem;
     }
