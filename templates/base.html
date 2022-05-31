@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ie">
 
 <head>
     {% include 'head_meta.html' %}
@@ -10,7 +10,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close">&times;</a>
     <a class="navbar-text uppercase" href="{{ url_for('home') }}" role="button">Home</a>
     <a class="navbar-text uppercase" href="{{ url_for('studios') }}" role="button">Studios</a>
-    <a class="navbar-text uppercase" href="artists.html" role="button">Artists</a>
+    <a class="navbar-text uppercase" href="{{ url_for('artists') }}" role="button">Artists</a>
     <a class="navbar-text uppercase" href="contact.html" role="button">Request a Quote</a>
 </div>
 <div id="main-wrapper">
@@ -33,7 +33,7 @@
                                 <a class="navbar-text" href="{{ url_for('studios') }}" role="button">Studios</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="navbar-text" href="artists.html" role="button">Artists</a>
+                                <a class="navbar-text" href="{{ url_for('artists') }}" role="button">Artists</a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="navbar-text nav-cta" href="contact.html" role="button">Request a Quote</a>

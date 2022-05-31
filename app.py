@@ -29,6 +29,17 @@ def studios():
         return render_template("404.html")
 
 
+@app.route("/artists")
+def artists():
+    try:
+        return render_template("artists.html",
+                               page_wrapper_id="artists-wrapper")
+
+    except Exception as e:
+        flash("Error loading page. ", f"Error: {e}")
+        return render_template("404.html")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP"),
