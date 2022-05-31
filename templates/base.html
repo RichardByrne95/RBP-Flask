@@ -8,8 +8,8 @@
 <body>
 <div id="mySideBar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close">&times;</a>
-    <a class="navbar-text uppercase" href="index.html" role="button">Home</a>
-    <a class="navbar-text uppercase" href="studios.html" role="button">Studios</a>
+    <a class="navbar-text uppercase" href="{{ url_for('home') }}" role="button">Home</a>
+    <a class="navbar-text uppercase" href="{{ url_for('studios') }}" role="button">Studios</a>
     <a class="navbar-text uppercase" href="artists.html" role="button">Artists</a>
     <a class="navbar-text uppercase" href="contact.html" role="button">Request a Quote</a>
 </div>
@@ -27,10 +27,10 @@
                         <!-- Code from official Bootstrap documentation referenced -->
                         <ul class="list-inline" id="horizontal-nav">
                             <li class="active list-inline-item">
-                                <a class="navbar-text" href="index.html" role="button">Home</a>
+                                <a class="navbar-text" href="{{ url_for('home') }}" role="button">Home</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="navbar-text" href="studios.html" role="button">Studios</a>
+                                <a class="navbar-text" href="{{ url_for('studios') }}" role="button">Studios</a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="navbar-text" href="artists.html" role="button">Artists</a>
@@ -53,7 +53,7 @@
         {% endblock %}
         <!-- ./HERO IMAGE -->
     </header>
-    <main class="wrapper container-fluid">
+    <main class="wrapper container-fluid" id="{{ page_wrapper_id }}">
         {% block main %}
         {% endblock %}
     </main>

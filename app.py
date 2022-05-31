@@ -10,9 +10,19 @@ app.secret_key = os.environ.get("SECRET_KEY")
 @app.route("/")
 @app.route("/home")
 def home():
-    """Homepage"""
     try:
         return render_template("index.html")
+
+    except Exception as e:
+        flash("Error loading page. ", f"Error: {e}")
+        return render_template("404.html")
+
+
+@app.route("/studios")
+def studios():
+    try:
+        return render_template("studios.html",
+                               page_wrapper_id="studios")
 
     except Exception as e:
         flash("Error loading page. ", f"Error: {e}")
