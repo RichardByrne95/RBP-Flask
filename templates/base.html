@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'head_meta.html' %}
+</head>
+
+<body>
+<div id="mySideBar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close">&times;</a>
+    <a class="navbar-text uppercase" href="index.html" role="button">Home</a>
+    <a class="navbar-text uppercase" href="studios.html" role="button">Studios</a>
+    <a class="navbar-text uppercase" href="artists.html" role="button">Artists</a>
+    <a class="navbar-text uppercase" href="contact.html" role="button">Request a Quote</a>
+</div>
+<div id="main-wrapper">
+    <a id="back-to-top"></a>
+    <header>
+        <!-- NAV -->
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="container-fluid navigation">
+                    <nav class="navbar">
+                        <div class="navbar-header">
+                            <a class="navbar-brand logo" href="index.html" role="button" aria-label="RBP Logo"></a>
+                        </div>
+                        <!-- Code from official Bootstrap documentation referenced -->
+                        <ul class="list-inline" id="horizontal-nav">
+                            <li class="active list-inline-item">
+                                <a class="navbar-text" href="index.html" role="button">Home</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="navbar-text" href="studios.html" role="button">Studios</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="navbar-text" href="artists.html" role="button">Artists</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="navbar-text nav-cta" href="contact.html" role="button">Request a Quote</a>
+                            </li>
+                        </ul>
+                        <!-- ./code from official Bootstrap documentation referenced -->
+                        <!-- Code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
+                        <button class="openbtn" onclick="openNav()">&#9776;</button>
+                        <!-- ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- ./NAV -->
+        <!-- HERO IMAGE -->
+        {% block hero_image %}
+        {% endblock %}
+        <!-- ./HERO IMAGE -->
+    </header>
+    <main class="wrapper container-fluid">
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% include 'scripts.html' %}
+</div>
+</body>
+
+</html>
