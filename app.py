@@ -22,7 +22,7 @@ def home():
 def studios():
     try:
         return render_template("studios.html",
-                               page_wrapper_id="studios")
+                               page_wrapper_id="studios-wrapper")
 
     except Exception as e:
         flash("Error loading page. ", f"Error: {e}")
@@ -34,6 +34,17 @@ def artists():
     try:
         return render_template("artists.html",
                                page_wrapper_id="artists-wrapper")
+
+    except Exception as e:
+        flash("Error loading page. ", f"Error: {e}")
+        return render_template("404.html")
+
+
+@app.route("/contact")
+def contact():
+    try:
+        return render_template("contact.html",
+                               page_wrapper_id="contact-wrapper")
 
     except Exception as e:
         flash("Error loading page. ", f"Error: {e}")
