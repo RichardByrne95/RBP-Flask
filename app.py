@@ -50,6 +50,17 @@ def contact():
         return render_template("404.html")
 
 
+@app.route("/blog")
+def blog_home():
+    try:
+        return render_template("blog.html",
+                               page_wrapper_id="blog-wrapper")
+
+    except Exception as e:
+        flash("Error loading page. ", f"Error: {e}")
+        return render_template("404.html")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP"),
