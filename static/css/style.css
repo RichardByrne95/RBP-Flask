@@ -311,7 +311,7 @@ nav button.openbtn {
 }
 
 .logo {
-    background: url(../images/logo/RBP-logo-black%20small%20cropped.png) left center no-repeat;
+    background: url(../images/logo/rbp_logo_black_small.png) left center no-repeat;
     width: 4.5rem;
     height: 4.5rem;
     background-size: contain;
@@ -322,7 +322,7 @@ nav button.openbtn {
 /* -----------------------------------------------------4. Hero Image */
 .hero-image-container {
     padding: 0;
-    background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background: url(../images/sunstudio/temple_lane_desk.jpg) no-repeat center center;
     background-size: cover;
     height: 35rem;
     position: relative;
@@ -493,7 +493,7 @@ blockquote::after {
 
 /* ------------------------------------------6.5.4.4. Studios */
 .sun-photo {
-    background: url("../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg") center center;
+    background: url("../images/sunstudio/temple_lane_desk.jpg") center center;
     width: 100%;
     height: 21.5rem;
     margin: 1.5rem 0;
@@ -506,7 +506,7 @@ blockquote::after {
 }
 
 .studio-one-photo {
-    background: url("../images/studioone/STUDIOONE_01-1-min.jpg") no-repeat center center;
+    background: url("../images/studioone/studio_one_control_room.jpg") no-repeat center center;
     width: 100%;
     height: 21.5rem;
     margin: 1.5rem 0;
@@ -564,7 +564,7 @@ blockquote::after {
 }
 
 .sun-photo-1 {
-    background: url(../images/sunstudio/TempleLaneLowRes-2-1024x683.jpg) no-repeat center center;
+    background: url(../images/sunstudio/temple_lane_desk.jpg) no-repeat center center;
     background-size: cover;
     margin-bottom: 1.7rem;
     overflow: hidden;
@@ -578,7 +578,7 @@ blockquote::after {
 /* -----------------------------------------------------7.1. Studio One */
 
 .studio-one-photo-1 {
-    background: url(../images/studioone/STUDIOONE_01-1-min.jpg) no-repeat center center;
+    background: url(../images/studioone/studio_one_control_room.jpg) no-repeat center center;
     background-size: cover;
     overflow: hidden;
     margin-bottom: 1.7rem;
@@ -621,64 +621,63 @@ blockquote::after {
 }
 
 #ae-mak {
-    background: url("../images/artists/AE\ MAK.jpg") no-repeat center center;
+    background: url("../images/artists/ae_mak.jpg") no-repeat center center;
     background-size: cover;
     margin-top: 0;
 }
 
 #greg-clifford {
-    background: url("../images/artists/Greg\ Clifford.jpg") no-repeat center center;
+    background: url("../images/artists/greg_clifford.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #bjh {
-    background: url("../images/artists/Barry\ Jay\ Hughes\ Logo.png") no-repeat center center;
+    background: url("../images/artists/barry_jay_hughes_logo.png") no-repeat center center;
     background-size: cover;
 }
 
 #white-trash {
-    background: url("../images/artists/White\ Trash\ Logo.jpg") no-repeat center center;
+    background: url("../images/artists/white_trash.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #eoin-coogan {
-    background: url("../images/artists/Eoin\ Coogan.jpg") no-repeat center center;
+    background: url("../images/artists/eoin_coogan.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #sambo-drumz {
-    background: url("../images/artists/Dreaming\ of\ Jupiter.jpg") no-repeat center center;
+    background: url("../images/artists/dreaming_of_jupiter.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #ultitune {
-    background: url("../images/artists/Ultitune\ -\ Here\'s\ to\ You.jpg") no-repeat center center;
+    background: url("../images/artists/ultitune.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #fionn-lynch {
-    background: url("../images/artists/Keywest_Bandlogo.png") no-repeat center center;
+    background: url("../images/artists/keywest.png") no-repeat center center;
     background-size: cover;
     height: 20rem;
 }
 
 #top-shelf {
-    background: url("../images/artists/Top\ Shelf.jpg") no-repeat center center;
+    background: url("../images/artists/top_shelf.jpg") no-repeat center center;
     background-size: cover;
     height: 28rem;
     margin-top: 7rem;
 }
 
 #abi-and-the-bandit {
-    background: url("../images/artists/Abi_Rec-min.jpg") no-repeat center center;
+    background: url("../images/artists/abi_and_the_bandit.jpg") no-repeat center center;
     background-size: cover;
     height: 27rem;
     margin-top: 6rem;
 }
 
 #and-many-more h5 {
-    margin: 3.4rem;
-    margin-top: 6.8rem;
+    margin: 6.8rem 3.4rem 3.4rem;
     font-size: 2rem;
 }
 
@@ -694,7 +693,7 @@ blockquote::after {
 /* Hero Image */
 .contact-hero-image-container {
     padding: 0;
-    background: url("../images/sunstudio/TempleLaneLowRes-22-1024x683.jpg") no-repeat center center;
+    background: url("../images/sunstudio/temple_lane_split_control_live_room.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
