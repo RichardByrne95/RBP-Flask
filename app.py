@@ -1,5 +1,4 @@
 import os
-
 from flask import Flask, flash, render_template
 
 app = Flask(__name__)
