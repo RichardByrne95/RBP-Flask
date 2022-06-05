@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-ie">
+
+{% include 'head_meta.html' %}
+
+<body>
+{% include 'mobile_sidebar.html' %}
+<div id="main-wrapper">
+    <a id="back-to-top"></a>
+    <header>
+        <!-- NAV -->
+        {% include 'nav.html' %}
+        <!-- ./NAV -->
+        <!-- HERO IMAGE -->
+        {% block hero_image %}
+        {% endblock %}
+        <!-- ./HERO IMAGE -->
+    </header>
+    <main class="wrapper container-fluid" id="{{ page_wrapper_id }}">
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    {% include 'scripts.html' %}
+</div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!-- CONTACT FORM -->
+<section class="container-fluid">
+    <a id="contact-form"></a>
+    <div class="row">
+        <div class="col">
+            <h2 class="section-heading text-left">{% if contact_heading %}{{ contact_heading }}{% else %}Tell Me About
+                Your Project{% endif %}</h2>
+            <p>
+                {% if contact_subheading %}
+                    {{ contact_subheading }}
+                {% else %}
+                    Get in touch via the form below and tell me about your project!
+                    You'll get a reply within <strong>24 hours!</strong>
+                {% endif %}
+            </p>
+            <p>
+            </p>
+        </div>
+    </div>
+    <br>
+    <!-- Code from official Bootstrap documentation referenced -->
+    <form>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="first_name">First Name *</label>
+                    <input type="text" class="form-control" id="first_name">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="last_name">Surname *</label>
+                    <input type="text" class="form-control" id="last_name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="project-details">Project Details</label>
+                    <textarea class="form-control" id="project-details"></textarea>
+                </div>
+                <button class="btn form-submit-button">Submit!</button>
+            </div>
+        </div>
+    </form>
+    <!-- ./Code from official Bootstrap documentation referenced -->
+</section>
+<!-- ./CONTACT FORM -->

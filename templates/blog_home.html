@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block hero_image %}
+    <!-- HERO IMAGE -->
+    <section class="row no-gutters">
+        <div class="col">
+            <div class="container-fluid hero-image-container blog-home-hero-image-container">
+                <div class="opaque-overlay">
+                    <div class="jumbotron blog-home-jumbotron text-center" role="heading">
+                        <h1 class="lead">RBP Blog</h1>
+                        <br>
+                        <h2 class="jumbotron-header">Your music industry hotspot</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./HERO IMAGE -->
+{% endblock %}
+
+{% block main %}
+    <!-- BLOG POSTS -->
+    {% for blog_post in blog_posts %}
+        <a href="{{ url_for('blog_post', blog_url="{{ blog_post.url }}") }}"><h3>{{ blog_post.title }}</h3></a>
+    {% endfor %}
+    <!-- ./BLOG POSTS -->
+{% endblock %}

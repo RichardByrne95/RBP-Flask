@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+
+{% block hero_image %}
+<section class="row no-gutters">
+    <div class="col">
+        <figure class="container-fluid hero-image-container">
+            <figure class="opaque-overlay">
+                <figcaption class="jumbotron text-center">
+                    <h2 class="lead">Indie Rock and Pop</h2>
+                    <h1 class="jumbotron-header">Sound Your Best</h1>
+                    <br>
+                    <a class="btn jumbotron-cta" href="#contact-form" role="button">Contact Us</a>
+                </figcaption>
+            </figure>
+        </figure>
+    </div>
+</section>
+{% endblock %}
+
+{% block main %}
+<!-- QUOTE AND LISTEN -->
+<section class="container-fluid" id="quote-and-listen-wrapper">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="quote-wrapper">
+                <blockquote>
+                    <h2>
+                        RBP provides professional-quality recording, mixing and mastering to make your music
+                        shine.
+                    </h2>
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <article class="listen-wrapper">
+                <div class="listen-heading">
+                    <h2 class="section-heading">Sample Of Work</h2>
+                </div>
+                <div class="audio-wrapper">
+                    <audio controls>
+                        <source src="../static/audio/regret_the_hour_sample.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls>
+                        <source src="../static/audio/blame_it_on_the_whiskey_sample.mp3"
+                                type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls>
+                        <source src="../static/audio/dont_let_the_devil_sample.mp3"
+                                type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- ./QUOTE AND LISTEN -->
+<!-- ARTIST QUOTES -->
+<section class="container-fluid" id="artist-quotes">
+    <div class="row">
+        <div class="col">
+            <h2 class="section-heading">
+                What Artists Are Saying
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="quote-wrapper artist-quote text-center">
+                <blockquote>
+                    Professional, enthusiastic, receptive toward new ideas/approaches and easy to work with.
+                </blockquote>
+            </div>
+            <div class="quote-source">
+                <p>— Greg Clifford</p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="quote-wrapper artist-quote text-center">
+                <blockquote>
+                    Richard gives the sound an artist wants!
+                </blockquote>
+            </div>
+            <div class="quote-source">
+                <p>— Abi & The Bandit</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="quote-wrapper artist-quote text-center">
+                <blockquote>
+                    The most chill session I’ve ever done!
+                </blockquote>
+            </div>
+            <div class="quote-source">
+                <p>— Æ MAK</p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="quote-wrapper artist-quote text-center">
+                <blockquote>
+                    Would recommend to anyone who needs a professional polish to their work.
+                </blockquote>
+            </div>
+            <div class="quote-source">
+                <p>— PureGrand</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a class="btn button-md more-artists-button" href="artists.html" role="button">More Artists</a>
+        </div>
+    </div>
+</section>
+<!-- ./ARTIST QUOTES -->
+<!-- STUDIOS -->
+<section class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col">
+            <h2 class="section-heading text-left">
+                Studios
+            </h2>
+        </div>
+    </div>
+    <article class="row no-gutters sun-studio">
+        <div class="col-md-6 studio-text">
+            <h3>
+                Sun Studio
+            </h3>
+            <h4>Rihanna. Kanye West. The Script. James Vincent McMorrow. WILL.I.AM. Tony Visconti.
+                Stephen
+                Street.</h4>
+            <div class="pre-photo-text">
+                <p>
+                    Sun is a studio environment for those looking to get top-of-the-line sounding
+                    records.
+                    Its
+                    <strong>tranquil and professional</strong> vibe allow you to perform at your best,
+                    and
+                    have a great time doing it.
+                </p>
+                <p>
+                    There’s also a <strong>pool table</strong> to have fun and wind down! Click <a
+                        href="studios.html">here</a> to see more.
+                </p>
+            </div>
+        </div>
+        <figure class="col-md-6">
+            <div class="sun-photo"></div>
+        </figure>
+        <div class="post-photo-text">
+            <p>
+                Sun is a studio environment for those looking to get top-of-the-line sounding records.
+                Its
+                <strong>tranquil and professional</strong> vibe allow you to perform at your best, and
+                have a great time doing it.
+            </p>
+            <p>
+                There’s also a <strong>pool table</strong> to have fun and wind down! Click <a
+                    href="studios.html">here</a> to see more.
+            </p>
+        </div>
+    </article>
+    <article class="row no-gutters studio-one">
+        <div class="col-md-6 studio-text">
+            <h3>
+                Studio One
+            </h3>
+            <h4>The Clockworks. The Hot Sprockets. Whitetrash. Æ MAK. Rónán Connolly.</h4>
+            <div class="pre-photo-text">
+                <p>
+                    Studio 1 is Dublin’s hidden studio gem. Many successful artists from the Irish music
+                    scene
+                    have
+                    <strong>started out their careers by recording here</strong>.
+                </p>
+                <p>
+                    With its state-of-the-art equipment and unique sounding Wood-Floor Live Room, Studio
+                    1
+                    is
+                    <strong>perfect for musicians who are looking to get a foothold in the music
+                        industry</strong>. Click <a href="studios.html">here</a> to see more.
+                </p>
+            </div>
+        </div>
+        <figure class="col-md-6">
+            <div class="studio-one-photo"></div>
+        </figure>
+        <div class="post-photo-text">
+            <p>
+                Studio 1 is Dublin’s hidden studio gem. Many successful artists from the Irish music scene
+                have
+                <strong>started out their careers by recording here</strong>.
+            </p>
+            <p>
+                With its state-of-the-art equipment and unique sounding Wood-Floor Live Room, Studio 1 is
+                <strong>perfect for musicians who are looking to get a foothold in the music
+                    industry</strong>. Click <a href="studios.html">here</a> to see more.
+            </p>
+        </div>
+    </article>
+</section>
+<!-- ./STUDIOS -->
+<hr>
+
+{% include 'contact_form.html' %}
+
+{% endblock %}

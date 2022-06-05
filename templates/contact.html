@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block hero_image %}
+<!-- HERO IMAGE -->
+<section class="row no-gutters">
+    <div class="col">
+        <div class="container-fluid contact-hero-image-container">
+            <div class="opaque-overlay" id="contact-overlay">
+                <div class="jumbotron text-center jumbotron-text-wrapper" role="heading">
+                    <h1 class="jumbotron-header ">Request a Quote</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./HERO IMAGE -->
+{% endblock %}
+
+{% block main %}
+{% include 'contact_form.html' %}
+{% endblock %}

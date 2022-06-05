@@ -1,0 +1,37 @@
+<!-- NAV -->
+<div class="row no-gutters">
+    <div class="col">
+        <div class="container-fluid navigation">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <a class="navbar-brand logo" href="{{ url_for('home') }}" role="button"
+                       aria-label="RBP Logo"></a>
+                </div>
+                <!-- Code from official Bootstrap documentation referenced -->
+                <ul class="list-inline" id="horizontal-nav">
+                    <li class="active list-inline-item">
+                        <a class="navbar-text" href="{{ url_for('home') }}" role="button">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-text" href="{{ url_for('studios') }}" role="button">Studios</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-text" href="{{ url_for('artists') }}" role="button">Artists</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-text" href="{{ url_for('blog_home') }}" role="button">Blog</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-text nav-cta" href="{{ url_for('contact') }}" role="button">Request a
+                            Quote</a>
+                    </li>
+                </ul>
+                <!-- ./code from official Bootstrap documentation referenced -->
+                <!-- Code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <!-- ./code referenced from w3: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- ./NAV -->

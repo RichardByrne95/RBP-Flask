@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block hero_image %}
+<!-- HERO IMAGE -->
+<section class="row no-gutters">
+    <div class="col">
+        <div class="container-fluid studios-hero-image-container">
+            <div class="opaque-overlay">
+                <div class="jumbotron studios-jumbotron text-center" role="heading">
+                    <h2 class="lead">Welcome to</h2>
+                    <h1 class="jumbotron-header">Our World Famous Studios</h1>
+                    <br>
+                    <a href="#contact-form" class="btn jumbotron-cta" role="button">Get Recording</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./HERO IMAGE -->
+{% endblock %}
+
+{% block main %}
+<!-- SUN STUDIO -->
+<section class="container-fluid" id="studios-sun-wrapper">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-left">
+                Sun Studio
+            </h2>
+            <h4>Rihanna. Kanye West. The Script. James Vincent McMorrow. WILL.I.AM. Tony Visconti. Stephen
+                Street.</h4>
+        </div>
+    </div>
+    <div class="row no-gutters ">
+        <div class="col">
+            <div class="sun-studio-gallery">
+                <figure class="sun-photo-1"></figure>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="post-photo-text">
+                <p>
+                    Sun is a studio environment for those looking to get top-of-the-line sounding records.
+                    Its
+                    <strong>tranquil and professional</strong> vibe allow you to perform at your best, and
+                    have a great time doing it.
+                </p>
+                <p>
+                    There’s also a <strong>pool table</strong> to have fun and wind down!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href="#contact-form" class="btn button-md button-sm" role="button">Record in Sun Studio</a>
+        </div>
+    </div>
+</section>
+<!-- ./SUN STUDIO -->
+<!-- STUDIO ONE -->
+<section class="container-fluid" id="studios-studio-one-wrapper">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-left">
+                Studio One
+            </h2>
+            <h4>The Clockworks. The Hot Sprockets. Whitetrash. Æ MAK. Rónán Connolly.</h4>
+        </div>
+    </div>
+    <div class="row no-gutters ">
+        <div class="col">
+            <div class="studio-one-gallery">
+                <figure class="studio-one-photo-1">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="post-photo-text">
+                <p>
+                    Studio 1 is Dublin’s hidden studio gem. Many successful artists from the Irish music
+                    scene
+                    have
+                    <strong>started out their careers by recording here</strong>.
+                </p>
+                <p>
+                    With its state-of-the-art equipment and unique sounding Wood-Floor Live Room, Studio 1
+                    is
+                    <strong>perfect for musicians who are looking to get a foothold in the music
+                        industry</strong>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href="#contact-form" class="btn button-md button-sm" role="button">Record in Studio One</a>
+        </div>
+    </div>
+</section>
+<!-- ./STUDIO ONE -->
+<hr>
+
+{% include 'contact_form.html' %}
+
+{% endblock %}
