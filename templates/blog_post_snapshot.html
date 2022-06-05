@@ -1,0 +1,15 @@
+<article>
+    <div class="row">
+        <div class="col-8">
+            <a href="{{ url_for('blog_post', blog_url="{{ blog_post.url }}") }}">
+                <h3>{{ blog_post.title }}</h3>
+            </a>
+            <p>{{ blog_post.description }}</p>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('blog_post', blog_url="{{ blog_post.url }}") }}">
+                <img src="{{ blog_post.hero_image }}" alt="{{ blog_post.hero_image_alt_text }}">
+            </a>
+        </div>
+    </div>
+</article>

@@ -21,7 +21,9 @@
 {% block main %}
     <!-- BLOG POSTS -->
     {% for blog_post in blog_posts %}
-        <a href="{{ url_for('blog_post', blog_url="{{ blog_post.url }}") }}"><h3>{{ blog_post.title }}</h3></a>
+        <a href="{{ url_for('blog_post', blog_url="{{ blog_post.url }}") }}">
+            {% include 'blog_post_snapshot.html' %}
+        </a>
     {% endfor %}
     <!-- ./BLOG POSTS -->
 {% endblock %}
