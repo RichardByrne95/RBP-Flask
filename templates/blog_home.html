@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block hero_image %}
+<!-- HERO IMAGE -->
+<section class="row no-gutters">
+    <div class="col">
+        <div class="container-fluid hero-image-container blog-home-hero-image-container">
+            <div class="opaque-overlay">
+                <div class="jumbotron blog-jumbotron text-center" role="heading">
+                    <h1 class="lead">RBP Blog</h1>
+                    <br>
+                    <h2 class="jumbotron-header">Your music industry hotspot</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ./HERO IMAGE -->
+{% endblock %}
+
+{% block main %}
+    <a href="{{ url_for('blog_post', blog_url="25 BEST WAYS TO EARN MONEY AS A FULL-TIME MUSICIAN") }}">Link to BLOG POST</a>
+{% endblock %}

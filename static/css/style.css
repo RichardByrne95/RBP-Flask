@@ -715,6 +715,30 @@ blockquote::after {
     padding: 1.5rem 1rem;
 }
 
+/* ------------------------------------------------------------------------------------9. Blog.html */
+/* Hero Image */
+.blog-home-jumbotron {
+    overflow: visible;
+}
+
+.blog-home-hero-image-container {
+    background: url("../images/blog/guitarist_concert.jpg");
+    height: 25rem;
+    background-size: cover;
+}
+
+.blog-home-hero-image-container h1 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+}
+
+.blog-home-hero-image-container h2 {
+    position: absolute;
+    top: 65%;
+}
+
 /* -----------------------------------------------------10. Media Queries */
 /* -----------------------------------------------------10. >=576px */
 @media screen and (min-width: 576px) {

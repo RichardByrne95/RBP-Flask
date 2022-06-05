@@ -1,6 +1,8 @@
 import os
 from flask_pymongo import MongoClient
 from flask import Flask, flash, render_template
+if os.path.exists("env.py"):
+    import env
 
 
 app = Flask(__name__)
@@ -59,9 +61,10 @@ def contact():
 
 @app.route("/blog")
 def blog_home():
-    try:
-        return render_template("blog.html",
-                               page_wrapper_id="blog-wrapper")
+    blog_posts = db.blog_posts
+    return render_template("blog_home.html",
+                           page_wrapper_id="blog-wrapper",
+                           blog_posts=blog_posts)
 
     except Exception as e:
         flash("Error loading page. ", f"Error: {e}")
