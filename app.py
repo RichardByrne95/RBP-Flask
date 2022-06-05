@@ -1,9 +1,16 @@
 import os
+from flask_pymongo import MongoClient
 from flask import Flask, flash, render_template
+
 
 app = Flask(__name__)
 
-app.secret_key = os.environ.get("SECRET_KEY")
+app.config["MONGO_DB_NAME"] = os.getenv("MONGO_DB_NAME")
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
+app.secret_key = os.getenv("SECRET_KEY")
+
+mongo = MongoClient(os.getenv("MONGO_URI"))
+db = mongo.get_database("ServerlessInstanceRBP")
 
 
 @app.route("/")
